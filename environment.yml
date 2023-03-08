@@ -16,3 +16,4 @@ dependencies:
   #- mujoco-py<2.1,>=2.0
   - tqdm
   - seaborn
+  - jupyterlab
