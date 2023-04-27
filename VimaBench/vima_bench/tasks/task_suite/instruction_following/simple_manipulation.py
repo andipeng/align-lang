@@ -32,19 +32,22 @@ class SimpleManipulation(BaseTask):
         # ====== task specific ======
         num_dragged_obj: int = 1,
         num_base_obj: int = 1,
-        num_distractors_obj: int = 1,
-        base_obj_area: list[int] = [1], # 4 quadrants for positions
-        dragged_obj_area: list[int] = [2],
-        distractor_obj_area: list[int] = [4],
+        num_other_obj: int = 1,
+        base_obj_loc: list[int] = [1], # 4 quadrants for positions
+        dragged_obj_loc: list[int] = [2],
+        third_obj_loc: list[int] = [3],
+        fourth_obj_loc: list[int] = [4],
         dragged_obj_express_types: Literal["image", "name"] = "image",
         base_obj_express_types: Literal["image", "name"] = "image",
-        distractor_obj_express_types: Literal["image", "name"] = "image",
+        third_obj_express_types: Literal["image", "name"] = "image",
+        fourth_obj_express_types: Literal["image", "name"] = "image",
         prepend_color_to_name: bool = True,
         oracle_max_steps: int = 3,  # two mistakes are allowed
         oracle_step_to_env_step_ratio: int = 4,
         possible_dragged_obj: str | list[str] | ObjEntry | list[ObjEntry] | None = None,
         possible_base_obj: str | list[str] | ObjEntry | list[ObjEntry] | None = None,
-        possible_distractor_obj: str | list[str] | ObjEntry | list[ObjEntry] | None = None,
+        possible_third_obj: str | list[str] | ObjEntry | list[ObjEntry] | None = None,
+        possible_fourth_obj: str | list[str] | ObjEntry | list[ObjEntry] | None = None,
         possible_dragged_obj_texture: str
         | list[str]
         | TextureEntry
@@ -55,7 +58,12 @@ class SimpleManipulation(BaseTask):
         | TextureEntry
         | list[TextureEntry]
         | None = None,
-        possible_distractor_obj_texture: str
+        possible_third_obj_texture: str
+        | list[str]
+        | TextureEntry
+        | list[TextureEntry]
+        | None = None,
+        possible_fourth_obj_texture: str
         | list[str]
         | TextureEntry
         | list[TextureEntry]
@@ -72,10 +80,11 @@ class SimpleManipulation(BaseTask):
         task_meta = {
             "num_dragged_obj": num_dragged_obj,
             "num_base_obj": num_base_obj,
-            "num_distractors_obj": num_distractors_obj,
-            "base_obj_area" : base_obj_area,
-            "dragged_obj_area" : dragged_obj_area,
-            "distractor_obj_area" : distractor_obj_area,
+            "num_other_obj": num_other_obj,
+            "base_obj_loc" : base_obj_loc,
+            "dragged_obj_loc" : dragged_obj_loc,
+            "third_obj_loc" : third_obj_loc,
+            "fourth_obj_loc" : fourth_obj_loc,
         }
         placeholder_expression = {
             "base_obj": {
@@ -160,8 +169,8 @@ class SimpleManipulation(BaseTask):
                 "possible_base_obj must be a str or list of str or ObjEntry"
             )
 
-        if possible_distractor_obj is None:
-            self.possible_distractor_obj = [
+        if possible_third_obj is None:
+            self.possible_third_obj = [
                 ObjPedia.BLOCK,
                 ObjPedia.L_BLOCK,
                 ObjPedia.CAPITAL_LETTER_A,
@@ -182,26 +191,70 @@ class SimpleManipulation(BaseTask):
                 ObjPedia.ROUND,
                 ObjPedia.STAR,
             ]
-        elif isinstance(possible_distractor_obj, str):
-            self.possible_distractor_obj = [
-                ObjPedia.lookup_object_by_name(possible_distractor_obj)
+        elif isinstance(possible_third_obj, str):
+            self.possible_third_obj = [
+                ObjPedia.lookup_object_by_name(possible_third_obj)
             ]
-        elif isinstance(possible_distractor_obj, ObjEntry):
-            self.possible_distractor_obj = [possible_distractor_obj]
-        elif isinstance(possible_distractor_obj, list):
-            if isinstance(possible_distractor_obj[0], str):
-                self.possible_distractor_obj = [
-                    ObjPedia.lookup_object_by_name(obj) for obj in possible_distractor_obj
+        elif isinstance(possible_third_obj, ObjEntry):
+            self.possible_third_obj = [possible_third_obj]
+        elif isinstance(possible_third_obj, list):
+            if isinstance(possible_third_obj[0], str):
+                self.possible_third_obj = [
+                    ObjPedia.lookup_object_by_name(obj) for obj in possible_third_obj
                 ]
-            elif isinstance(possible_distractor_obj[0], ObjEntry):
-                self.possible_distractor_obj = possible_distractor_obj
+            elif isinstance(possible_third_obj[0], ObjEntry):
+                self.possible_third_obj = possible_third_obj
             else:
                 raise ValueError(
-                    "possible_distractor_obj must be a list of str or ObjEntry"
+                    "possible_third_obj must be a list of str or ObjEntry"
                 )
         else:
             raise ValueError(
-                "possible_distractor_obj must be a str or list of str or ObjEntry"
+                "possible_third_obj must be a str or list of str or ObjEntry"
+            )
+
+        if possible_fourth_obj is None:
+            self.possible_fourth_obj = [
+                ObjPedia.BLOCK,
+                ObjPedia.L_BLOCK,
+                ObjPedia.CAPITAL_LETTER_A,
+                ObjPedia.CAPITAL_LETTER_E,
+                ObjPedia.CAPITAL_LETTER_G,
+                ObjPedia.CAPITAL_LETTER_M,
+                ObjPedia.CAPITAL_LETTER_R,
+                ObjPedia.CAPITAL_LETTER_T,
+                ObjPedia.CAPITAL_LETTER_V,
+                ObjPedia.CROSS,
+                ObjPedia.DIAMOND,
+                ObjPedia.TRIANGLE,
+                ObjPedia.FLOWER,
+                ObjPedia.HEART,
+                ObjPedia.HEXAGON,
+                ObjPedia.PENTAGON,
+                ObjPedia.RING,
+                ObjPedia.ROUND,
+                ObjPedia.STAR,
+            ]
+        elif isinstance(possible_fourth_obj, str):
+            self.possible_fourth_obj = [
+                ObjPedia.lookup_object_by_name(possible_fourth_obj)
+            ]
+        elif isinstance(possible_fourth_obj, ObjEntry):
+            self.possible_fourth_obj = [possible_fourth_obj]
+        elif isinstance(possible_fourth_obj, list):
+            if isinstance(possible_fourth_obj[0], str):
+                self.possible_fourth_obj = [
+                    ObjPedia.lookup_object_by_name(obj) for obj in possible_fourth_obj
+                ]
+            elif isinstance(possible_fourth_obj[0], ObjEntry):
+                self.possible_fourth_obj = possible_fourth_obj
+            else:
+                raise ValueError(
+                    "possible_fourth_obj must be a list of str or ObjEntry"
+                )
+        else:
+            raise ValueError(
+                "possible_fourth_obj must be a str or list of str or ObjEntry"
             )
 
         if possible_dragged_obj_texture is None:
@@ -258,31 +311,58 @@ class SimpleManipulation(BaseTask):
                 "possible_base_obj_texture must be a str or list of str or TextureEntry"
             )
 
-        if possible_distractor_obj_texture is None:
-            self.possible_distractor_obj_texture = TexturePedia.all_entries()[
+        if possible_third_obj_texture is None:
+            self.possible_third_obj_texture = TexturePedia.all_entries()[
                 : int(len(TexturePedia.all_entries()) / 2)
             ]
-        elif isinstance(possible_distractor_obj_texture, str):
-            self.possible_distractor_obj_texture = [
-                TexturePedia.lookup_color_by_name(possible_distractor_obj_texture)
+        elif isinstance(possible_third_obj_texture, str):
+            self.possible_third_obj_texture = [
+                TexturePedia.lookup_color_by_name(possible_third_obj_texture)
             ]
-        elif isinstance(possible_distractor_obj_texture, TextureEntry):
-            self.possible_distractor_obj_texture = [possible_distractor_obj_texture]
-        elif isinstance(possible_distractor_obj_texture, list):
-            if isinstance(possible_distractor_obj_texture[0], str):
-                self.possible_distractor_obj_texture = [
+        elif isinstance(possible_third_obj_texture, TextureEntry):
+            self.possible_third_obj_texture = [possible_third_obj_texture]
+        elif isinstance(possible_third_obj_texture, list):
+            if isinstance(possible_third_obj_texture[0], str):
+                self.possible_third_obj_texture = [
                     TexturePedia.lookup_color_by_name(obj)
-                    for obj in possible_distractor_obj_texture
+                    for obj in possible_third_obj_texture
                 ]
-            elif isinstance(possible_distractor_obj_texture[0], TextureEntry):
-                self.possible_distractor_obj_texture = possible_distractor_obj_texture
+            elif isinstance(possible_third_obj_texture[0], TextureEntry):
+                self.possible_third_obj_texture = possible_third_obj_texture
             else:
                 raise ValueError(
-                    "possible_distractor_obj_texture must be a list of str or TextureEntry"
+                    "possible_third_obj_texture must be a list of str or TextureEntry"
                 )
         else:
             raise ValueError(
-                "possible_distractor_obj_texture must be a str or list of str or TextureEntry"
+                "possible_third_obj_texture must be a str or list of str or TextureEntry"
+            )
+
+        if possible_fourth_obj_texture is None:
+            self.possible_fourth_obj_texture = TexturePedia.all_entries()[
+                : int(len(TexturePedia.all_entries()) / 2)
+            ]
+        elif isinstance(possible_fourth_obj_texture, str):
+            self.possible_fourth_obj_texture = [
+                TexturePedia.lookup_color_by_name(possible_fourth_obj_texture)
+            ]
+        elif isinstance(possible_fourth_obj_texture, TextureEntry):
+            self.possible_fourth_obj_texture = [possible_fourth_obj_texture]
+        elif isinstance(possible_fourth_obj_texture, list):
+            if isinstance(possible_fourth_obj_texture[0], str):
+                self.possible_fourth_obj_texture = [
+                    TexturePedia.lookup_color_by_name(obj)
+                    for obj in possible_fourth_obj_texture
+                ]
+            elif isinstance(possible_fourth_obj_texture[0], TextureEntry):
+                self.possible_fourth_obj_texture = possible_fourth_obj_texture
+            else:
+                raise ValueError(
+                    "possible_fourth_obj_texture must be a list of str or TextureEntry"
+                )
+        else:
+            raise ValueError(
+                "possible_fourth_obj_texture must be a str or list of str or TextureEntry"
             )
 
         super().__init__(
@@ -325,9 +405,9 @@ class SimpleManipulation(BaseTask):
                 low=sampled_base_obj.size_range.low,
                 high=sampled_base_obj.size_range.high,
             )
-            base_obj_area = self.task_meta["base_obj_area"]
-            base_obj_area = random.choice(base_obj_area)
-            base_pose = self.get_discrete_pose(env, base_size, base_obj_area) # DISCRETE SAMPLING
+            base_obj_loc = self.task_meta["base_obj_loc"]
+            base_obj_loc = random.choice(base_obj_loc)
+            base_pose = self.get_discrete_pose(env, base_size, base_obj_loc) # DISCRETE SAMPLING
             self.base_pose = base_pose
             obj_id, urdf_full_path, pose = self.add_object_to_env(
                 env=env,
@@ -384,9 +464,9 @@ class SimpleManipulation(BaseTask):
                 high=sampled_dragged_obj.size_range.high,
             )
             #dragged_pose = self.get_random_pose(env, dragged_size)
-            dragged_obj_area = self.task_meta["dragged_obj_area"]
-            dragged_obj_area = random.choice(dragged_obj_area)
-            dragged_pose = self.get_discrete_pose(env, base_size, dragged_obj_area) # DISCRETE SAMPLING
+            dragged_obj_loc = self.task_meta["dragged_obj_loc"]
+            dragged_obj_loc = random.choice(dragged_obj_loc)
+            dragged_pose = self.get_discrete_pose(env, base_size, dragged_obj_loc) # DISCRETE SAMPLING
             self.dragged_pose = dragged_pose
             # noinspection PyUnboundLocalVariable
             if dragged_size[0] is None or dragged_pose[1] is None:
@@ -457,50 +537,99 @@ class SimpleManipulation(BaseTask):
             )
         self._all_goals = self.goals.copy()
 
-        # add distractor(s): we use the same object type for both dragged_obj and distractor_obj
-        if self.task_meta["num_distractors_obj"] == 0:
+        # add distractor(s):
+        num_other_obj = self.task_meta["num_other_obj"]
+        if num_other_obj == 0:
             return
 
-        sampled_colors = [
-            self.rng.choice(self.possible_distractor_obj_texture).value,
+        sampled_colors_third = [
+            self.rng.choice(self.possible_third_obj_texture).value,
             [
                 t.value
                 for t in self.rng.choice(
-                    self.possible_distractor_obj_texture,
-                    size=self.task_meta["num_distractors_obj"],
+                    self.possible_third_obj_texture,
+                    size=self.task_meta["num_other_obj"],
                 )
             ],
         ]
 
         # add distractor objects
-        distractor_poses = []
+        third_poses = []
         not_reach_max_times = False
         for i in range(self.REJECT_SAMPLING_MAX_TIMES):
-            sampled_distractor_obj = self.rng.choice(self.possible_distractor_obj).value
-            distractor_size = self.rng.uniform(
-                low=sampled_distractor_obj.size_range.low,
-                high=sampled_distractor_obj.size_range.high,
+            possible_third_obj = self.rng.choice(self.possible_third_obj).value
+            third_size = self.rng.uniform(
+                low=possible_third_obj.size_range.low,
+                high=possible_third_obj.size_range.high,
             )
-            distractor_obj_area = self.task_meta["distractor_obj_area"]
-            distractor_obj_area = random.choice(distractor_obj_area)
-            distractor_pose = self.get_discrete_pose(env, distractor_size, distractor_obj_area) # DISCRETE SAMPLING
-            self.distractor_pose = distractor_pose
+            third_obj_loc = self.task_meta["third_obj_loc"]
+            third_obj_loc = random.choice(third_obj_loc)
+            third_pose = self.get_discrete_pose(env, third_size, third_obj_loc) # DISCRETE SAMPLING
+            self.third_pose = third_pose
             obj_id, urdf_full_path, pose = self.add_object_to_env(
                 env=env,
-                obj_entry=sampled_distractor_obj,
-                color=sampled_colors[0],
-                pose=distractor_pose,
-                size=distractor_size,
+                obj_entry=possible_third_obj,
+                color=sampled_colors_third[0],
+                pose=third_pose,
+                size=third_size,
                 category="fixed",
                 retain_temp=True,
             )
             if obj_id is not None:
-                distractor_poses.append(distractor_pose)
+                third_poses.append(third_pose)
                 not_reach_max_times = True
                 break
             else:
                 print(
-                    f"Warning: {i + 1} repeated sampling when try to spawn distractor object"
+                    f"Warning: {i + 1} repeated sampling when try to spawn other object"
+                )
+        if not not_reach_max_times:
+            raise ValueError("Error in sampling distractor object")
+
+        # terminate before we generate more
+        if num_other_obj == 1:
+            return
+
+        sampled_colors_fourth = [
+            self.rng.choice(self.possible_fourth_obj_texture).value,
+            [
+                t.value
+                for t in self.rng.choice(
+                    self.possible_fourth_obj_texture,
+                    size=self.task_meta["num_other_obj"],
+                )
+            ],
+        ]
+
+        # add distractor objects
+        fourth_poses = []
+        not_reach_max_times = False
+        for i in range(self.REJECT_SAMPLING_MAX_TIMES):
+            possible_fourth_obj = self.rng.choice(self.possible_fourth_obj).value
+            fourth_size = self.rng.uniform(
+                low=possible_fourth_obj.size_range.low,
+                high=possible_fourth_obj.size_range.high,
+            )
+            fourth_obj_loc = self.task_meta["fourth_obj_loc"]
+            fourth_obj_loc = random.choice(fourth_obj_loc)
+            fourth_pose = self.get_discrete_pose(env, fourth_size, fourth_obj_loc) # DISCRETE SAMPLING
+            self.fourth_pose = fourth_pose
+            obj_id, urdf_full_path, pose = self.add_object_to_env(
+                env=env,
+                obj_entry=possible_fourth_obj,
+                color=sampled_colors_fourth[0],
+                pose=fourth_pose,
+                size=fourth_size,
+                category="fixed",
+                retain_temp=True,
+            )
+            if obj_id is not None:
+                fourth_poses.append(fourth_pose)
+                not_reach_max_times = True
+                break
+            else:
+                print(
+                    f"Warning: {i + 1} repeated sampling when try to spawn other object"
                 )
         if not not_reach_max_times:
             raise ValueError("Error in sampling distractor object")
