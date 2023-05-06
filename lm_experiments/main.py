@@ -155,6 +155,7 @@ def main():
         "object color":colors
     }
     os.makedirs(results_path,exist_ok=True)
+    r=0
     for rule in tqdm(rules):
         rows=[]
         for group in ["object type", "object color"]:
@@ -177,7 +178,8 @@ def main():
                     row=[rule, group, candidate, answer]
                     rows.append(row)
         df = pd.DataFrame(rows, columns=['rule','group','candidate','answer'])
-        df.to_csv(f'{results_path}/{engine}.csv')
+        df.to_csv(f'{results_path}/{engine}_rule-{r}.csv')
+        r+=1
 
 
 
