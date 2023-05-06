@@ -1,17 +1,22 @@
 from utils import openai_authenticate, openai_completion
+import pandas as pd
+import os
+from tqdm import tqdm
+
 
 engine = 'gpt-4'
+results_path = f'results'
 
 object_list = """
   - L-shaped block
   - block
   - bowl
   - container
-  - cross
-  - diamond
-  - flower
-  - heart
-  - hexagon
+  - cross (block of this shape)
+  - diamond (block of this shape)
+  - flower (block of this shape)
+  - heart (block of this shape)
+  - hexagon (block of this shape)
   - letter A
   - letter E
   - letter G
@@ -21,16 +26,15 @@ object_list = """
   - letter V
   - pallet
   - pan
-  - pentagon
-  - ring
-  - round
+  - pentagon (block of this shape)
+  - ring (block of this shape)
+  - round (block of this shape)
   - shorter block
   - small block
-  - star
-  - triangle
-"""
+  - star (block of this shape)
+  - triangle (block of this shape)"""
 object_colors = """
- - brick
+  - brick
   - tiles
   - wooden
   - granite
@@ -111,16 +115,28 @@ object_colors = """
   - yellow paisley
   - green paisley
   - blue paisley
-  - purple paisley
-"""
+  - purple paisley"""
 
+rules=[
+    "Bring me the red heart",
+    "Bring me the heart",
+    "Bring me the tiger object",
+    "Bring me a letter from the word letter",
+    "Bring me a vowel",
+    "Bring me a consonant that has any warm color on it",
+    "Bring me a vowel that has multiple colors in it",
+    "Bring me the geometric shape with the most number of sides",
+    "Bring me the alphabetically earliest letter",
+    "Bring me something I can drink water out of",
+    "Bring me something I could find in a kitchen"
+]
 
 def generate_prompt(rule, group, candidate):
     system_prompt = f"""You are interfacing with a robotics environment that has a robotic arm learning to pick up objects based on some linguistic command (e.g. "pick up red bowl"). At each interaction, the researcher will specify the command that you need to teach the robot. In order to teach the robot, you will need to help design the training distribution by specifying what properties the target object can have based on the given command. Target objects in this environment have two properties: object type, object color.  Any object type can be paired with any color, but an object can only take on exactly one object type and exactly one color.
 Object types:
 {object_list}
 Object colors:
-{color_list}
+{object_colors}
     """
     user_prompt = f"""The command is "{rule}". In an instantiation of the environment that contains only some subset of the object types and colors, could the target object have {group} "{candidate}"? Think step-by-step and then finish with a new line that says "Final answer:" followed by "yes" or "no"."""
     return [
@@ -131,11 +147,37 @@ Object colors:
 
 
 def main():
-    for group in ["object type", "object color"]:
-        for candidate in object_list if group == "object type" else color_list:
-            prompt = generate_prompt(rule, group, candidate)
-            choices, _ = openai_completion(prompt, engine, 0.0, True)
-            final_answer = choices[0]["content"].split("\nFinal answer: ")[-1]
+    openai_authenticate(True)
+    types=object_list.split('\n  - ')[1:]
+    colors=object_colors.split('\n  - ')[1:]
+    group_dict={
+        "object type":types,
+        "object color":colors
+    }
+    os.makedirs(results_path,exist_ok=True)
+    for rule in tqdm(rules):
+        rows=[]
+        for group in ["object type", "object color"]:
+            for candidate in tqdm(group_dict[group]):
+                answer=False
+                attempt=0
+                while not answer:
+                    attempt+=1
+                    messages = generate_prompt(rule, group, candidate)
+                    choices,_=openai_completion(messages, engine, 0.0, True)
+                    try:
+                        answer = choices[0]['message']['content'].split("\nFinal answer: ")[-1].replace('\n', '').strip()
+                        assert(answer.lower() in ['yes','no'])
+                        
+                    except Exception as e:
+                        answer=False
+                        if attempt>=10:
+                            answer='error'
+                            print(f'''Error: {cache[key]} \n {e}''')
+                    row=[rule, group, candidate, answer]
+                    rows.append(row)
+        df = pd.DataFrame(rows, columns=['rule','group','candidate','answer'])
+        df.to_csv(f'{results_path}/{engine}.csv')
 
 
 
