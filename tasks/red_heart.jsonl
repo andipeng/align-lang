@@ -1,0 +1,5 @@
+{
+    "task_description": "Bring me the red heart",
+    "goal_obj_types": ["heart"],
+    "goal_obj_colors": ["red"],
+}
