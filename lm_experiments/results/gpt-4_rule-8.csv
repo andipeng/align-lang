@@ -1,108 +1,108 @@
 ,rule,group,candidate,answer
-0,Bring me the alphabetically earliest letter,object type,L-shaped block,no
-1,Bring me the alphabetically earliest letter,object type,block,no
-2,Bring me the alphabetically earliest letter,object type,bowl,no
-3,Bring me the alphabetically earliest letter,object type,container,no
-4,Bring me the alphabetically earliest letter,object type,cross (block of this shape),no
-5,Bring me the alphabetically earliest letter,object type,diamond (block of this shape),no
-6,Bring me the alphabetically earliest letter,object type,flower (block of this shape),no
-7,Bring me the alphabetically earliest letter,object type,heart (block of this shape),no
-8,Bring me the alphabetically earliest letter,object type,hexagon (block of this shape),no
-9,Bring me the alphabetically earliest letter,object type,letter A,yes
-10,Bring me the alphabetically earliest letter,object type,letter E,yes
-11,Bring me the alphabetically earliest letter,object type,letter G,yes
-12,Bring me the alphabetically earliest letter,object type,letter M,yes
-13,Bring me the alphabetically earliest letter,object type,letter R,yes
-14,Bring me the alphabetically earliest letter,object type,letter T,yes
-15,Bring me the alphabetically earliest letter,object type,letter V,yes
-16,Bring me the alphabetically earliest letter,object type,pallet,no
-17,Bring me the alphabetically earliest letter,object type,pan,no
-18,Bring me the alphabetically earliest letter,object type,pentagon (block of this shape),no
-19,Bring me the alphabetically earliest letter,object type,ring (block of this shape),no
-20,Bring me the alphabetically earliest letter,object type,round (block of this shape),no
-21,Bring me the alphabetically earliest letter,object type,shorter block,no
-22,Bring me the alphabetically earliest letter,object type,small block,no
-23,Bring me the alphabetically earliest letter,object type,star (block of this shape),no
-24,Bring me the alphabetically earliest letter,object type,triangle (block of this shape),no
-25,Bring me the alphabetically earliest letter,object color,brick,yes
-26,Bring me the alphabetically earliest letter,object color,tiles,yes
-27,Bring me the alphabetically earliest letter,object color,wooden,yes
-28,Bring me the alphabetically earliest letter,object color,granite,yes
-29,Bring me the alphabetically earliest letter,object color,plastic,yes
-30,Bring me the alphabetically earliest letter,object color,polka dot,yes
-31,Bring me the alphabetically earliest letter,object color,checkerboard,yes
-32,Bring me the alphabetically earliest letter,object color,tiger,yes
-33,Bring me the alphabetically earliest letter,object color,magma,yes
-34,Bring me the alphabetically earliest letter,object color,rainbow,yes
-35,Bring me the alphabetically earliest letter,object color,blue,yes
-36,Bring me the alphabetically earliest letter,object color,cyan,yes
-37,Bring me the alphabetically earliest letter,object color,green,yes
-38,Bring me the alphabetically earliest letter,object color,olive,yes
-39,Bring me the alphabetically earliest letter,object color,orange,yes
-40,Bring me the alphabetically earliest letter,object color,pink,yes
-41,Bring me the alphabetically earliest letter,object color,purple,yes
-42,Bring me the alphabetically earliest letter,object color,red,yes
-43,Bring me the alphabetically earliest letter,object color,yellow,yes
-44,Bring me the alphabetically earliest letter,object color,dark blue,yes
-45,Bring me the alphabetically earliest letter,object color,dark cyan,yes
-46,Bring me the alphabetically earliest letter,object color,dark green,yes
-47,Bring me the alphabetically earliest letter,object color,dark orange,yes
-48,Bring me the alphabetically earliest letter,object color,dark pink,yes
-49,Bring me the alphabetically earliest letter,object color,dark purple,yes
-50,Bring me the alphabetically earliest letter,object color,dark red,yes
-51,Bring me the alphabetically earliest letter,object color,dark yellow,yes
-52,Bring me the alphabetically earliest letter,object color,red and yellow stripe,yes
-53,Bring me the alphabetically earliest letter,object color,red and green stripe,yes
-54,Bring me the alphabetically earliest letter,object color,red and blue stripe,yes
-55,Bring me the alphabetically earliest letter,object color,red and purple stripe,yes
-56,Bring me the alphabetically earliest letter,object color,yellow and green stripe,yes
-57,Bring me the alphabetically earliest letter,object color,yellow and blue stripe,yes
-58,Bring me the alphabetically earliest letter,object color,yellow and purple stripe,yes
-59,Bring me the alphabetically earliest letter,object color,green and blue stripe,yes
-60,Bring me the alphabetically earliest letter,object color,green and purple stripe,yes
-61,Bring me the alphabetically earliest letter,object color,blue and purple stripe,yes
-62,Bring me the alphabetically earliest letter,object color,dark red and yellow stripe,yes
-63,Bring me the alphabetically earliest letter,object color,dark red and green stripe,yes
-64,Bring me the alphabetically earliest letter,object color,dark red and blue stripe,yes
-65,Bring me the alphabetically earliest letter,object color,dark red and purple stripe,yes
-66,Bring me the alphabetically earliest letter,object color,dark yellow and green stripe,yes
-67,Bring me the alphabetically earliest letter,object color,dark yellow and blue stripe,yes
-68,Bring me the alphabetically earliest letter,object color,dark yellow and purple stripe,yes
-69,Bring me the alphabetically earliest letter,object color,dark green and blue stripe,yes
-70,Bring me the alphabetically earliest letter,object color,dark green and purple stripe,yes
-71,Bring me the alphabetically earliest letter,object color,dark blue and purple stripe,yes
-72,Bring me the alphabetically earliest letter,object color,red and yellow polka dot,yes
-73,Bring me the alphabetically earliest letter,object color,red and green polka dot,yes
-74,Bring me the alphabetically earliest letter,object color,red and blue polka dot,yes
-75,Bring me the alphabetically earliest letter,object color,red and purple polka dot,yes
-76,Bring me the alphabetically earliest letter,object color,yellow and green polka dot,yes
-77,Bring me the alphabetically earliest letter,object color,yellow and blue polka dot,yes
-78,Bring me the alphabetically earliest letter,object color,yellow and purple polka dot,yes
-79,Bring me the alphabetically earliest letter,object color,green and blue polka dot,yes
-80,Bring me the alphabetically earliest letter,object color,green and purple polka dot,yes
-81,Bring me the alphabetically earliest letter,object color,blue and purple polka dot,yes
-82,Bring me the alphabetically earliest letter,object color,dark red and yellow polka dot,yes
-83,Bring me the alphabetically earliest letter,object color,dark red and green polka dot,yes
-84,Bring me the alphabetically earliest letter,object color,dark red and blue polka dot,yes
-85,Bring me the alphabetically earliest letter,object color,dark red and purple polka dot,yes
-86,Bring me the alphabetically earliest letter,object color,dark yellow and green polka dot,yes
-87,Bring me the alphabetically earliest letter,object color,dark yellow and blue polka dot,yes
-88,Bring me the alphabetically earliest letter,object color,dark yellow and purple polka dot,yes
-89,Bring me the alphabetically earliest letter,object color,dark green and blue polka dot,yes
-90,Bring me the alphabetically earliest letter,object color,dark green and purple polka dot,yes
-91,Bring me the alphabetically earliest letter,object color,dark blue and purple polka dot,yes
-92,Bring me the alphabetically earliest letter,object color,red swirl,yes
-93,Bring me the alphabetically earliest letter,object color,yellow swirl,yes
-94,Bring me the alphabetically earliest letter,object color,green swirl,yes
-95,Bring me the alphabetically earliest letter,object color,blue swirl,yes
-96,Bring me the alphabetically earliest letter,object color,purple swirl,yes
-97,Bring me the alphabetically earliest letter,object color,dark red swirl,yes
-98,Bring me the alphabetically earliest letter,object color,dark yellow swirl,yes
-99,Bring me the alphabetically earliest letter,object color,dark green swirl,yes
-100,Bring me the alphabetically earliest letter,object color,dark blue swirl,yes
-101,Bring me the alphabetically earliest letter,object color,dark purple swirl,yes
-102,Bring me the alphabetically earliest letter,object color,red paisley,yes
-103,Bring me the alphabetically earliest letter,object color,yellow paisley,yes
-104,Bring me the alphabetically earliest letter,object color,green paisley,yes
-105,Bring me the alphabetically earliest letter,object color,blue paisley,yes
-106,Bring me the alphabetically earliest letter,object color,purple paisley,yes
+0,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,L-shaped block,no
+1,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,block,no
+2,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,bowl,no
+3,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,container,no
+4,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,cross (block of this shape),no
+5,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,diamond (block of this shape),no
+6,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,flower (block of this shape),no
+7,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,heart (block of this shape),no
+8,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,hexagon (block of this shape),no
+9,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,letter A,yes
+10,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,letter E,yes
+11,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,letter G,yes
+12,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,letter M,yes
+13,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,letter R,yes
+14,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,letter T,yes
+15,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,letter V,yes
+16,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,pallet,no
+17,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,pan,no
+18,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,pentagon (block of this shape),no
+19,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,ring (block of this shape),no
+20,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,round (block of this shape),no
+21,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,shorter block,no
+22,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,small block,no
+23,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,star (block of this shape),no
+24,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object type,triangle (block of this shape),no
+25,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,brick,yes
+26,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,tiles,yes
+27,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,wooden,yes
+28,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,granite,yes
+29,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,plastic,yes
+30,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,polka dot,yes
+31,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,checkerboard,yes
+32,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,tiger,yes
+33,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,magma,yes
+34,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,rainbow,yes
+35,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,blue,yes
+36,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,cyan,yes
+37,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,green,yes
+38,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,olive,yes
+39,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,orange,yes
+40,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,pink,yes
+41,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,purple,yes
+42,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,red,yes
+43,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,yellow,yes
+44,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark blue,yes
+45,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark cyan,yes
+46,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark green,yes
+47,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark orange,yes
+48,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark pink,yes
+49,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark purple,yes
+50,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark red,yes
+51,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark yellow,yes
+52,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,red and yellow stripe,yes
+53,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,red and green stripe,yes
+54,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,red and blue stripe,yes
+55,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,red and purple stripe,yes
+56,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,yellow and green stripe,yes
+57,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,yellow and blue stripe,yes
+58,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,yellow and purple stripe,yes
+59,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,green and blue stripe,yes
+60,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,green and purple stripe,yes
+61,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,blue and purple stripe,yes
+62,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark red and yellow stripe,yes
+63,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark red and green stripe,yes
+64,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark red and blue stripe,yes
+65,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark red and purple stripe,yes
+66,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark yellow and green stripe,yes
+67,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark yellow and blue stripe,yes
+68,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark yellow and purple stripe,yes
+69,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark green and blue stripe,yes
+70,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark green and purple stripe,yes
+71,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark blue and purple stripe,yes
+72,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,red and yellow polka dot,yes
+73,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,red and green polka dot,yes
+74,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,red and blue polka dot,yes
+75,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,red and purple polka dot,yes
+76,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,yellow and green polka dot,yes
+77,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,yellow and blue polka dot,yes
+78,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,yellow and purple polka dot,yes
+79,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,green and blue polka dot,yes
+80,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,green and purple polka dot,yes
+81,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,blue and purple polka dot,yes
+82,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark red and yellow polka dot,yes
+83,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark red and green polka dot,yes
+84,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark red and blue polka dot,yes
+85,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark red and purple polka dot,yes
+86,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark yellow and green polka dot,yes
+87,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark yellow and blue polka dot,yes
+88,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark yellow and purple polka dot,yes
+89,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark green and blue polka dot,yes
+90,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark green and purple polka dot,yes
+91,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark blue and purple polka dot,yes
+92,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,red swirl,yes
+93,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,yellow swirl,yes
+94,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,green swirl,yes
+95,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,blue swirl,yes
+96,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,purple swirl,yes
+97,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark red swirl,yes
+98,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark yellow swirl,yes
+99,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark green swirl,yes
+100,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark blue swirl,yes
+101,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,dark purple swirl,yes
+102,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,red paisley,yes
+103,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,yellow paisley,yes
+104,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,green paisley,yes
+105,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,blue paisley,yes
+106,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",object color,purple paisley,yes
