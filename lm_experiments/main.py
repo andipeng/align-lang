@@ -125,7 +125,7 @@ rules=[
     "Bring me a vowel",
     "Bring me a consonant that has any warm color on it",
     "Bring me a vowel that has multiple colors in it",
-    "Bring me the geometric shape with the most number of sides",
+    "Bring me a geometric shape. If there are multiple, bring the one with the most sides",
     "Bring me the alphabetically earliest letter",
     "Bring me something I can drink water out of",
     "Bring me something I could find in a kitchen"
@@ -146,6 +146,7 @@ Object colors:
 
 
 
+rules = [rules[7]]
 def main():
     openai_authenticate(True)
     types=object_list.split('\n  - ')[1:]
@@ -155,7 +156,7 @@ def main():
         "object color":colors
     }
     os.makedirs(results_path,exist_ok=True)
-    r=0
+    r=7
     for rule in tqdm(rules):
         rows=[]
         for group in ["object type", "object color"]:
@@ -169,6 +170,7 @@ def main():
                     try:
                         answer = choices[0]['message']['content'].split("\nFinal answer: ")[-1].replace('\n', '').strip()
                         assert(answer.lower() in ['yes','no'])
+                        print(candidate, answer)
                         
                     except Exception as e:
                         answer=False

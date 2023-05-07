@@ -1,6 +1,8 @@
 import os
 import openai
 import time
+import pandas as pd
+
 
 
 def openai_authenticate(azure=True):
@@ -69,3 +71,13 @@ def openai_completion(prompt, engine, temperature, azure):
             time.sleep(5)
     choices = [dict(choice.items()) for choice in response.choices]
     return choices, response.created
+
+def results2jsons():
+    answer_jsons=[]
+    for rule in range(11):
+        df=pd.read_csv(f'results/gpt-4_rule-{rule}.csv')
+        answer_json={}
+        for group in ["object type", "object color"]:
+            answer_json[group]=[v.split(' (')[0] for v in df[df.answer=='yes']['candidate'].values]
+        answer_jsons.append(answer_json)
+    return answer_jsons
