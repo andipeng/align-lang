@@ -12,7 +12,7 @@
     {
         "task_name": "Bring me the tiger object",
         "object color": ["tiger"],
-        "object type": ["L-shaped block", "block", "bowl", "container", "cross (block of this shape)", "diamond (block of this shape)", "flower (block of this shape)", "heart (block of this shape)", "hexagon (block of this shape)", "letter A", "letter E", "letter G", "letter M", "letter R", "letter T", "letter V", "pallet", "pan", "pentagon (block of this shape)", "ring (block of this shape)", "round (block of this shape)", "shorter block", "small block", "star (block of this shape)", "triangle (block of this shape)"]
+        "object type": ["L-shaped block", "block", "bowl", "container", "cross", "diamond", "flower", "heart", "hexagon", "letter A", "letter E", "letter G", "letter M", "letter R", "letter T", "letter V", "pallet", "pan", "pentagon", "ring", "round", "shorter block", "small block", "star", "triangle"]
     },
     {
         "task_name": "Bring me a letter from the word letter",

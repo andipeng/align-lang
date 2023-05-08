@@ -68,8 +68,8 @@ object_colors = [pertask_overlaps[obj]['object color'] for obj in objects]
 
 fig, ax = plt.subplots(figsize=(10, 6))
 
-ax.bar(objects, object_types, color='red', width=0.4, align='edge', label='Object type')
-ax.bar(objects, object_colors, color='blue', width=-0.4, align='edge', label='Object color')
+ax.bar(objects, object_types, color='blue', width=-0.4, align='edge', label='Object type')
+ax.bar(objects, object_colors, color='orange', width=0.4, align='edge', label='Object color')
 
 ax.legend()
 ax.set_xticklabels(objects, rotation=20, ha='right')
