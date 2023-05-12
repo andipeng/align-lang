@@ -124,11 +124,14 @@ rules=[
     "Bring me a letter from the word letter",
     "Bring me a vowel",
     "Bring me a consonant that has any warm color on it",
-    "Bring me a vowel that has multiple colors in it",
-    "Bring me a geometric shape. If there are multiple, bring the one with the most sides",
+    "Bring me a vowel that has multiple colors on it",
+    "Bring me a basic shape. If there are multiple, bring the one with the most sides",
     "Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",
     "Bring me something I can drink water out of",
-    "Bring me something I could find in a kitchen"
+    "Bring me something I could find in a kitchen",
+    "Bring me the dark solid-colored bowl that has my favorite color",
+    "Bring me a pentagon made of the same material as my dream patio",
+    "Bring me a letter I could use to spell my name"
 ]
 
 def generate_prompt(rule, group, candidate):
@@ -146,7 +149,7 @@ Object colors:
 
 
 
-# rules = [rules[9]]
+# rules = [rules[6]]
 def main():
     openai_authenticate(True)
     types=object_list.split('\n  - ')[1:]
@@ -156,7 +159,6 @@ def main():
         "object color":colors
     }
     os.makedirs(results_path,exist_ok=True)
-    # r=9
     for rule in tqdm(rules):
         rows=[]
         for group in ["object type", "object color"]:
@@ -176,9 +178,9 @@ def main():
                         answer=False
                         if attempt>=10:
                             answer='error'
-                            print(f'''Error: {cache[key]} \n {e}''')
-                    row=[rule, group, candidate, answer]
-                    rows.append(row)
+                            print(f'''Error: {rule} \n {e}''')
+                row=[rule, group, candidate, answer]
+                rows.append(row)
         df = pd.DataFrame(rows, columns=['rule','group','candidate','answer'])
         df.to_csv(f'{results_path}/{engine}_rule-{r}.csv')
         r+=1
