@@ -1,0 +1,108 @@
+,rule,group,candidate,answer
+0,Bring me the dark solid-colored bowl that has my favorite color,object type,L-shaped block,no
+1,Bring me the dark solid-colored bowl that has my favorite color,object type,block,no
+2,Bring me the dark solid-colored bowl that has my favorite color,object type,bowl,yes
+3,Bring me the dark solid-colored bowl that has my favorite color,object type,container,no
+4,Bring me the dark solid-colored bowl that has my favorite color,object type,cross (block of this shape),no
+5,Bring me the dark solid-colored bowl that has my favorite color,object type,diamond (block of this shape),no
+6,Bring me the dark solid-colored bowl that has my favorite color,object type,flower (block of this shape),no
+7,Bring me the dark solid-colored bowl that has my favorite color,object type,heart (block of this shape),no
+8,Bring me the dark solid-colored bowl that has my favorite color,object type,hexagon (block of this shape),no
+9,Bring me the dark solid-colored bowl that has my favorite color,object type,letter A,no
+10,Bring me the dark solid-colored bowl that has my favorite color,object type,letter E,no
+11,Bring me the dark solid-colored bowl that has my favorite color,object type,letter G,no
+12,Bring me the dark solid-colored bowl that has my favorite color,object type,letter M,no
+13,Bring me the dark solid-colored bowl that has my favorite color,object type,letter R,no
+14,Bring me the dark solid-colored bowl that has my favorite color,object type,letter T,no
+15,Bring me the dark solid-colored bowl that has my favorite color,object type,letter V,no
+16,Bring me the dark solid-colored bowl that has my favorite color,object type,pallet,no
+17,Bring me the dark solid-colored bowl that has my favorite color,object type,pan,no
+18,Bring me the dark solid-colored bowl that has my favorite color,object type,pentagon (block of this shape),no
+19,Bring me the dark solid-colored bowl that has my favorite color,object type,ring (block of this shape),no
+20,Bring me the dark solid-colored bowl that has my favorite color,object type,round (block of this shape),no
+21,Bring me the dark solid-colored bowl that has my favorite color,object type,shorter block,no
+22,Bring me the dark solid-colored bowl that has my favorite color,object type,small block,no
+23,Bring me the dark solid-colored bowl that has my favorite color,object type,star (block of this shape),no
+24,Bring me the dark solid-colored bowl that has my favorite color,object type,triangle (block of this shape),no
+25,Bring me the dark solid-colored bowl that has my favorite color,object color,brick,no
+26,Bring me the dark solid-colored bowl that has my favorite color,object color,tiles,no
+27,Bring me the dark solid-colored bowl that has my favorite color,object color,wooden,no
+28,Bring me the dark solid-colored bowl that has my favorite color,object color,granite,no
+29,Bring me the dark solid-colored bowl that has my favorite color,object color,plastic,no
+30,Bring me the dark solid-colored bowl that has my favorite color,object color,polka dot,no
+31,Bring me the dark solid-colored bowl that has my favorite color,object color,checkerboard,no
+32,Bring me the dark solid-colored bowl that has my favorite color,object color,tiger,no
+33,Bring me the dark solid-colored bowl that has my favorite color,object color,magma,no
+34,Bring me the dark solid-colored bowl that has my favorite color,object color,rainbow,no
+35,Bring me the dark solid-colored bowl that has my favorite color,object color,blue,no
+36,Bring me the dark solid-colored bowl that has my favorite color,object color,cyan,no
+37,Bring me the dark solid-colored bowl that has my favorite color,object color,green,no
+38,Bring me the dark solid-colored bowl that has my favorite color,object color,olive,no
+39,Bring me the dark solid-colored bowl that has my favorite color,object color,orange,no
+40,Bring me the dark solid-colored bowl that has my favorite color,object color,pink,no
+41,Bring me the dark solid-colored bowl that has my favorite color,object color,purple,yes
+42,Bring me the dark solid-colored bowl that has my favorite color,object color,red,no
+43,Bring me the dark solid-colored bowl that has my favorite color,object color,yellow,no
+44,Bring me the dark solid-colored bowl that has my favorite color,object color,dark blue,yes
+45,Bring me the dark solid-colored bowl that has my favorite color,object color,dark cyan,yes
+46,Bring me the dark solid-colored bowl that has my favorite color,object color,dark green,yes
+47,Bring me the dark solid-colored bowl that has my favorite color,object color,dark orange,yes
+48,Bring me the dark solid-colored bowl that has my favorite color,object color,dark pink,yes
+49,Bring me the dark solid-colored bowl that has my favorite color,object color,dark purple,yes
+50,Bring me the dark solid-colored bowl that has my favorite color,object color,dark red,yes
+51,Bring me the dark solid-colored bowl that has my favorite color,object color,dark yellow,yes
+52,Bring me the dark solid-colored bowl that has my favorite color,object color,red and yellow stripe,no
+53,Bring me the dark solid-colored bowl that has my favorite color,object color,red and green stripe,no
+54,Bring me the dark solid-colored bowl that has my favorite color,object color,red and blue stripe,no
+55,Bring me the dark solid-colored bowl that has my favorite color,object color,red and purple stripe,no
+56,Bring me the dark solid-colored bowl that has my favorite color,object color,yellow and green stripe,no
+57,Bring me the dark solid-colored bowl that has my favorite color,object color,yellow and blue stripe,no
+58,Bring me the dark solid-colored bowl that has my favorite color,object color,yellow and purple stripe,no
+59,Bring me the dark solid-colored bowl that has my favorite color,object color,green and blue stripe,no
+60,Bring me the dark solid-colored bowl that has my favorite color,object color,green and purple stripe,no
+61,Bring me the dark solid-colored bowl that has my favorite color,object color,blue and purple stripe,no
+62,Bring me the dark solid-colored bowl that has my favorite color,object color,dark red and yellow stripe,no
+63,Bring me the dark solid-colored bowl that has my favorite color,object color,dark red and green stripe,no
+64,Bring me the dark solid-colored bowl that has my favorite color,object color,dark red and blue stripe,no
+65,Bring me the dark solid-colored bowl that has my favorite color,object color,dark red and purple stripe,no
+66,Bring me the dark solid-colored bowl that has my favorite color,object color,dark yellow and green stripe,no
+67,Bring me the dark solid-colored bowl that has my favorite color,object color,dark yellow and blue stripe,no
+68,Bring me the dark solid-colored bowl that has my favorite color,object color,dark yellow and purple stripe,no
+69,Bring me the dark solid-colored bowl that has my favorite color,object color,dark green and blue stripe,no
+70,Bring me the dark solid-colored bowl that has my favorite color,object color,dark green and purple stripe,no
+71,Bring me the dark solid-colored bowl that has my favorite color,object color,dark blue and purple stripe,no
+72,Bring me the dark solid-colored bowl that has my favorite color,object color,red and yellow polka dot,no
+73,Bring me the dark solid-colored bowl that has my favorite color,object color,red and green polka dot,no
+74,Bring me the dark solid-colored bowl that has my favorite color,object color,red and blue polka dot,no
+75,Bring me the dark solid-colored bowl that has my favorite color,object color,red and purple polka dot,no
+76,Bring me the dark solid-colored bowl that has my favorite color,object color,yellow and green polka dot,no
+77,Bring me the dark solid-colored bowl that has my favorite color,object color,yellow and blue polka dot,no
+78,Bring me the dark solid-colored bowl that has my favorite color,object color,yellow and purple polka dot,no
+79,Bring me the dark solid-colored bowl that has my favorite color,object color,green and blue polka dot,no
+80,Bring me the dark solid-colored bowl that has my favorite color,object color,green and purple polka dot,no
+81,Bring me the dark solid-colored bowl that has my favorite color,object color,blue and purple polka dot,no
+82,Bring me the dark solid-colored bowl that has my favorite color,object color,dark red and yellow polka dot,no
+83,Bring me the dark solid-colored bowl that has my favorite color,object color,dark red and green polka dot,no
+84,Bring me the dark solid-colored bowl that has my favorite color,object color,dark red and blue polka dot,no
+85,Bring me the dark solid-colored bowl that has my favorite color,object color,dark red and purple polka dot,no
+86,Bring me the dark solid-colored bowl that has my favorite color,object color,dark yellow and green polka dot,no
+87,Bring me the dark solid-colored bowl that has my favorite color,object color,dark yellow and blue polka dot,no
+88,Bring me the dark solid-colored bowl that has my favorite color,object color,dark yellow and purple polka dot,no
+89,Bring me the dark solid-colored bowl that has my favorite color,object color,dark green and blue polka dot,no
+90,Bring me the dark solid-colored bowl that has my favorite color,object color,dark green and purple polka dot,no
+91,Bring me the dark solid-colored bowl that has my favorite color,object color,dark blue and purple polka dot,no
+92,Bring me the dark solid-colored bowl that has my favorite color,object color,red swirl,no
+93,Bring me the dark solid-colored bowl that has my favorite color,object color,yellow swirl,no
+94,Bring me the dark solid-colored bowl that has my favorite color,object color,green swirl,no
+95,Bring me the dark solid-colored bowl that has my favorite color,object color,blue swirl,no
+96,Bring me the dark solid-colored bowl that has my favorite color,object color,purple swirl,no
+97,Bring me the dark solid-colored bowl that has my favorite color,object color,dark red swirl,no
+98,Bring me the dark solid-colored bowl that has my favorite color,object color,dark yellow swirl,no
+99,Bring me the dark solid-colored bowl that has my favorite color,object color,dark green swirl,no
+100,Bring me the dark solid-colored bowl that has my favorite color,object color,dark blue swirl,no
+101,Bring me the dark solid-colored bowl that has my favorite color,object color,dark purple swirl,no
+102,Bring me the dark solid-colored bowl that has my favorite color,object color,red paisley,no
+103,Bring me the dark solid-colored bowl that has my favorite color,object color,yellow paisley,no
+104,Bring me the dark solid-colored bowl that has my favorite color,object color,green paisley,no
+105,Bring me the dark solid-colored bowl that has my favorite color,object color,blue paisley,no
+106,Bring me the dark solid-colored bowl that has my favorite color,object color,purple paisley,no
