@@ -2,7 +2,7 @@ import os
 import openai
 import time
 import pandas as pd
-
+import json
 
 
 def openai_authenticate(azure=True):
@@ -13,64 +13,75 @@ def openai_authenticate(azure=True):
         openai.api_base = open(api_base_location).read().strip()
         openai.api_version = "2023-03-15-preview"
     else:
-        api_key_location=os.path.expanduser(os.path.join("~/.ssh/", "openai"))
+        # api_key_location=os.path.expanduser(os.path.join("~/.ssh/", "openai"))
         # openai.api_base = 'https://api.openai.com/v1'
         # openai.api_version = None
-    openai.api_key = open(api_key_location).read().strip()
+        openai.api_key = os.environ['OPENAI_API_KEY']
+    # openai.api_key = open(api_key_location).read().strip()
     
     
     
-def openai_chatcompletion(messages, engine, temperature, azure):
-    response=False
-    i=0
-    while not response:
-        i+=1
-        try:
-            if azure:
-                response = openai.ChatCompletion.create(
-                    engine=engine,
-                    messages=messages,
-                    temperature=temperature,
-                )
-            else:
-                response = openai.ChatCompletion.create(
-                    model=engine,
-                    messages=messages,
-                    temperature=temperature,
-                )
-        except Exception as e:
-            if i>=10:
-                return False, False
-            if i>=5:
-                print(f'Attempt {i} failed: {e}')
-            elif i>=3: print(f'Attempt {i} failed.')
-            time.sleep(5)
-    choices = [dict(choice.items()) for choice in response.choices]
-    return choices, response.created
+def openai_chatcompletion(messages, engine, temperature, azure, cache=None, cache_file=None):
+    messages_cache_key = json.dumps(messages)
+    if cache and messages_cache_key in cache:
+        response = cache[messages_cache_key]
+    else:
+        response=False
+        i=0
+        while not response:
+            i+=1
+            try:
+                if azure:
+                    response = openai.ChatCompletion.create(
+                        engine=engine,
+                        messages=messages,
+                        temperature=temperature,
+                    )
+                else:
+                    response = openai.ChatCompletion.create(
+                        model=engine,
+                        messages=messages,
+                        temperature=temperature,
+                    )
+            except Exception as e:
+                if i>=10:
+                    return False, False
+                if i>=5:
+                    print(f'Attempt {i} failed: {e}')
+                elif i>=3: print(f'Attempt {i} failed.')
+                time.sleep(5)
+        save_openai_cache({messages_cache_key: response}, cache, cache_file)
+    choices = [dict(choice.items()) for choice in response["choices"]]
+    return choices, response["created"]
 
 
-def openai_completion(prompt, engine, temperature, azure):
+def openai_completion(prompt, engine, temperature, azure, cache=None, cache_file=None):
     if engine in ['gpt-4','gpt-4-32k','gpt-35-turbo','gpt-3.5-turbo']:
-        return openai_chatcompletion(prompt, engine, temperature, azure)
-    response=False
-    i=0
-    while not response:
-        i+=1
-        try:
-            response = openai.Completion.create(
-                engine=engine,
-                prompt=prompt,
-                temperature=temperature,
-            )
-        except Exception as e:
-            if i>=10:
-                return False, False
-            if i>=5:
-                print(f'Attempt {i} failed: {e}')
-            elif i>=3: print(f'Attempt {i} failed.')
-            time.sleep(5)
-    choices = [dict(choice.items()) for choice in response.choices]
-    return choices, response.created
+        return openai_chatcompletion(prompt, engine, temperature, azure, cache=cache, cache_file=cache_file)
+    messages_cache_key = json.dumps(prompt)
+    if cache and messages_cache_key in cache:
+        response = cache[messages_cache_key]
+    else:
+        response=False
+        i=0
+        while not response:
+            i+=1
+            try:
+                response = openai.Completion.create(
+                    engine=engine,
+                    prompt=prompt,
+                    temperature=temperature,
+                )
+            except Exception as e:
+                if i>=10:
+                    return False, False
+                if i>=5:
+                    print(f'Attempt {i} failed: {e}')
+                elif i>=3: print(f'Attempt {i} failed.')
+                time.sleep(5)
+        save_openai_cache({messages_cache_key: response}, cache, cache_file)
+    choices = [dict(choice.items()) for choice in response["choices"]]
+    return choices, response["created"]
 
 def results2jsons():
     answer_jsons=[]
@@ -81,3 +92,41 @@ def results2jsons():
             answer_json[group]=[v.split(' (')[0] for v in df[df.answer=='yes']['candidate'].values]
         answer_jsons.append(answer_json)
     return answer_jsons
+
+
+
+def load_openai_cache(openai_cache_file):
+    '''Loads the openai cache file into a dict.
+    
+    Args:
+        openai_cache_file (str): The path to the openai cache file.
+        
+    Returns:
+        dict: The openai cache dict.
+    '''
+    if not openai_cache_file:
+        return None
+    openai_cache = {}
+    if os.path.exists(openai_cache_file):
+        with open(openai_cache_file) as f:
+            for line in f:
+                openai_cache.update(json.loads(line))
+    return openai_cache
+
+
+
+def save_openai_cache(new_entry, openai_cache=None, openai_cache_file=None):
+    '''Saves the new entry to the openai cache file and updates the openai_cache dict.
+    
+    Args:
+        new_entry (dict): The new entry to save to the cache.
+        openai_cache (dict): The openai cache dict to update.
+        openai_cache_file (str): The path to the openai cache file.
+    
+    Returns:
+        None
+    '''
+    if openai_cache_file:
+        with open(openai_cache_file, "a") as wf:
+            wf.write(json.dumps(new_entry)+"\n")
+        openai_cache.update(new_entry)
