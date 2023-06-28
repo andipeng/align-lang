@@ -3,7 +3,10 @@ import openai
 import time
 import pandas as pd
 import json
-
+from tenacity import (
+    retry,
+    wait_random_exponential,
+)
 
 def openai_authenticate(azure=True):
     if azure:
@@ -18,43 +21,32 @@ def openai_authenticate(azure=True):
         # openai.api_version = None
         openai.api_key = os.environ['OPENAI_API_KEY']
     # openai.api_key = open(api_key_location).read().strip()
-    
-    
-    
+
+
+@retry(wait=wait_random_exponential(min=1, max=60))
 def openai_chatcompletion(messages, engine, temperature, azure, cache=None, cache_file=None):
     messages_cache_key = json.dumps(messages)
     if cache and messages_cache_key in cache:
         response = cache[messages_cache_key]
     else:
-        response=False
-        i=0
-        while not response:
-            i+=1
-            try:
-                if azure:
-                    response = openai.ChatCompletion.create(
-                        engine=engine,
-                        messages=messages,
-                        temperature=temperature,
-                    )
-                else:
-                    response = openai.ChatCompletion.create(
-                        model=engine,
-                        messages=messages,
-                        temperature=temperature,
-                    )
-            except Exception as e:
-                if i>=10:
-                    return False, False
-                if i>=5:
-                    print(f'Attempt {i} failed: {e}')
-                elif i>=3: print(f'Attempt {i} failed.')
-                time.sleep(5)
+        if azure:
+            response = openai.ChatCompletion.create(
+                engine=engine,
+                messages=messages,
+                temperature=temperature,
+            )
+        else:
+            response = openai.ChatCompletion.create(
+                model=engine,
+                messages=messages,
+                temperature=temperature,
+            )
         save_openai_cache({messages_cache_key: response}, cache, cache_file)
     choices = [dict(choice.items()) for choice in response["choices"]]
     return choices, response["created"]
 
 
+@retry(wait=wait_random_exponential(min=1, max=60))
 def openai_completion(prompt, engine, temperature, azure, cache=None, cache_file=None):
     if engine in ['gpt-4','gpt-4-32k','gpt-35-turbo','gpt-3.5-turbo']:
         return openai_chatcompletion(prompt, engine, temperature, azure, cache=cache, cache_file=cache_file)
@@ -62,23 +54,11 @@ def openai_completion(prompt, engine, temperature, azure, cache=None, cache_file
     if cache and messages_cache_key in cache:
         response = cache[messages_cache_key]
     else:
-        response=False
-        i=0
-        while not response:
-            i+=1
-            try:
-                response = openai.Completion.create(
-                    engine=engine,
-                    prompt=prompt,
-                    temperature=temperature,
-                )
-            except Exception as e:
-                if i>=10:
-                    return False, False
-                if i>=5:
-                    print(f'Attempt {i} failed: {e}')
-                elif i>=3: print(f'Attempt {i} failed.')
-                time.sleep(5)
+        response = openai.Completion.create(
+            engine=engine,
+            prompt=prompt,
+            temperature=temperature,
+        )
         save_openai_cache({messages_cache_key: response}, cache, cache_file)
     choices = [dict(choice.items()) for choice in response["choices"]]
     return choices, response["created"]

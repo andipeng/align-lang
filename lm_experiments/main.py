@@ -183,11 +183,12 @@ def main():
     os.makedirs(results_path,exist_ok=True)
     openai_cache = load_openai_cache(openai_cache_file)
     for r, rule in tqdm(enumerate(rules)):
+        print(rule)
         rows=[]
         messages = generate_prompt_verbs(rule)
         choices, _ = openai_completion(messages, engine, 0.0, use_azure, openai_cache, openai_cache_file)
         try:
-            object_categories = choices[0]['message']['content'].split("\n")[-1].split(": ")[-1].strip().split(", ")
+            object_categories = choices[0]['message']['content'].split("\n")[-1].split(": ")[-1].strip().strip(".").split(", ")
             object_categories = [object_cat.lower() for object_cat in object_categories]
             print(object_categories)
             
@@ -198,7 +199,7 @@ def main():
                 print(f'''Error: {rule} \n {e}''')
         for object_category in object_categories:  # channels
             for group in ["object type", "object color"]:
-                for candidate in tqdm(group_dict[group]):
+                for c, candidate in enumerate(group_dict[group]):
                     answer=False
                     attempt=0
                     while not answer:
@@ -206,12 +207,13 @@ def main():
                         messages = generate_prompt_object_abstractions(rule, object_category, group, candidate)
                         choices, _ = openai_completion(messages, engine, 0.0, use_azure, openai_cache, openai_cache_file)
                         try:
-                            answer = choices[0]['message']['content'].split("\nFinal answer: ")[-1].replace('\n', '').strip()
+                            answer = choices[0]['message']['content'].split("\nFinal answer: ")[-1].replace('\n', '').strip(".").strip()
                             assert(answer.lower() in ['yes','no'])
-                            print(candidate, answer)
+                            print(f"{c}/{len(group_dict[group])}", candidate, answer)
                             
                         except Exception as e:
                             answer=False
+                            breakpoint()
                             if attempt>=10:
                                 answer='error'
                                 print(f'''Error: {rule} \n {e}''')
@@ -220,6 +222,7 @@ def main():
         df = pd.DataFrame(rows, columns=['rule','object_category','group','candidate','answer'])
         df.to_csv(f'{results_path}/{engine}_rule-{r}.csv')
         r+=1
+        print()
 
 
 
