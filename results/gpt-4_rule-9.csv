@@ -1,0 +1,108 @@
+,rule,object_category,group,candidate,answer
+0,Rotate a letter from the word 'letter',object to rotate,object type,L-shaped block,no
+1,Rotate a letter from the word 'letter',object to rotate,object type,block,no
+2,Rotate a letter from the word 'letter',object to rotate,object type,bowl,no
+3,Rotate a letter from the word 'letter',object to rotate,object type,container,no
+4,Rotate a letter from the word 'letter',object to rotate,object type,cross (block of this shape),no
+5,Rotate a letter from the word 'letter',object to rotate,object type,diamond (block of this shape),no
+6,Rotate a letter from the word 'letter',object to rotate,object type,flower (block of this shape),no
+7,Rotate a letter from the word 'letter',object to rotate,object type,heart (block of this shape),no
+8,Rotate a letter from the word 'letter',object to rotate,object type,hexagon (block of this shape),no
+9,Rotate a letter from the word 'letter',object to rotate,object type,letter A,no
+10,Rotate a letter from the word 'letter',object to rotate,object type,letter E,yes
+11,Rotate a letter from the word 'letter',object to rotate,object type,letter G,no
+12,Rotate a letter from the word 'letter',object to rotate,object type,letter M,no
+13,Rotate a letter from the word 'letter',object to rotate,object type,letter R,yes
+14,Rotate a letter from the word 'letter',object to rotate,object type,letter T,yes
+15,Rotate a letter from the word 'letter',object to rotate,object type,letter V,no
+16,Rotate a letter from the word 'letter',object to rotate,object type,pallet,no
+17,Rotate a letter from the word 'letter',object to rotate,object type,pan,no
+18,Rotate a letter from the word 'letter',object to rotate,object type,pentagon (block of this shape),no
+19,Rotate a letter from the word 'letter',object to rotate,object type,ring (block of this shape),no
+20,Rotate a letter from the word 'letter',object to rotate,object type,round (block of this shape),no
+21,Rotate a letter from the word 'letter',object to rotate,object type,shorter block,no
+22,Rotate a letter from the word 'letter',object to rotate,object type,small block,no
+23,Rotate a letter from the word 'letter',object to rotate,object type,star (block of this shape),no
+24,Rotate a letter from the word 'letter',object to rotate,object type,triangle (block of this shape),no
+25,Rotate a letter from the word 'letter',object to rotate,object color,brick,yes
+26,Rotate a letter from the word 'letter',object to rotate,object color,tiles,yes
+27,Rotate a letter from the word 'letter',object to rotate,object color,wooden,yes
+28,Rotate a letter from the word 'letter',object to rotate,object color,granite,yes
+29,Rotate a letter from the word 'letter',object to rotate,object color,plastic,yes
+30,Rotate a letter from the word 'letter',object to rotate,object color,polka dot,yes
+31,Rotate a letter from the word 'letter',object to rotate,object color,checkerboard,yes
+32,Rotate a letter from the word 'letter',object to rotate,object color,tiger,yes
+33,Rotate a letter from the word 'letter',object to rotate,object color,magma,yes
+34,Rotate a letter from the word 'letter',object to rotate,object color,rainbow,yes
+35,Rotate a letter from the word 'letter',object to rotate,object color,blue,yes
+36,Rotate a letter from the word 'letter',object to rotate,object color,cyan,yes
+37,Rotate a letter from the word 'letter',object to rotate,object color,green,yes
+38,Rotate a letter from the word 'letter',object to rotate,object color,olive,yes
+39,Rotate a letter from the word 'letter',object to rotate,object color,orange,yes
+40,Rotate a letter from the word 'letter',object to rotate,object color,pink,yes
+41,Rotate a letter from the word 'letter',object to rotate,object color,purple,yes
+42,Rotate a letter from the word 'letter',object to rotate,object color,red,yes
+43,Rotate a letter from the word 'letter',object to rotate,object color,yellow,yes
+44,Rotate a letter from the word 'letter',object to rotate,object color,dark blue,yes
+45,Rotate a letter from the word 'letter',object to rotate,object color,dark cyan,yes
+46,Rotate a letter from the word 'letter',object to rotate,object color,dark green,yes
+47,Rotate a letter from the word 'letter',object to rotate,object color,dark orange,yes
+48,Rotate a letter from the word 'letter',object to rotate,object color,dark pink,yes
+49,Rotate a letter from the word 'letter',object to rotate,object color,dark purple,yes
+50,Rotate a letter from the word 'letter',object to rotate,object color,dark red,yes
+51,Rotate a letter from the word 'letter',object to rotate,object color,dark yellow,yes
+52,Rotate a letter from the word 'letter',object to rotate,object color,red and yellow stripe,yes
+53,Rotate a letter from the word 'letter',object to rotate,object color,red and green stripe,yes
+54,Rotate a letter from the word 'letter',object to rotate,object color,red and blue stripe,yes
+55,Rotate a letter from the word 'letter',object to rotate,object color,red and purple stripe,yes
+56,Rotate a letter from the word 'letter',object to rotate,object color,yellow and green stripe,yes
+57,Rotate a letter from the word 'letter',object to rotate,object color,yellow and blue stripe,yes
+58,Rotate a letter from the word 'letter',object to rotate,object color,yellow and purple stripe,yes
+59,Rotate a letter from the word 'letter',object to rotate,object color,green and blue stripe,yes
+60,Rotate a letter from the word 'letter',object to rotate,object color,green and purple stripe,yes
+61,Rotate a letter from the word 'letter',object to rotate,object color,blue and purple stripe,yes
+62,Rotate a letter from the word 'letter',object to rotate,object color,dark red and yellow stripe,yes
+63,Rotate a letter from the word 'letter',object to rotate,object color,dark red and green stripe,yes
+64,Rotate a letter from the word 'letter',object to rotate,object color,dark red and blue stripe,yes
+65,Rotate a letter from the word 'letter',object to rotate,object color,dark red and purple stripe,yes
+66,Rotate a letter from the word 'letter',object to rotate,object color,dark yellow and green stripe,yes
+67,Rotate a letter from the word 'letter',object to rotate,object color,dark yellow and blue stripe,yes
+68,Rotate a letter from the word 'letter',object to rotate,object color,dark yellow and purple stripe,yes
+69,Rotate a letter from the word 'letter',object to rotate,object color,dark green and blue stripe,yes
+70,Rotate a letter from the word 'letter',object to rotate,object color,dark green and purple stripe,yes
+71,Rotate a letter from the word 'letter',object to rotate,object color,dark blue and purple stripe,yes
+72,Rotate a letter from the word 'letter',object to rotate,object color,red and yellow polka dot,yes
+73,Rotate a letter from the word 'letter',object to rotate,object color,red and green polka dot,yes
+74,Rotate a letter from the word 'letter',object to rotate,object color,red and blue polka dot,yes
+75,Rotate a letter from the word 'letter',object to rotate,object color,red and purple polka dot,yes
+76,Rotate a letter from the word 'letter',object to rotate,object color,yellow and green polka dot,yes
+77,Rotate a letter from the word 'letter',object to rotate,object color,yellow and blue polka dot,yes
+78,Rotate a letter from the word 'letter',object to rotate,object color,yellow and purple polka dot,yes
+79,Rotate a letter from the word 'letter',object to rotate,object color,green and blue polka dot,yes
+80,Rotate a letter from the word 'letter',object to rotate,object color,green and purple polka dot,yes
+81,Rotate a letter from the word 'letter',object to rotate,object color,blue and purple polka dot,yes
+82,Rotate a letter from the word 'letter',object to rotate,object color,dark red and yellow polka dot,yes
+83,Rotate a letter from the word 'letter',object to rotate,object color,dark red and green polka dot,yes
+84,Rotate a letter from the word 'letter',object to rotate,object color,dark red and blue polka dot,yes
+85,Rotate a letter from the word 'letter',object to rotate,object color,dark red and purple polka dot,yes
+86,Rotate a letter from the word 'letter',object to rotate,object color,dark yellow and green polka dot,yes
+87,Rotate a letter from the word 'letter',object to rotate,object color,dark yellow and blue polka dot,yes
+88,Rotate a letter from the word 'letter',object to rotate,object color,dark yellow and purple polka dot,yes
+89,Rotate a letter from the word 'letter',object to rotate,object color,dark green and blue polka dot,yes
+90,Rotate a letter from the word 'letter',object to rotate,object color,dark green and purple polka dot,yes
+91,Rotate a letter from the word 'letter',object to rotate,object color,dark blue and purple polka dot,yes
+92,Rotate a letter from the word 'letter',object to rotate,object color,red swirl,yes
+93,Rotate a letter from the word 'letter',object to rotate,object color,yellow swirl,yes
+94,Rotate a letter from the word 'letter',object to rotate,object color,green swirl,yes
+95,Rotate a letter from the word 'letter',object to rotate,object color,blue swirl,yes
+96,Rotate a letter from the word 'letter',object to rotate,object color,purple swirl,yes
+97,Rotate a letter from the word 'letter',object to rotate,object color,dark red swirl,yes
+98,Rotate a letter from the word 'letter',object to rotate,object color,dark yellow swirl,yes
+99,Rotate a letter from the word 'letter',object to rotate,object color,dark green swirl,yes
+100,Rotate a letter from the word 'letter',object to rotate,object color,dark blue swirl,yes
+101,Rotate a letter from the word 'letter',object to rotate,object color,dark purple swirl,yes
+102,Rotate a letter from the word 'letter',object to rotate,object color,red paisley,yes
+103,Rotate a letter from the word 'letter',object to rotate,object color,yellow paisley,yes
+104,Rotate a letter from the word 'letter',object to rotate,object color,green paisley,yes
+105,Rotate a letter from the word 'letter',object to rotate,object color,blue paisley,yes
+106,Rotate a letter from the word 'letter',object to rotate,object color,purple paisley,yes

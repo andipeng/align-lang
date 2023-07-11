@@ -7,7 +7,7 @@ from tqdm import tqdm
 engine = 'gpt-4'
 results_path = f'results'
 use_azure = False
-openai_cache_file = f'openai_cache_{engine}.csv'
+openai_cache_file = f'openai_cache_{engine}.jsonl'
 
 object_list = """
   - L-shaped block
@@ -164,7 +164,7 @@ Object types:
 Object colors:
 {object_colors}
     """
-    user_prompt = f"""The command is "{rule}". In an instantiation of the environment that contains only some subset of the object types and colors, could {object_category} have {group} "{candidate}"? Think step-by-step and then finish with a new line that says "Final answer:" followed by "yes" or "no"."""
+    user_prompt = f"""The command is "{rule}". In an instantiation of the environment that contains only some subset of the object types and colors, could the {object_category} have {group} "{candidate}"? Recall that the object types and colors are mutually exclusive. Think step-by-step and then finish with a new line that says "Final answer:" followed by "yes" or "no" and nothing else. If unsure, make your best guess."""
     return [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt},
@@ -184,6 +184,8 @@ def main():
     openai_cache = load_openai_cache(openai_cache_file)
     for r, rule in tqdm(enumerate(rules)):
         print(rule)
+        if r > 10:
+            continue
         rows=[]
         messages = generate_prompt_verbs(rule)
         choices, _ = openai_completion(messages, engine, 0.0, use_azure, openai_cache, openai_cache_file)

@@ -90,7 +90,10 @@ def load_openai_cache(openai_cache_file):
     if os.path.exists(openai_cache_file):
         with open(openai_cache_file) as f:
             for line in f:
-                openai_cache.update(json.loads(line))
+                try:
+                    openai_cache.update(json.loads(line))
+                except:
+                    breakpoint()
     return openai_cache
 
 
