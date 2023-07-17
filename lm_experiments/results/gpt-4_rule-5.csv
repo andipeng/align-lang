@@ -1,108 +1,108 @@
-,rule,group,candidate,answer
-0,Bring me a consonant that has any warm color on it,object type,L-shaped block,no
-1,Bring me a consonant that has any warm color on it,object type,block,no
-2,Bring me a consonant that has any warm color on it,object type,bowl,no
-3,Bring me a consonant that has any warm color on it,object type,container,no
-4,Bring me a consonant that has any warm color on it,object type,cross (block of this shape),no
-5,Bring me a consonant that has any warm color on it,object type,diamond (block of this shape),no
-6,Bring me a consonant that has any warm color on it,object type,flower (block of this shape),no
-7,Bring me a consonant that has any warm color on it,object type,heart (block of this shape),no
-8,Bring me a consonant that has any warm color on it,object type,hexagon (block of this shape),no
-9,Bring me a consonant that has any warm color on it,object type,letter A,no
-10,Bring me a consonant that has any warm color on it,object type,letter E,no
-11,Bring me a consonant that has any warm color on it,object type,letter G,yes
-12,Bring me a consonant that has any warm color on it,object type,letter M,yes
-13,Bring me a consonant that has any warm color on it,object type,letter R,yes
-14,Bring me a consonant that has any warm color on it,object type,letter T,yes
-15,Bring me a consonant that has any warm color on it,object type,letter V,yes
-16,Bring me a consonant that has any warm color on it,object type,pallet,no
-17,Bring me a consonant that has any warm color on it,object type,pan,no
-18,Bring me a consonant that has any warm color on it,object type,pentagon (block of this shape),no
-19,Bring me a consonant that has any warm color on it,object type,ring (block of this shape),no
-20,Bring me a consonant that has any warm color on it,object type,round (block of this shape),no
-21,Bring me a consonant that has any warm color on it,object type,shorter block,no
-22,Bring me a consonant that has any warm color on it,object type,small block,no
-23,Bring me a consonant that has any warm color on it,object type,star (block of this shape),no
-24,Bring me a consonant that has any warm color on it,object type,triangle (block of this shape),no
-25,Bring me a consonant that has any warm color on it,object color,brick,no
-26,Bring me a consonant that has any warm color on it,object color,tiles,no
-27,Bring me a consonant that has any warm color on it,object color,wooden,no
-28,Bring me a consonant that has any warm color on it,object color,granite,no
-29,Bring me a consonant that has any warm color on it,object color,plastic,no
-30,Bring me a consonant that has any warm color on it,object color,polka dot,yes
-31,Bring me a consonant that has any warm color on it,object color,checkerboard,no
-32,Bring me a consonant that has any warm color on it,object color,tiger,no
-33,Bring me a consonant that has any warm color on it,object color,magma,no
-34,Bring me a consonant that has any warm color on it,object color,rainbow,no
-35,Bring me a consonant that has any warm color on it,object color,blue,no
-36,Bring me a consonant that has any warm color on it,object color,cyan,no
-37,Bring me a consonant that has any warm color on it,object color,green,no
-38,Bring me a consonant that has any warm color on it,object color,olive,no
-39,Bring me a consonant that has any warm color on it,object color,orange,yes
-40,Bring me a consonant that has any warm color on it,object color,pink,yes
-41,Bring me a consonant that has any warm color on it,object color,purple,no
-42,Bring me a consonant that has any warm color on it,object color,red,yes
-43,Bring me a consonant that has any warm color on it,object color,yellow,yes
-44,Bring me a consonant that has any warm color on it,object color,dark blue,no
-45,Bring me a consonant that has any warm color on it,object color,dark cyan,no
-46,Bring me a consonant that has any warm color on it,object color,dark green,no
-47,Bring me a consonant that has any warm color on it,object color,dark orange,yes
-48,Bring me a consonant that has any warm color on it,object color,dark pink,yes
-49,Bring me a consonant that has any warm color on it,object color,dark purple,no
-50,Bring me a consonant that has any warm color on it,object color,dark red,yes
-51,Bring me a consonant that has any warm color on it,object color,dark yellow,yes
-52,Bring me a consonant that has any warm color on it,object color,red and yellow stripe,yes
-53,Bring me a consonant that has any warm color on it,object color,red and green stripe,no
-54,Bring me a consonant that has any warm color on it,object color,red and blue stripe,no
-55,Bring me a consonant that has any warm color on it,object color,red and purple stripe,no
-56,Bring me a consonant that has any warm color on it,object color,yellow and green stripe,no
-57,Bring me a consonant that has any warm color on it,object color,yellow and blue stripe,no
-58,Bring me a consonant that has any warm color on it,object color,yellow and purple stripe,no
-59,Bring me a consonant that has any warm color on it,object color,green and blue stripe,no
-60,Bring me a consonant that has any warm color on it,object color,green and purple stripe,no
-61,Bring me a consonant that has any warm color on it,object color,blue and purple stripe,no
-62,Bring me a consonant that has any warm color on it,object color,dark red and yellow stripe,yes
-63,Bring me a consonant that has any warm color on it,object color,dark red and green stripe,yes
-64,Bring me a consonant that has any warm color on it,object color,dark red and blue stripe,no
-65,Bring me a consonant that has any warm color on it,object color,dark red and purple stripe,no
-66,Bring me a consonant that has any warm color on it,object color,dark yellow and green stripe,no
-67,Bring me a consonant that has any warm color on it,object color,dark yellow and blue stripe,no
-68,Bring me a consonant that has any warm color on it,object color,dark yellow and purple stripe,yes
-69,Bring me a consonant that has any warm color on it,object color,dark green and blue stripe,no
-70,Bring me a consonant that has any warm color on it,object color,dark green and purple stripe,no
-71,Bring me a consonant that has any warm color on it,object color,dark blue and purple stripe,no
-72,Bring me a consonant that has any warm color on it,object color,red and yellow polka dot,yes
-73,Bring me a consonant that has any warm color on it,object color,red and green polka dot,no
-74,Bring me a consonant that has any warm color on it,object color,red and blue polka dot,no
-75,Bring me a consonant that has any warm color on it,object color,red and purple polka dot,no
-76,Bring me a consonant that has any warm color on it,object color,yellow and green polka dot,no
-77,Bring me a consonant that has any warm color on it,object color,yellow and blue polka dot,no
-78,Bring me a consonant that has any warm color on it,object color,yellow and purple polka dot,no
-79,Bring me a consonant that has any warm color on it,object color,green and blue polka dot,no
-80,Bring me a consonant that has any warm color on it,object color,green and purple polka dot,no
-81,Bring me a consonant that has any warm color on it,object color,blue and purple polka dot,no
-82,Bring me a consonant that has any warm color on it,object color,dark red and yellow polka dot,yes
-83,Bring me a consonant that has any warm color on it,object color,dark red and green polka dot,no
-84,Bring me a consonant that has any warm color on it,object color,dark red and blue polka dot,no
-85,Bring me a consonant that has any warm color on it,object color,dark red and purple polka dot,no
-86,Bring me a consonant that has any warm color on it,object color,dark yellow and green polka dot,no
-87,Bring me a consonant that has any warm color on it,object color,dark yellow and blue polka dot,no
-88,Bring me a consonant that has any warm color on it,object color,dark yellow and purple polka dot,no
-89,Bring me a consonant that has any warm color on it,object color,dark green and blue polka dot,no
-90,Bring me a consonant that has any warm color on it,object color,dark green and purple polka dot,no
-91,Bring me a consonant that has any warm color on it,object color,dark blue and purple polka dot,no
-92,Bring me a consonant that has any warm color on it,object color,red swirl,yes
-93,Bring me a consonant that has any warm color on it,object color,yellow swirl,yes
-94,Bring me a consonant that has any warm color on it,object color,green swirl,no
-95,Bring me a consonant that has any warm color on it,object color,blue swirl,no
-96,Bring me a consonant that has any warm color on it,object color,purple swirl,no
-97,Bring me a consonant that has any warm color on it,object color,dark red swirl,yes
-98,Bring me a consonant that has any warm color on it,object color,dark yellow swirl,yes
-99,Bring me a consonant that has any warm color on it,object color,dark green swirl,no
-100,Bring me a consonant that has any warm color on it,object color,dark blue swirl,no
-101,Bring me a consonant that has any warm color on it,object color,dark purple swirl,no
-102,Bring me a consonant that has any warm color on it,object color,red paisley,yes
-103,Bring me a consonant that has any warm color on it,object color,yellow paisley,yes
-104,Bring me a consonant that has any warm color on it,object color,green paisley,no
-105,Bring me a consonant that has any warm color on it,object color,blue paisley,no
-106,Bring me a consonant that has any warm color on it,object color,purple paisley,no
+,rule,object_category,group,candidate,answer
+0,Bring me a vowel with multiple colors on it,object to bring,object type,L-shaped block,no
+1,Bring me a vowel with multiple colors on it,object to bring,object type,block,no
+2,Bring me a vowel with multiple colors on it,object to bring,object type,bowl,no
+3,Bring me a vowel with multiple colors on it,object to bring,object type,container,no
+4,Bring me a vowel with multiple colors on it,object to bring,object type,cross (block of this shape),no
+5,Bring me a vowel with multiple colors on it,object to bring,object type,diamond (block of this shape),no
+6,Bring me a vowel with multiple colors on it,object to bring,object type,flower (block of this shape),no
+7,Bring me a vowel with multiple colors on it,object to bring,object type,heart (block of this shape),no
+8,Bring me a vowel with multiple colors on it,object to bring,object type,hexagon (block of this shape),no
+9,Bring me a vowel with multiple colors on it,object to bring,object type,letter A,yes
+10,Bring me a vowel with multiple colors on it,object to bring,object type,letter E,yes
+11,Bring me a vowel with multiple colors on it,object to bring,object type,letter G,no
+12,Bring me a vowel with multiple colors on it,object to bring,object type,letter M,no
+13,Bring me a vowel with multiple colors on it,object to bring,object type,letter R,no
+14,Bring me a vowel with multiple colors on it,object to bring,object type,letter T,no
+15,Bring me a vowel with multiple colors on it,object to bring,object type,letter V,no
+16,Bring me a vowel with multiple colors on it,object to bring,object type,pallet,no
+17,Bring me a vowel with multiple colors on it,object to bring,object type,pan,no
+18,Bring me a vowel with multiple colors on it,object to bring,object type,pentagon (block of this shape),no
+19,Bring me a vowel with multiple colors on it,object to bring,object type,ring (block of this shape),no
+20,Bring me a vowel with multiple colors on it,object to bring,object type,round (block of this shape),no
+21,Bring me a vowel with multiple colors on it,object to bring,object type,shorter block,no
+22,Bring me a vowel with multiple colors on it,object to bring,object type,small block,no
+23,Bring me a vowel with multiple colors on it,object to bring,object type,star (block of this shape),no
+24,Bring me a vowel with multiple colors on it,object to bring,object type,triangle (block of this shape),no
+25,Bring me a vowel with multiple colors on it,object to bring,object color,brick,no
+26,Bring me a vowel with multiple colors on it,object to bring,object color,tiles,no
+27,Bring me a vowel with multiple colors on it,object to bring,object color,wooden,no
+28,Bring me a vowel with multiple colors on it,object to bring,object color,granite,no
+29,Bring me a vowel with multiple colors on it,object to bring,object color,plastic,no
+30,Bring me a vowel with multiple colors on it,object to bring,object color,polka dot,yes
+31,Bring me a vowel with multiple colors on it,object to bring,object color,checkerboard,yes
+32,Bring me a vowel with multiple colors on it,object to bring,object color,tiger,no
+33,Bring me a vowel with multiple colors on it,object to bring,object color,magma,no
+34,Bring me a vowel with multiple colors on it,object to bring,object color,rainbow,yes
+35,Bring me a vowel with multiple colors on it,object to bring,object color,blue,no
+36,Bring me a vowel with multiple colors on it,object to bring,object color,cyan,no
+37,Bring me a vowel with multiple colors on it,object to bring,object color,green,no
+38,Bring me a vowel with multiple colors on it,object to bring,object color,olive,no
+39,Bring me a vowel with multiple colors on it,object to bring,object color,orange,no
+40,Bring me a vowel with multiple colors on it,object to bring,object color,pink,no
+41,Bring me a vowel with multiple colors on it,object to bring,object color,purple,no
+42,Bring me a vowel with multiple colors on it,object to bring,object color,red,no
+43,Bring me a vowel with multiple colors on it,object to bring,object color,yellow,no
+44,Bring me a vowel with multiple colors on it,object to bring,object color,dark blue,no
+45,Bring me a vowel with multiple colors on it,object to bring,object color,dark cyan,no
+46,Bring me a vowel with multiple colors on it,object to bring,object color,dark green,no
+47,Bring me a vowel with multiple colors on it,object to bring,object color,dark orange,no
+48,Bring me a vowel with multiple colors on it,object to bring,object color,dark pink,no
+49,Bring me a vowel with multiple colors on it,object to bring,object color,dark purple,no
+50,Bring me a vowel with multiple colors on it,object to bring,object color,dark red,no
+51,Bring me a vowel with multiple colors on it,object to bring,object color,dark yellow,no
+52,Bring me a vowel with multiple colors on it,object to bring,object color,red and yellow stripe,yes
+53,Bring me a vowel with multiple colors on it,object to bring,object color,red and green stripe,yes
+54,Bring me a vowel with multiple colors on it,object to bring,object color,red and blue stripe,yes
+55,Bring me a vowel with multiple colors on it,object to bring,object color,red and purple stripe,yes
+56,Bring me a vowel with multiple colors on it,object to bring,object color,yellow and green stripe,yes
+57,Bring me a vowel with multiple colors on it,object to bring,object color,yellow and blue stripe,yes
+58,Bring me a vowel with multiple colors on it,object to bring,object color,yellow and purple stripe,yes
+59,Bring me a vowel with multiple colors on it,object to bring,object color,green and blue stripe,yes
+60,Bring me a vowel with multiple colors on it,object to bring,object color,green and purple stripe,yes
+61,Bring me a vowel with multiple colors on it,object to bring,object color,blue and purple stripe,yes
+62,Bring me a vowel with multiple colors on it,object to bring,object color,dark red and yellow stripe,yes
+63,Bring me a vowel with multiple colors on it,object to bring,object color,dark red and green stripe,yes
+64,Bring me a vowel with multiple colors on it,object to bring,object color,dark red and blue stripe,yes
+65,Bring me a vowel with multiple colors on it,object to bring,object color,dark red and purple stripe,yes
+66,Bring me a vowel with multiple colors on it,object to bring,object color,dark yellow and green stripe,yes
+67,Bring me a vowel with multiple colors on it,object to bring,object color,dark yellow and blue stripe,yes
+68,Bring me a vowel with multiple colors on it,object to bring,object color,dark yellow and purple stripe,yes
+69,Bring me a vowel with multiple colors on it,object to bring,object color,dark green and blue stripe,yes
+70,Bring me a vowel with multiple colors on it,object to bring,object color,dark green and purple stripe,yes
+71,Bring me a vowel with multiple colors on it,object to bring,object color,dark blue and purple stripe,yes
+72,Bring me a vowel with multiple colors on it,object to bring,object color,red and yellow polka dot,yes
+73,Bring me a vowel with multiple colors on it,object to bring,object color,red and green polka dot,yes
+74,Bring me a vowel with multiple colors on it,object to bring,object color,red and blue polka dot,yes
+75,Bring me a vowel with multiple colors on it,object to bring,object color,red and purple polka dot,yes
+76,Bring me a vowel with multiple colors on it,object to bring,object color,yellow and green polka dot,yes
+77,Bring me a vowel with multiple colors on it,object to bring,object color,yellow and blue polka dot,yes
+78,Bring me a vowel with multiple colors on it,object to bring,object color,yellow and purple polka dot,yes
+79,Bring me a vowel with multiple colors on it,object to bring,object color,green and blue polka dot,yes
+80,Bring me a vowel with multiple colors on it,object to bring,object color,green and purple polka dot,yes
+81,Bring me a vowel with multiple colors on it,object to bring,object color,blue and purple polka dot,yes
+82,Bring me a vowel with multiple colors on it,object to bring,object color,dark red and yellow polka dot,yes
+83,Bring me a vowel with multiple colors on it,object to bring,object color,dark red and green polka dot,yes
+84,Bring me a vowel with multiple colors on it,object to bring,object color,dark red and blue polka dot,yes
+85,Bring me a vowel with multiple colors on it,object to bring,object color,dark red and purple polka dot,yes
+86,Bring me a vowel with multiple colors on it,object to bring,object color,dark yellow and green polka dot,yes
+87,Bring me a vowel with multiple colors on it,object to bring,object color,dark yellow and blue polka dot,yes
+88,Bring me a vowel with multiple colors on it,object to bring,object color,dark yellow and purple polka dot,yes
+89,Bring me a vowel with multiple colors on it,object to bring,object color,dark green and blue polka dot,yes
+90,Bring me a vowel with multiple colors on it,object to bring,object color,dark green and purple polka dot,yes
+91,Bring me a vowel with multiple colors on it,object to bring,object color,dark blue and purple polka dot,yes
+92,Bring me a vowel with multiple colors on it,object to bring,object color,red swirl,no
+93,Bring me a vowel with multiple colors on it,object to bring,object color,yellow swirl,no
+94,Bring me a vowel with multiple colors on it,object to bring,object color,green swirl,no
+95,Bring me a vowel with multiple colors on it,object to bring,object color,blue swirl,no
+96,Bring me a vowel with multiple colors on it,object to bring,object color,purple swirl,no
+97,Bring me a vowel with multiple colors on it,object to bring,object color,dark red swirl,no
+98,Bring me a vowel with multiple colors on it,object to bring,object color,dark yellow swirl,no
+99,Bring me a vowel with multiple colors on it,object to bring,object color,dark green swirl,no
+100,Bring me a vowel with multiple colors on it,object to bring,object color,dark blue swirl,no
+101,Bring me a vowel with multiple colors on it,object to bring,object color,dark purple swirl,no
+102,Bring me a vowel with multiple colors on it,object to bring,object color,red paisley,no
+103,Bring me a vowel with multiple colors on it,object to bring,object color,yellow paisley,no
+104,Bring me a vowel with multiple colors on it,object to bring,object color,green paisley,no
+105,Bring me a vowel with multiple colors on it,object to bring,object color,blue paisley,no
+106,Bring me a vowel with multiple colors on it,object to bring,object color,purple paisley,yes

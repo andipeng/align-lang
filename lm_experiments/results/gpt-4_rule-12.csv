@@ -1,108 +1,215 @@
-,rule,group,candidate,answer
-0,Bring me a pentagon made of the same material as my dream patio,object type,L-shaped block,no
-1,Bring me a pentagon made of the same material as my dream patio,object type,block,no
-2,Bring me a pentagon made of the same material as my dream patio,object type,bowl,no
-3,Bring me a pentagon made of the same material as my dream patio,object type,container,no
-4,Bring me a pentagon made of the same material as my dream patio,object type,cross (block of this shape),no
-5,Bring me a pentagon made of the same material as my dream patio,object type,diamond (block of this shape),no
-6,Bring me a pentagon made of the same material as my dream patio,object type,flower (block of this shape),no
-7,Bring me a pentagon made of the same material as my dream patio,object type,heart (block of this shape),no
-8,Bring me a pentagon made of the same material as my dream patio,object type,hexagon (block of this shape),no
-9,Bring me a pentagon made of the same material as my dream patio,object type,letter A,no
-10,Bring me a pentagon made of the same material as my dream patio,object type,letter E,no
-11,Bring me a pentagon made of the same material as my dream patio,object type,letter G,no
-12,Bring me a pentagon made of the same material as my dream patio,object type,letter M,no
-13,Bring me a pentagon made of the same material as my dream patio,object type,letter R,no
-14,Bring me a pentagon made of the same material as my dream patio,object type,letter T,no
-15,Bring me a pentagon made of the same material as my dream patio,object type,letter V,no
-16,Bring me a pentagon made of the same material as my dream patio,object type,pallet,no
-17,Bring me a pentagon made of the same material as my dream patio,object type,pan,no
-18,Bring me a pentagon made of the same material as my dream patio,object type,pentagon (block of this shape),yes
-19,Bring me a pentagon made of the same material as my dream patio,object type,ring (block of this shape),no
-20,Bring me a pentagon made of the same material as my dream patio,object type,round (block of this shape),no
-21,Bring me a pentagon made of the same material as my dream patio,object type,shorter block,no
-22,Bring me a pentagon made of the same material as my dream patio,object type,small block,no
-23,Bring me a pentagon made of the same material as my dream patio,object type,star (block of this shape),no
-24,Bring me a pentagon made of the same material as my dream patio,object type,triangle (block of this shape),no
-25,Bring me a pentagon made of the same material as my dream patio,object color,brick,yes
-26,Bring me a pentagon made of the same material as my dream patio,object color,tiles,yes
-27,Bring me a pentagon made of the same material as my dream patio,object color,wooden,yes
-28,Bring me a pentagon made of the same material as my dream patio,object color,granite,yes
-29,Bring me a pentagon made of the same material as my dream patio,object color,plastic,yes
-30,Bring me a pentagon made of the same material as my dream patio,object color,polka dot,no
-31,Bring me a pentagon made of the same material as my dream patio,object color,checkerboard,yes
-32,Bring me a pentagon made of the same material as my dream patio,object color,tiger,no
-33,Bring me a pentagon made of the same material as my dream patio,object color,magma,no
-34,Bring me a pentagon made of the same material as my dream patio,object color,rainbow,yes
-35,Bring me a pentagon made of the same material as my dream patio,object color,blue,no
-36,Bring me a pentagon made of the same material as my dream patio,object color,cyan,no
-37,Bring me a pentagon made of the same material as my dream patio,object color,green,no
-38,Bring me a pentagon made of the same material as my dream patio,object color,olive,yes
-39,Bring me a pentagon made of the same material as my dream patio,object color,orange,no
-40,Bring me a pentagon made of the same material as my dream patio,object color,pink,no
-41,Bring me a pentagon made of the same material as my dream patio,object color,purple,no
-42,Bring me a pentagon made of the same material as my dream patio,object color,red,no
-43,Bring me a pentagon made of the same material as my dream patio,object color,yellow,no
-44,Bring me a pentagon made of the same material as my dream patio,object color,dark blue,yes
-45,Bring me a pentagon made of the same material as my dream patio,object color,dark cyan,yes
-46,Bring me a pentagon made of the same material as my dream patio,object color,dark green,yes
-47,Bring me a pentagon made of the same material as my dream patio,object color,dark orange,yes
-48,Bring me a pentagon made of the same material as my dream patio,object color,dark pink,yes
-49,Bring me a pentagon made of the same material as my dream patio,object color,dark purple,no
-50,Bring me a pentagon made of the same material as my dream patio,object color,dark red,yes
-51,Bring me a pentagon made of the same material as my dream patio,object color,dark yellow,no
-52,Bring me a pentagon made of the same material as my dream patio,object color,red and yellow stripe,no
-53,Bring me a pentagon made of the same material as my dream patio,object color,red and green stripe,no
-54,Bring me a pentagon made of the same material as my dream patio,object color,red and blue stripe,yes
-55,Bring me a pentagon made of the same material as my dream patio,object color,red and purple stripe,no
-56,Bring me a pentagon made of the same material as my dream patio,object color,yellow and green stripe,no
-57,Bring me a pentagon made of the same material as my dream patio,object color,yellow and blue stripe,no
-58,Bring me a pentagon made of the same material as my dream patio,object color,yellow and purple stripe,no
-59,Bring me a pentagon made of the same material as my dream patio,object color,green and blue stripe,no
-60,Bring me a pentagon made of the same material as my dream patio,object color,green and purple stripe,no
-61,Bring me a pentagon made of the same material as my dream patio,object color,blue and purple stripe,no
-62,Bring me a pentagon made of the same material as my dream patio,object color,dark red and yellow stripe,yes
-63,Bring me a pentagon made of the same material as my dream patio,object color,dark red and green stripe,no
-64,Bring me a pentagon made of the same material as my dream patio,object color,dark red and blue stripe,yes
-65,Bring me a pentagon made of the same material as my dream patio,object color,dark red and purple stripe,no
-66,Bring me a pentagon made of the same material as my dream patio,object color,dark yellow and green stripe,no
-67,Bring me a pentagon made of the same material as my dream patio,object color,dark yellow and blue stripe,no
-68,Bring me a pentagon made of the same material as my dream patio,object color,dark yellow and purple stripe,no
-69,Bring me a pentagon made of the same material as my dream patio,object color,dark green and blue stripe,no
-70,Bring me a pentagon made of the same material as my dream patio,object color,dark green and purple stripe,no
-71,Bring me a pentagon made of the same material as my dream patio,object color,dark blue and purple stripe,no
-72,Bring me a pentagon made of the same material as my dream patio,object color,red and yellow polka dot,no
-73,Bring me a pentagon made of the same material as my dream patio,object color,red and green polka dot,no
-74,Bring me a pentagon made of the same material as my dream patio,object color,red and blue polka dot,no
-75,Bring me a pentagon made of the same material as my dream patio,object color,red and purple polka dot,no
-76,Bring me a pentagon made of the same material as my dream patio,object color,yellow and green polka dot,no
-77,Bring me a pentagon made of the same material as my dream patio,object color,yellow and blue polka dot,no
-78,Bring me a pentagon made of the same material as my dream patio,object color,yellow and purple polka dot,no
-79,Bring me a pentagon made of the same material as my dream patio,object color,green and blue polka dot,yes
-80,Bring me a pentagon made of the same material as my dream patio,object color,green and purple polka dot,yes
-81,Bring me a pentagon made of the same material as my dream patio,object color,blue and purple polka dot,no
-82,Bring me a pentagon made of the same material as my dream patio,object color,dark red and yellow polka dot,no
-83,Bring me a pentagon made of the same material as my dream patio,object color,dark red and green polka dot,no
-84,Bring me a pentagon made of the same material as my dream patio,object color,dark red and blue polka dot,no
-85,Bring me a pentagon made of the same material as my dream patio,object color,dark red and purple polka dot,no
-86,Bring me a pentagon made of the same material as my dream patio,object color,dark yellow and green polka dot,no
-87,Bring me a pentagon made of the same material as my dream patio,object color,dark yellow and blue polka dot,no
-88,Bring me a pentagon made of the same material as my dream patio,object color,dark yellow and purple polka dot,no
-89,Bring me a pentagon made of the same material as my dream patio,object color,dark green and blue polka dot,no
-90,Bring me a pentagon made of the same material as my dream patio,object color,dark green and purple polka dot,no
-91,Bring me a pentagon made of the same material as my dream patio,object color,dark blue and purple polka dot,no
-92,Bring me a pentagon made of the same material as my dream patio,object color,red swirl,yes
-93,Bring me a pentagon made of the same material as my dream patio,object color,yellow swirl,no
-94,Bring me a pentagon made of the same material as my dream patio,object color,green swirl,no
-95,Bring me a pentagon made of the same material as my dream patio,object color,blue swirl,no
-96,Bring me a pentagon made of the same material as my dream patio,object color,purple swirl,no
-97,Bring me a pentagon made of the same material as my dream patio,object color,dark red swirl,no
-98,Bring me a pentagon made of the same material as my dream patio,object color,dark yellow swirl,no
-99,Bring me a pentagon made of the same material as my dream patio,object color,dark green swirl,no
-100,Bring me a pentagon made of the same material as my dream patio,object color,dark blue swirl,no
-101,Bring me a pentagon made of the same material as my dream patio,object color,dark purple swirl,no
-102,Bring me a pentagon made of the same material as my dream patio,object color,red paisley,no
-103,Bring me a pentagon made of the same material as my dream patio,object color,yellow paisley,no
-104,Bring me a pentagon made of the same material as my dream patio,object color,green paisley,no
-105,Bring me a pentagon made of the same material as my dream patio,object color,blue paisley,no
-106,Bring me a pentagon made of the same material as my dream patio,object color,purple paisley,no
+,rule,object_category,group,candidate,answer
+0,Sweep the letter into the square without touching the pan,object to sweep,object type,L-shaped block,no
+1,Sweep the letter into the square without touching the pan,object to sweep,object type,block,no
+2,Sweep the letter into the square without touching the pan,object to sweep,object type,bowl,no
+3,Sweep the letter into the square without touching the pan,object to sweep,object type,container,no
+4,Sweep the letter into the square without touching the pan,object to sweep,object type,cross (block of this shape),no
+5,Sweep the letter into the square without touching the pan,object to sweep,object type,diamond (block of this shape),no
+6,Sweep the letter into the square without touching the pan,object to sweep,object type,flower (block of this shape),no
+7,Sweep the letter into the square without touching the pan,object to sweep,object type,heart (block of this shape),no
+8,Sweep the letter into the square without touching the pan,object to sweep,object type,hexagon (block of this shape),no
+9,Sweep the letter into the square without touching the pan,object to sweep,object type,letter A,yes
+10,Sweep the letter into the square without touching the pan,object to sweep,object type,letter E,yes
+11,Sweep the letter into the square without touching the pan,object to sweep,object type,letter G,yes
+12,Sweep the letter into the square without touching the pan,object to sweep,object type,letter M,yes
+13,Sweep the letter into the square without touching the pan,object to sweep,object type,letter R,yes
+14,Sweep the letter into the square without touching the pan,object to sweep,object type,letter T,yes
+15,Sweep the letter into the square without touching the pan,object to sweep,object type,letter V,yes
+16,Sweep the letter into the square without touching the pan,object to sweep,object type,pallet,no
+17,Sweep the letter into the square without touching the pan,object to sweep,object type,pan,no
+18,Sweep the letter into the square without touching the pan,object to sweep,object type,pentagon (block of this shape),no
+19,Sweep the letter into the square without touching the pan,object to sweep,object type,ring (block of this shape),no
+20,Sweep the letter into the square without touching the pan,object to sweep,object type,round (block of this shape),no
+21,Sweep the letter into the square without touching the pan,object to sweep,object type,shorter block,no
+22,Sweep the letter into the square without touching the pan,object to sweep,object type,small block,no
+23,Sweep the letter into the square without touching the pan,object to sweep,object type,star (block of this shape),no
+24,Sweep the letter into the square without touching the pan,object to sweep,object type,triangle (block of this shape),no
+25,Sweep the letter into the square without touching the pan,object to sweep,object color,brick,yes
+26,Sweep the letter into the square without touching the pan,object to sweep,object color,tiles,yes
+27,Sweep the letter into the square without touching the pan,object to sweep,object color,wooden,yes
+28,Sweep the letter into the square without touching the pan,object to sweep,object color,granite,yes
+29,Sweep the letter into the square without touching the pan,object to sweep,object color,plastic,yes
+30,Sweep the letter into the square without touching the pan,object to sweep,object color,polka dot,yes
+31,Sweep the letter into the square without touching the pan,object to sweep,object color,checkerboard,yes
+32,Sweep the letter into the square without touching the pan,object to sweep,object color,tiger,yes
+33,Sweep the letter into the square without touching the pan,object to sweep,object color,magma,yes
+34,Sweep the letter into the square without touching the pan,object to sweep,object color,rainbow,yes
+35,Sweep the letter into the square without touching the pan,object to sweep,object color,blue,yes
+36,Sweep the letter into the square without touching the pan,object to sweep,object color,cyan,yes
+37,Sweep the letter into the square without touching the pan,object to sweep,object color,green,yes
+38,Sweep the letter into the square without touching the pan,object to sweep,object color,olive,yes
+39,Sweep the letter into the square without touching the pan,object to sweep,object color,orange,yes
+40,Sweep the letter into the square without touching the pan,object to sweep,object color,pink,yes
+41,Sweep the letter into the square without touching the pan,object to sweep,object color,purple,yes
+42,Sweep the letter into the square without touching the pan,object to sweep,object color,red,yes
+43,Sweep the letter into the square without touching the pan,object to sweep,object color,yellow,yes
+44,Sweep the letter into the square without touching the pan,object to sweep,object color,dark blue,yes
+45,Sweep the letter into the square without touching the pan,object to sweep,object color,dark cyan,yes
+46,Sweep the letter into the square without touching the pan,object to sweep,object color,dark green,yes
+47,Sweep the letter into the square without touching the pan,object to sweep,object color,dark orange,yes
+48,Sweep the letter into the square without touching the pan,object to sweep,object color,dark pink,yes
+49,Sweep the letter into the square without touching the pan,object to sweep,object color,dark purple,yes
+50,Sweep the letter into the square without touching the pan,object to sweep,object color,dark red,yes
+51,Sweep the letter into the square without touching the pan,object to sweep,object color,dark yellow,yes
+52,Sweep the letter into the square without touching the pan,object to sweep,object color,red and yellow stripe,yes
+53,Sweep the letter into the square without touching the pan,object to sweep,object color,red and green stripe,yes
+54,Sweep the letter into the square without touching the pan,object to sweep,object color,red and blue stripe,yes
+55,Sweep the letter into the square without touching the pan,object to sweep,object color,red and purple stripe,yes
+56,Sweep the letter into the square without touching the pan,object to sweep,object color,yellow and green stripe,yes
+57,Sweep the letter into the square without touching the pan,object to sweep,object color,yellow and blue stripe,yes
+58,Sweep the letter into the square without touching the pan,object to sweep,object color,yellow and purple stripe,yes
+59,Sweep the letter into the square without touching the pan,object to sweep,object color,green and blue stripe,yes
+60,Sweep the letter into the square without touching the pan,object to sweep,object color,green and purple stripe,yes
+61,Sweep the letter into the square without touching the pan,object to sweep,object color,blue and purple stripe,yes
+62,Sweep the letter into the square without touching the pan,object to sweep,object color,dark red and yellow stripe,yes
+63,Sweep the letter into the square without touching the pan,object to sweep,object color,dark red and green stripe,yes
+64,Sweep the letter into the square without touching the pan,object to sweep,object color,dark red and blue stripe,yes
+65,Sweep the letter into the square without touching the pan,object to sweep,object color,dark red and purple stripe,yes
+66,Sweep the letter into the square without touching the pan,object to sweep,object color,dark yellow and green stripe,yes
+67,Sweep the letter into the square without touching the pan,object to sweep,object color,dark yellow and blue stripe,yes
+68,Sweep the letter into the square without touching the pan,object to sweep,object color,dark yellow and purple stripe,yes
+69,Sweep the letter into the square without touching the pan,object to sweep,object color,dark green and blue stripe,yes
+70,Sweep the letter into the square without touching the pan,object to sweep,object color,dark green and purple stripe,yes
+71,Sweep the letter into the square without touching the pan,object to sweep,object color,dark blue and purple stripe,yes
+72,Sweep the letter into the square without touching the pan,object to sweep,object color,red and yellow polka dot,yes
+73,Sweep the letter into the square without touching the pan,object to sweep,object color,red and green polka dot,yes
+74,Sweep the letter into the square without touching the pan,object to sweep,object color,red and blue polka dot,yes
+75,Sweep the letter into the square without touching the pan,object to sweep,object color,red and purple polka dot,yes
+76,Sweep the letter into the square without touching the pan,object to sweep,object color,yellow and green polka dot,yes
+77,Sweep the letter into the square without touching the pan,object to sweep,object color,yellow and blue polka dot,yes
+78,Sweep the letter into the square without touching the pan,object to sweep,object color,yellow and purple polka dot,yes
+79,Sweep the letter into the square without touching the pan,object to sweep,object color,green and blue polka dot,yes
+80,Sweep the letter into the square without touching the pan,object to sweep,object color,green and purple polka dot,yes
+81,Sweep the letter into the square without touching the pan,object to sweep,object color,blue and purple polka dot,yes
+82,Sweep the letter into the square without touching the pan,object to sweep,object color,dark red and yellow polka dot,yes
+83,Sweep the letter into the square without touching the pan,object to sweep,object color,dark red and green polka dot,yes
+84,Sweep the letter into the square without touching the pan,object to sweep,object color,dark red and blue polka dot,yes
+85,Sweep the letter into the square without touching the pan,object to sweep,object color,dark red and purple polka dot,yes
+86,Sweep the letter into the square without touching the pan,object to sweep,object color,dark yellow and green polka dot,yes
+87,Sweep the letter into the square without touching the pan,object to sweep,object color,dark yellow and blue polka dot,yes
+88,Sweep the letter into the square without touching the pan,object to sweep,object color,dark yellow and purple polka dot,yes
+89,Sweep the letter into the square without touching the pan,object to sweep,object color,dark green and blue polka dot,yes
+90,Sweep the letter into the square without touching the pan,object to sweep,object color,dark green and purple polka dot,yes
+91,Sweep the letter into the square without touching the pan,object to sweep,object color,dark blue and purple polka dot,yes
+92,Sweep the letter into the square without touching the pan,object to sweep,object color,red swirl,yes
+93,Sweep the letter into the square without touching the pan,object to sweep,object color,yellow swirl,yes
+94,Sweep the letter into the square without touching the pan,object to sweep,object color,green swirl,yes
+95,Sweep the letter into the square without touching the pan,object to sweep,object color,blue swirl,yes
+96,Sweep the letter into the square without touching the pan,object to sweep,object color,purple swirl,yes
+97,Sweep the letter into the square without touching the pan,object to sweep,object color,dark red swirl,yes
+98,Sweep the letter into the square without touching the pan,object to sweep,object color,dark yellow swirl,yes
+99,Sweep the letter into the square without touching the pan,object to sweep,object color,dark green swirl,yes
+100,Sweep the letter into the square without touching the pan,object to sweep,object color,dark blue swirl,yes
+101,Sweep the letter into the square without touching the pan,object to sweep,object color,dark purple swirl,yes
+102,Sweep the letter into the square without touching the pan,object to sweep,object color,red paisley,yes
+103,Sweep the letter into the square without touching the pan,object to sweep,object color,yellow paisley,yes
+104,Sweep the letter into the square without touching the pan,object to sweep,object color,green paisley,yes
+105,Sweep the letter into the square without touching the pan,object to sweep,object color,blue paisley,yes
+106,Sweep the letter into the square without touching the pan,object to sweep,object color,purple paisley,yes
+107,Sweep the letter into the square without touching the pan,object to avoid,object type,L-shaped block,no
+108,Sweep the letter into the square without touching the pan,object to avoid,object type,block,no
+109,Sweep the letter into the square without touching the pan,object to avoid,object type,bowl,no
+110,Sweep the letter into the square without touching the pan,object to avoid,object type,container,no
+111,Sweep the letter into the square without touching the pan,object to avoid,object type,cross (block of this shape),no
+112,Sweep the letter into the square without touching the pan,object to avoid,object type,diamond (block of this shape),no
+113,Sweep the letter into the square without touching the pan,object to avoid,object type,flower (block of this shape),no
+114,Sweep the letter into the square without touching the pan,object to avoid,object type,heart (block of this shape),no
+115,Sweep the letter into the square without touching the pan,object to avoid,object type,hexagon (block of this shape),no
+116,Sweep the letter into the square without touching the pan,object to avoid,object type,letter A,no
+117,Sweep the letter into the square without touching the pan,object to avoid,object type,letter E,no
+118,Sweep the letter into the square without touching the pan,object to avoid,object type,letter G,no
+119,Sweep the letter into the square without touching the pan,object to avoid,object type,letter M,no
+120,Sweep the letter into the square without touching the pan,object to avoid,object type,letter R,no
+121,Sweep the letter into the square without touching the pan,object to avoid,object type,letter T,no
+122,Sweep the letter into the square without touching the pan,object to avoid,object type,letter V,no
+123,Sweep the letter into the square without touching the pan,object to avoid,object type,pallet,no
+124,Sweep the letter into the square without touching the pan,object to avoid,object type,pan,yes
+125,Sweep the letter into the square without touching the pan,object to avoid,object type,pentagon (block of this shape),no
+126,Sweep the letter into the square without touching the pan,object to avoid,object type,ring (block of this shape),no
+127,Sweep the letter into the square without touching the pan,object to avoid,object type,round (block of this shape),no
+128,Sweep the letter into the square without touching the pan,object to avoid,object type,shorter block,no
+129,Sweep the letter into the square without touching the pan,object to avoid,object type,small block,no
+130,Sweep the letter into the square without touching the pan,object to avoid,object type,star (block of this shape),no
+131,Sweep the letter into the square without touching the pan,object to avoid,object type,triangle (block of this shape),no
+132,Sweep the letter into the square without touching the pan,object to avoid,object color,brick,yes
+133,Sweep the letter into the square without touching the pan,object to avoid,object color,tiles,yes
+134,Sweep the letter into the square without touching the pan,object to avoid,object color,wooden,yes
+135,Sweep the letter into the square without touching the pan,object to avoid,object color,granite,yes
+136,Sweep the letter into the square without touching the pan,object to avoid,object color,plastic,yes
+137,Sweep the letter into the square without touching the pan,object to avoid,object color,polka dot,yes
+138,Sweep the letter into the square without touching the pan,object to avoid,object color,checkerboard,yes
+139,Sweep the letter into the square without touching the pan,object to avoid,object color,tiger,yes
+140,Sweep the letter into the square without touching the pan,object to avoid,object color,magma,yes
+141,Sweep the letter into the square without touching the pan,object to avoid,object color,rainbow,yes
+142,Sweep the letter into the square without touching the pan,object to avoid,object color,blue,yes
+143,Sweep the letter into the square without touching the pan,object to avoid,object color,cyan,yes
+144,Sweep the letter into the square without touching the pan,object to avoid,object color,green,yes
+145,Sweep the letter into the square without touching the pan,object to avoid,object color,olive,yes
+146,Sweep the letter into the square without touching the pan,object to avoid,object color,orange,yes
+147,Sweep the letter into the square without touching the pan,object to avoid,object color,pink,yes
+148,Sweep the letter into the square without touching the pan,object to avoid,object color,purple,yes
+149,Sweep the letter into the square without touching the pan,object to avoid,object color,red,yes
+150,Sweep the letter into the square without touching the pan,object to avoid,object color,yellow,yes
+151,Sweep the letter into the square without touching the pan,object to avoid,object color,dark blue,yes
+152,Sweep the letter into the square without touching the pan,object to avoid,object color,dark cyan,yes
+153,Sweep the letter into the square without touching the pan,object to avoid,object color,dark green,yes
+154,Sweep the letter into the square without touching the pan,object to avoid,object color,dark orange,yes
+155,Sweep the letter into the square without touching the pan,object to avoid,object color,dark pink,yes
+156,Sweep the letter into the square without touching the pan,object to avoid,object color,dark purple,yes
+157,Sweep the letter into the square without touching the pan,object to avoid,object color,dark red,yes
+158,Sweep the letter into the square without touching the pan,object to avoid,object color,dark yellow,yes
+159,Sweep the letter into the square without touching the pan,object to avoid,object color,red and yellow stripe,yes
+160,Sweep the letter into the square without touching the pan,object to avoid,object color,red and green stripe,yes
+161,Sweep the letter into the square without touching the pan,object to avoid,object color,red and blue stripe,yes
+162,Sweep the letter into the square without touching the pan,object to avoid,object color,red and purple stripe,yes
+163,Sweep the letter into the square without touching the pan,object to avoid,object color,yellow and green stripe,yes
+164,Sweep the letter into the square without touching the pan,object to avoid,object color,yellow and blue stripe,yes
+165,Sweep the letter into the square without touching the pan,object to avoid,object color,yellow and purple stripe,yes
+166,Sweep the letter into the square without touching the pan,object to avoid,object color,green and blue stripe,yes
+167,Sweep the letter into the square without touching the pan,object to avoid,object color,green and purple stripe,yes
+168,Sweep the letter into the square without touching the pan,object to avoid,object color,blue and purple stripe,yes
+169,Sweep the letter into the square without touching the pan,object to avoid,object color,dark red and yellow stripe,yes
+170,Sweep the letter into the square without touching the pan,object to avoid,object color,dark red and green stripe,yes
+171,Sweep the letter into the square without touching the pan,object to avoid,object color,dark red and blue stripe,yes
+172,Sweep the letter into the square without touching the pan,object to avoid,object color,dark red and purple stripe,yes
+173,Sweep the letter into the square without touching the pan,object to avoid,object color,dark yellow and green stripe,yes
+174,Sweep the letter into the square without touching the pan,object to avoid,object color,dark yellow and blue stripe,yes
+175,Sweep the letter into the square without touching the pan,object to avoid,object color,dark yellow and purple stripe,yes
+176,Sweep the letter into the square without touching the pan,object to avoid,object color,dark green and blue stripe,yes
+177,Sweep the letter into the square without touching the pan,object to avoid,object color,dark green and purple stripe,yes
+178,Sweep the letter into the square without touching the pan,object to avoid,object color,dark blue and purple stripe,yes
+179,Sweep the letter into the square without touching the pan,object to avoid,object color,red and yellow polka dot,yes
+180,Sweep the letter into the square without touching the pan,object to avoid,object color,red and green polka dot,yes
+181,Sweep the letter into the square without touching the pan,object to avoid,object color,red and blue polka dot,yes
+182,Sweep the letter into the square without touching the pan,object to avoid,object color,red and purple polka dot,yes
+183,Sweep the letter into the square without touching the pan,object to avoid,object color,yellow and green polka dot,yes
+184,Sweep the letter into the square without touching the pan,object to avoid,object color,yellow and blue polka dot,yes
+185,Sweep the letter into the square without touching the pan,object to avoid,object color,yellow and purple polka dot,yes
+186,Sweep the letter into the square without touching the pan,object to avoid,object color,green and blue polka dot,yes
+187,Sweep the letter into the square without touching the pan,object to avoid,object color,green and purple polka dot,yes
+188,Sweep the letter into the square without touching the pan,object to avoid,object color,blue and purple polka dot,yes
+189,Sweep the letter into the square without touching the pan,object to avoid,object color,dark red and yellow polka dot,yes
+190,Sweep the letter into the square without touching the pan,object to avoid,object color,dark red and green polka dot,yes
+191,Sweep the letter into the square without touching the pan,object to avoid,object color,dark red and blue polka dot,yes
+192,Sweep the letter into the square without touching the pan,object to avoid,object color,dark red and purple polka dot,yes
+193,Sweep the letter into the square without touching the pan,object to avoid,object color,dark yellow and green polka dot,yes
+194,Sweep the letter into the square without touching the pan,object to avoid,object color,dark yellow and blue polka dot,yes
+195,Sweep the letter into the square without touching the pan,object to avoid,object color,dark yellow and purple polka dot,yes
+196,Sweep the letter into the square without touching the pan,object to avoid,object color,dark green and blue polka dot,yes
+197,Sweep the letter into the square without touching the pan,object to avoid,object color,dark green and purple polka dot,yes
+198,Sweep the letter into the square without touching the pan,object to avoid,object color,dark blue and purple polka dot,yes
+199,Sweep the letter into the square without touching the pan,object to avoid,object color,red swirl,yes
+200,Sweep the letter into the square without touching the pan,object to avoid,object color,yellow swirl,yes
+201,Sweep the letter into the square without touching the pan,object to avoid,object color,green swirl,yes
+202,Sweep the letter into the square without touching the pan,object to avoid,object color,blue swirl,yes
+203,Sweep the letter into the square without touching the pan,object to avoid,object color,purple swirl,yes
+204,Sweep the letter into the square without touching the pan,object to avoid,object color,dark red swirl,yes
+205,Sweep the letter into the square without touching the pan,object to avoid,object color,dark yellow swirl,yes
+206,Sweep the letter into the square without touching the pan,object to avoid,object color,dark green swirl,yes
+207,Sweep the letter into the square without touching the pan,object to avoid,object color,dark blue swirl,yes
+208,Sweep the letter into the square without touching the pan,object to avoid,object color,dark purple swirl,yes
+209,Sweep the letter into the square without touching the pan,object to avoid,object color,red paisley,yes
+210,Sweep the letter into the square without touching the pan,object to avoid,object color,yellow paisley,yes
+211,Sweep the letter into the square without touching the pan,object to avoid,object color,green paisley,yes
+212,Sweep the letter into the square without touching the pan,object to avoid,object color,blue paisley,yes
+213,Sweep the letter into the square without touching the pan,object to avoid,object color,purple paisley,yes

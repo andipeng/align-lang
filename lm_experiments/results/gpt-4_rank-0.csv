@@ -1,2 +1,0 @@
-,rule,ranking,candidates,answer
-0,"Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",True,"['letter T', 'letter A', 'letter V', 'letter E', 'letter G', 'letter M', 'letter R']","letter A, letter E, letter G, letter M, letter R, letter T, letter V"
