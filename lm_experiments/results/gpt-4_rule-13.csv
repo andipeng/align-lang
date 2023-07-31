@@ -29,11 +29,11 @@
 27,Sweep the letter into the square without touching anything red,object to sweep,object color,wooden,yes
 28,Sweep the letter into the square without touching anything red,object to sweep,object color,granite,yes
 29,Sweep the letter into the square without touching anything red,object to sweep,object color,plastic,yes
-30,Sweep the letter into the square without touching anything red,object to sweep,object color,polka dot,no
+30,Sweep the letter into the square without touching anything red,object to sweep,object color,polka dot,yes
 31,Sweep the letter into the square without touching anything red,object to sweep,object color,checkerboard,yes
 32,Sweep the letter into the square without touching anything red,object to sweep,object color,tiger,yes
-33,Sweep the letter into the square without touching anything red,object to sweep,object color,magma,no
-34,Sweep the letter into the square without touching anything red,object to sweep,object color,rainbow,no
+33,Sweep the letter into the square without touching anything red,object to sweep,object color,magma,yes
+34,Sweep the letter into the square without touching anything red,object to sweep,object color,rainbow,yes
 35,Sweep the letter into the square without touching anything red,object to sweep,object color,blue,yes
 36,Sweep the letter into the square without touching anything red,object to sweep,object color,cyan,yes
 37,Sweep the letter into the square without touching anything red,object to sweep,object color,green,yes
@@ -41,7 +41,7 @@
 39,Sweep the letter into the square without touching anything red,object to sweep,object color,orange,yes
 40,Sweep the letter into the square without touching anything red,object to sweep,object color,pink,yes
 41,Sweep the letter into the square without touching anything red,object to sweep,object color,purple,yes
-42,Sweep the letter into the square without touching anything red,object to sweep,object color,red,no
+42,Sweep the letter into the square without touching anything red,object to sweep,object color,red,yes
 43,Sweep the letter into the square without touching anything red,object to sweep,object color,yellow,yes
 44,Sweep the letter into the square without touching anything red,object to sweep,object color,dark blue,yes
 45,Sweep the letter into the square without touching anything red,object to sweep,object color,dark cyan,yes
@@ -51,10 +51,10 @@
 49,Sweep the letter into the square without touching anything red,object to sweep,object color,dark purple,yes
 50,Sweep the letter into the square without touching anything red,object to sweep,object color,dark red,yes
 51,Sweep the letter into the square without touching anything red,object to sweep,object color,dark yellow,yes
-52,Sweep the letter into the square without touching anything red,object to sweep,object color,red and yellow stripe,no
-53,Sweep the letter into the square without touching anything red,object to sweep,object color,red and green stripe,no
-54,Sweep the letter into the square without touching anything red,object to sweep,object color,red and blue stripe,no
-55,Sweep the letter into the square without touching anything red,object to sweep,object color,red and purple stripe,no
+52,Sweep the letter into the square without touching anything red,object to sweep,object color,red and yellow stripe,yes
+53,Sweep the letter into the square without touching anything red,object to sweep,object color,red and green stripe,yes
+54,Sweep the letter into the square without touching anything red,object to sweep,object color,red and blue stripe,yes
+55,Sweep the letter into the square without touching anything red,object to sweep,object color,red and purple stripe,yes
 56,Sweep the letter into the square without touching anything red,object to sweep,object color,yellow and green stripe,yes
 57,Sweep the letter into the square without touching anything red,object to sweep,object color,yellow and blue stripe,yes
 58,Sweep the letter into the square without touching anything red,object to sweep,object color,yellow and purple stripe,yes
