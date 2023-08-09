@@ -42,6 +42,12 @@ class Rotate(RotateTheObjBase):
         | TextureEntry
         | list[TextureEntry]
         | None = None,
+        possible_distractor_obj: str | list[str] | ObjEntry | list[ObjEntry] | None = None,
+        possible_distractor_obj_texture: str
+        | list[str]
+        | TextureEntry
+        | list[TextureEntry]
+        | None = None,
         # ====== general ======
         obs_img_views: str | list[str] | None = None,
         obs_img_size: tuple[int, int] = (128, 256),
@@ -98,6 +104,8 @@ class Rotate(RotateTheObjBase):
             possible_angles_of_rotation=possible_angles_of_rotation,
             possible_dragged_obj=possible_dragged_obj,
             possible_dragged_obj_texture=possible_dragged_obj_texture,
+            possible_distractor_obj=possible_distractor_obj,
+            possible_distractor_obj_texture=possible_distractor_obj_texture,
             obs_img_views=obs_img_views,
             obs_img_size=obs_img_size,
             placeholder_img_size=placeholder_img_size,

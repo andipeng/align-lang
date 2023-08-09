@@ -19,7 +19,7 @@ class ObjPedia(Enum):
             low=(0.17, 0.17, 0),
             high=(0.17, 0.17, 0),
         ),
-        symmetry=0,
+        symmetry=1 / 4 * math.pi,
         profile=ProfilePedia.CIRCLE_LIKE,
     )
     BLOCK = ObjEntry(
@@ -74,6 +74,7 @@ class ObjPedia(Enum):
         ),
         from_template=True,
         replace_fn=container_replace_fn,
+        symmetry=1 / 4 * math.pi,
         profile=ProfilePedia.SQUARE_LIKE,
     )
     THREE_SIDED_RECTANGLE = ObjEntry(
@@ -345,7 +346,7 @@ class ObjPedia(Enum):
         ),
         from_template=True,
         replace_fn=google_scanned_obj_fn("frypan.obj"),
-        symmetry=0,
+        symmetry=1 / 4 * math.pi,
         profile=ProfilePedia.CIRCLE_LIKE,
     )
 
