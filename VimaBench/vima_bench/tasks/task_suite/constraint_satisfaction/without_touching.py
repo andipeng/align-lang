@@ -95,6 +95,7 @@ class WithoutTouching(SweepObjectsToZoneBase):
         sampled_num_swept_objs = sorted(self.task_meta["sample_prob"])[
             self.rng.choice(len(probs), p=probs)
         ]
+        sampled_num_swept_objs = 1 #ANDI
 
         sampled_swept_obj = self.possible_dragged_obj.value
         sampled_swept_obj_texture = self.rng.choice(
@@ -133,7 +134,7 @@ class WithoutTouching(SweepObjectsToZoneBase):
             high=sampled_base_obj.size_range.high,
         )
         base_obj_sampled_size[0] *= 0.86
-        base_obj_sampled_size[1] *= 1.5
+        base_obj_sampled_size[1] *= 1.7#1.5 ANDI
 
         # fixed base pose
         base_pos_x = self.bounds[0, 0] + 0.14
@@ -307,7 +308,7 @@ class WithoutTouching(SweepObjectsToZoneBase):
         # add distractors at sampled_distractor_obj_born_pos
         self.distractors_pts = {}
         not_reach_max_times = False
-        for i in range(self.REJECT_SAMPLING_MAX_TIMES):
+        for i in range(0): #ANDI #range(self.REJECT_SAMPLING_MAX_TIMES):
             poses = []
             # add distractors at sampled_distractor_obj_born_pos
             for _ in range(sampled_num_swept_objs):
@@ -346,8 +347,8 @@ class WithoutTouching(SweepObjectsToZoneBase):
             if len(self.distractors_pts.keys()) == sampled_num_swept_objs:
                 not_reach_max_times = True
                 break
-        if not not_reach_max_times:
-            raise ValueError("Error in sampling distractor objects")
+        #if not not_reach_max_times: ANDI
+        #    raise ValueError("Error in sampling distractor objects")
 
         # store constraint
         margin = swept_obj_size[0]
