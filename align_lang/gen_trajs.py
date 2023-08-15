@@ -6,6 +6,7 @@ import pickle
 import argparse
 from tqdm import tqdm
 import numpy as np
+import statistics
 
 from align_lang.utils import downsize_obs, flatten_act
 
@@ -44,8 +45,11 @@ parser.add_argument('--save_dir', type=str, default='expert_data')
 parser.add_argument('--task', type=str, default='visual_manipulation')
 parser.add_argument('--num_trajs', type=int, default=10)
 parser.add_argument('--max_steps', type=int, default=1)
-parser.add_argument('--dart', type=bool, default=False)
 parser.add_argument('--device', type=str, default='cpu')
+parser.add_argument('--dart', type=bool, default=True)
+parser.add_argument('--dart_mu', type=int, default=0.0)
+parser.add_argument('--dart_std', type=int, default=0.05)
+parser.add_argument('--dart_samples', type=int, default=5)
 args = parser.parse_args()
 
 ########################## LANG DEF ####################################
@@ -100,6 +104,23 @@ def gen_trajs(env, num_trajs, task_name, task_kwargs, goal):
         traj['goals'] = np.array(traj['goals'])
         traj['meta'] = np.array(traj['meta'])
         trajs.append(traj)
+
+    if args.dart: # iterates through and adds Gaussian noise to trajectories
+        for traj in trajs:
+            for sample in range(args.dart_samples):
+                noisy_traj = {'obs': [],'acts': [], 'goals':[], 'meta': []}
+                noisy_traj['meta'] = env.meta_info
+                
+                # injects Gaussian noise
+                for action in traj['acts']:
+                    noise = np.random.normal(args.dart_mu, args.dart_std*np.std(action), action.shape)
+                    action_noisy = action + noise
+                    noisy_traj['acts'].append(action_noisy)
+                for state in traj['obs']:
+                    noise = np.random.normal(args.dart_mu, args.dart_std*np.std(state), state.shape)
+                    state_noisy = state + noise
+                    noisy_traj['obs'].append(state_noisy)
+                trajs.append(noisy_traj)
     return trajs
 
 trajs = gen_trajs(env=env, num_trajs=args.num_trajs, task_name=args.task, task_kwargs=task_kwargs, goal=lang_embed)
