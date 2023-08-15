@@ -2,6 +2,7 @@ import math
 import os
 import pickle
 import numpy as np
+import cv2
 
 def downsize_obs(obs):
     cv2.imwrite('temp.jpg', obs)
@@ -13,7 +14,7 @@ def flatten_act(action):
     return np.concatenate(list(action.values())).ravel()
 
 # reconstructs actions for simulator
-def reconstruct_act(action):
+def reconstruct_act(action, env):
     reconst_action = {}
     reconst_action['pose0_position'] = np.array(action[0:2])
     reconst_action['pose0_rotation'] = np.array(action[2:6])
