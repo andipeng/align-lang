@@ -18,14 +18,6 @@ phi_hat = {
     'block': ['red'],
 }
 
-
-"""
-set(
-    {"object": "tomato", "color": ""},
-    {""}
-)
-"""
-
 ########################## TASK DEF ####################################
 visual_man_task_kwargs = {'num_dragged_obj': 1,
      'num_base_obj': 1,
@@ -60,16 +52,15 @@ parser.add_argument('--mask', type=bool, default=False)
 parser.add_argument('--num_trajs', type=int, default=10)
 parser.add_argument('--max_steps', type=int, default=1)
 parser.add_argument('--device', type=str, default='cpu')
-parser.add_argument('--dart', type=bool, default=True)
+parser.add_argument('--dart', type=bool, default=False)
 parser.add_argument('--dart_mu', type=int, default=0.0)
 parser.add_argument('--dart_std', type=int, default=0.05)
 parser.add_argument('--dart_samples', type=int, default=5)
 args = parser.parse_args()
 
 ########################## LANG DEF ####################################
-
 lang_model = SentenceTransformer('all-MiniLM-L6-v2', device=args.device)
-lang_goal = 'bring me the bowl'
+lang_goal = 'bring me the red block'
 lang_embed = lang_model.encode(lang_goal)
 
 ########################################################################

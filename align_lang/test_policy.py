@@ -29,12 +29,12 @@ visual_man_task_kwargs = {'num_dragged_obj': 1,
      'num_other_obj': 0,
      'dragged_obj_loc': [1],
      'base_obj_loc': [4],
-     'third_obj_loc' : [1],
+     'third_obj_loc' : [2],
      'fourth_obj_loc' : [3],
-     'possible_dragged_obj': ['bowl'],
+     'possible_dragged_obj': ['block'],
      'possible_dragged_obj_texture': ['red'],
      'possible_base_obj': ['pan'],
-     'possible_base_obj_texture': ['blue'],
+     'possible_base_obj_texture': ['tiger'],
      'possible_third_obj': ['bowl'],
      'possible_third_obj_texture': ['blue'],
      'possible_fourth_obj': ['pentagon'],
@@ -61,8 +61,8 @@ record_cfg = {'save_video': True,
 ########################## VIDEO RECORD ####################################
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--policy_dir', type=str, default='results')
-parser.add_argument('--mask', type=bool, default=True)
+parser.add_argument('--policy_dir', type=str, default='policies')
+parser.add_argument('--policy', type=str, default='GCBC')
 parser.add_argument('--task', type=str, default='visual_manipulation')
 parser.add_argument('--num_test_trajs', type=int, default=1)
 parser.add_argument('--video', type=bool, default=True)
@@ -74,7 +74,7 @@ args = parser.parse_args()
 ########################## LANG DEF ####################################
 
 lang_model = SentenceTransformer('all-MiniLM-L6-v2', device=args.device)
-lang_goal = 'bring me the bowl'
+lang_goal = 'bring me the block'
 lang_embed = lang_model.encode(lang_goal)
 
 ########################################################################
@@ -94,7 +94,7 @@ print("========================================")
 print("Loading policy")
 print("========================================")
 
-policy = torch.load(args.policy_dir + '/policy.pt', map_location=args.device)
+policy = torch.load(args.policy_dir + '/' + args.policy + '_policy.pt', map_location=args.device)
 policy.eval()
 
 successes = []
@@ -113,28 +113,31 @@ for i in tqdm(range(args.num_test_trajs)):
         segm = obs['segm']['top']
         s_hat = process_segm(segm, phi_hat, env.meta_info['obj_id_to_info'])
         im = Image.fromarray(s_hat.astype(np.uint8))
-        im.save('rollouts_gcbc/'+str(i)+"/"+str(step)+'_mask.jpg')
+        im.save('rollouts/'+str(i)+"/"+str(step)+'_mask.jpg')
             
         # saves rgb image as well
         top_obs = obs['rgb']['top']
         top_obs = process_obs(top_obs)
         im = Image.fromarray(top_obs)
-        im.save('rollouts_gcbc/'+str(i)+"/"+str(step)+'.jpg')
+        im.save('rollouts/'+str(i)+"/"+str(step)+'.jpg')
             
         # uses either s_hat or true obs
-        state = s_hat if args.mask else top_obs
+        if args.policy == 'LGA':
+            state = s_hat
+        else:
+            state = top_obs
             
-        state = torch.Tensor(state[None]).to(device)
-        goal = torch.Tensor(lang_embed[None]).to(device)
-        if args.mask:
+        state = torch.Tensor(state[None]).to(args.device)
+        if args.policy == 'LGA':
             action = policy(state).cpu().detach().numpy()[0]
         else:
+            goal = torch.Tensor(lang_embed[None]).to(args.device)
             action = policy(state,goal).cpu().detach().numpy()[0]
             
-        rollouts['actions'].append(action)
-        rollouts['action_starts'].append(action[0:2].copy())
-        rollouts['action_ends'].append(action[6:8].copy())
-        obs, _, done, info = env.step(action=reconstruct_act(action), skip_oracle=False)
+        #rollouts['actions'].append(action)
+        #rollouts['action_starts'].append(action[0:2].copy())
+        #rollouts['action_ends'].append(action[6:8].copy())
+        obs, _, done, info = env.step(action=reconstruct_act(action, env), skip_oracle=False)
         
     if done:
         successes.append(1)
@@ -148,13 +151,13 @@ for i in tqdm(range(args.num_test_trajs)):
     segm = obs['segm']['top']
     s_hat = process_segm(segm, phi_hat, env.meta_info['obj_id_to_info'])
     im = Image.fromarray(s_hat.astype(np.uint8))
-    im.save('rollouts_gcbc/'+str(i)+"/"+str(step+1)+'_mask.jpg')
+    im.save('rollouts/'+str(i)+"/"+str(step+1)+'_mask.jpg')
             
     # saves rgb image as well
     top_obs = obs['rgb']['top']
     top_obs = process_obs(top_obs)
     im = Image.fromarray(top_obs)
-    im.save('rollouts_gcbc/'+str(i)+"/"+str(step+1)+'.jpg')
+    im.save('rollouts/'+str(i)+"/"+str(step+1)+'.jpg')
 
 env.close()
 
