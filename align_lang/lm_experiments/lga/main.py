@@ -120,28 +120,20 @@ object_colors = """
   - purple paisley"""
 
 rules=[
-    "Bring me the red heart",
-    "Bring me the heart",
-    "Bring me the tiger-colored object",
-    "Bring me a letter from the word 'letter'",
-    # "Bring me a vowel",
-    "Bring me a consonant with a warm color on it",
-    "Bring me a vowel with multiple colors on it",
-    # "Bring me a basic shape. If there are multiple, bring the one with the most sides",
-    # "Bring me a letter. If there are multiple, bring the one that comes earliest in the alphabet",
-    "Bring me something to drink water out of",
-    "Bring me something I can put food in",
-    "Rotate the red heart",
-    "Rotate a letter from the word 'letter'",
-    "Rotate something I can put food in",
-    "Sweep the hexagon into the square without touching the red pan",
-    "Sweep the letter into the square without touching the pan",
-    "Sweep the letter into the square without touching anything red",
-    # "Bring me something I could find in a kitchen",
-    # "Bring me the dark solid-colored bowl that has my favorite color",
-    # "Bring me a pentagon made of the same material as my dream patio",
-    # "Bring me a letter I could use to spell my name",
-    # "Sweep the L-shaped block into the goal, avoiding the magma ring",
+    #"Bring me the red heart",
+    #"Bring me the heart",
+    #"Bring me the tiger-colored object",
+    #"Bring me a letter from the word 'letter'",
+    #"Bring me a consonant with a warm color on it",
+    #"Bring me a vowel with multiple colors on it",
+    #"Bring me something to drink water out of",
+    #"Bring me something I can put food in",
+    #"Rotate the red heart",
+    #"Rotate a letter from the word 'letter'",
+    #"Rotate something I can put food in",
+    #"Sweep the hexagon into the square without touching the red pan",
+    #"Sweep the letter into the square without touching the pan",
+    #"Sweep the letter into the square without touching anything red",
 ]
 
 
@@ -184,8 +176,8 @@ def main():
     openai_cache = load_openai_cache(openai_cache_file)
     for r, rule in tqdm(enumerate(rules)):
         print(rule)
-        if r > 10:
-            continue
+        # if r > 10:
+        #     continue
         rows=[]
         messages = generate_prompt_verbs(rule)
         choices, _ = openai_completion(messages, engine, 0.0, use_azure, openai_cache, openai_cache_file)
