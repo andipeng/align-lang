@@ -4,11 +4,24 @@ import pickle
 import numpy as np
 import cv2
 
-def downsize_obs(obs):
+def process_obs(obs):
+    obs = np.rollaxis(obs,0,3)
     cv2.imwrite('temp.jpg', obs)
     img = cv2.imread('temp.jpg')
-    downsized_obs = cv2.resize(img, dsize=(72, 36), interpolation=cv2.INTER_CUBIC)
-    return downsized_obs
+    processed_obs = cv2.resize(img, dsize=(72, 36), interpolation=cv2.INTER_CUBIC)
+    return processed_obs
+
+def process_segm(segm, phi_hat, env_obj_info):
+    # searches if obj + properties are in phi_hat, replaces with mask
+    for obj in env_obj_info:
+        if env_obj_info[obj]['obj_name'] in phi_hat.keys():
+            if env_obj_info[obj]['texture_name'] in phi_hat[env_obj_info[obj]['obj_name']]:
+                segm[segm == obj] = 255
+    segm[segm < 255] = 0
+    # reshape + resize
+    segm = cv2.merge((segm,segm,segm))
+    segm = cv2.resize(segm, dsize=(72, 36), interpolation=cv2.INTER_LINEAR_EXACT)
+    return segm
 
 def flatten_act(action):
     return np.concatenate(list(action.values())).ravel()

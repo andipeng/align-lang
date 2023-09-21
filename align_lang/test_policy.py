@@ -14,12 +14,16 @@ from torch import distributions as pyd
 from sentence_transformers import SentenceTransformer
 
 from align_lang.policies import GCBCPolicy, BCPolicy
-from align_lang.utils import downsize_obs, reconstruct_act
+from align_lang.utils import process_obs, process_segm, reconstruct_act
 
 import vima_bench
 
-########################## TASK DEF ####################################
+########################## PHI_HAT ####################################
+phi_hat = {
+    'block': ['red'],
+}
 
+########################## TASK DEF ####################################
 visual_man_task_kwargs = {'num_dragged_obj': 1,
      'num_base_obj': 1,
      'num_other_obj': 0,
@@ -58,6 +62,7 @@ record_cfg = {'save_video': True,
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--policy_dir', type=str, default='results')
+parser.add_argument('--mask', type=bool, default=True)
 parser.add_argument('--task', type=str, default='visual_manipulation')
 parser.add_argument('--num_test_trajs', type=int, default=1)
 parser.add_argument('--video', type=bool, default=True)
@@ -104,22 +109,32 @@ for i in tqdm(range(args.num_test_trajs)):
         video_name = str(i)
         env.start_rec(video_name)
     for step in range(args.max_steps):
+        # constructs s_hat from phi_hat
         segm = obs['segm']['top']
+        s_hat = process_segm(segm, phi_hat, env.meta_info['obj_id_to_info'])
+        im = Image.fromarray(s_hat.astype(np.uint8))
+        im.save('rollouts_gcbc/'+str(i)+"/"+str(step)+'_mask.jpg')
+            
+        # saves rgb image as well
         top_obs = obs['rgb']['top']
-        top_obs = np.rollaxis(top_obs,0,3)
-
-        first_obs = top_obs.copy()
-
+        top_obs = process_obs(top_obs)
         im = Image.fromarray(top_obs)
-        im.save('rollouts/'+str(i)+"/"+str(step)+'.jpg')
-        top_obs = downsize_obs(top_obs)
-        state = torch.Tensor(top_obs[None]).to(args.device)
-        goal = torch.Tensor(lang_embed[None]).to(args.device)
-        action = policy(state,goal).cpu().detach().numpy()[0] #GCBC
-        #action = policy(state).cpu().detach().numpy()[0] #BC
-
-        obs, _, done, info = env.step(action=reconstruct_act(action, env), skip_oracle=False)
-        segm = obs['segm']['top']
+        im.save('rollouts_gcbc/'+str(i)+"/"+str(step)+'.jpg')
+            
+        # uses either s_hat or true obs
+        state = s_hat if args.mask else top_obs
+            
+        state = torch.Tensor(state[None]).to(device)
+        goal = torch.Tensor(lang_embed[None]).to(device)
+        if args.mask:
+            action = policy(state).cpu().detach().numpy()[0]
+        else:
+            action = policy(state,goal).cpu().detach().numpy()[0]
+            
+        rollouts['actions'].append(action)
+        rollouts['action_starts'].append(action[0:2].copy())
+        rollouts['action_ends'].append(action[6:8].copy())
+        obs, _, done, info = env.step(action=reconstruct_act(action), skip_oracle=False)
         
     if done:
         successes.append(1)
@@ -129,11 +144,17 @@ for i in tqdm(range(args.num_test_trajs)):
     if args.video:
         env.end_rec()
         
+    # constructs s_hat from phi_hat
+    segm = obs['segm']['top']
+    s_hat = process_segm(segm, phi_hat, env.meta_info['obj_id_to_info'])
+    im = Image.fromarray(s_hat.astype(np.uint8))
+    im.save('rollouts_gcbc/'+str(i)+"/"+str(step+1)+'_mask.jpg')
+            
+    # saves rgb image as well
     top_obs = obs['rgb']['top']
-    top_obs = np.rollaxis(top_obs,0,3)
-        
+    top_obs = process_obs(top_obs)
     im = Image.fromarray(top_obs)
-    im.save('rollouts/'+str(i)+"/"+str(step+1)+'.jpg')
+    im.save('rollouts_gcbc/'+str(i)+"/"+str(step+1)+'.jpg')
 
 env.close()
 

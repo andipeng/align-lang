@@ -17,6 +17,7 @@ from align_lang.policies import GCBCPolicy, BCPolicy
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--policy', type=str, default='GCBC')
+parser.add_argument('--mask', type=bool, default=True)
 parser.add_argument('--save_dir', type=str, default='results')
 parser.add_argument('--data_dir', type=str, default='expert_data')
 parser.add_argument('--task', type=str, default='visual_manipulation')
@@ -44,6 +45,8 @@ print("========================================")
 
 if args.policy == 'GCBC':
     policy = GCBCPolicy(act_size, args.hidden_layer_size)
+elif args.mask:
+    policy = BCPolicy(act_size, args.hidden_layer_size)
 policy.to(args.device)
 
 criterion = nn.MSELoss()
@@ -63,7 +66,10 @@ for epoch in range(args.epochs):  # loop over the dataset multiple times
 
         t_idx = np.random.randint(len(trajs), size=(args.batch_size,)) # Indices of traj
         t_idx_pertraj = np.random.randint(1, size=(args.batch_size,)) # Indices of timesteps in traj
-        t_states = np.concatenate([trajs[c_idx]['obs'][t_idx][None] for (c_idx, t_idx) in zip(t_idx, t_idx_pertraj)])
+        if args.mask:
+            t_states = np.concatenate([trajs[c_idx]['mask_obs'][t_idx][None] for (c_idx, t_idx) in zip(t_idx, t_idx_pertraj)])
+        else:
+            t_states = np.concatenate([trajs[c_idx]['obs'][t_idx][None] for (c_idx, t_idx) in zip(t_idx, t_idx_pertraj)])
         t_goals = np.concatenate([trajs[c_idx]['goals'][t_idx][None] for (c_idx, t_idx) in zip(t_idx, t_idx_pertraj)])
         t_actions = np.concatenate([trajs[c_idx]['acts'][t_idx][None] for (c_idx, t_idx) in zip(t_idx, t_idx_pertraj)])
    
@@ -71,8 +77,10 @@ for epoch in range(args.epochs):  # loop over the dataset multiple times
         t_goals = torch.Tensor(t_goals).float().to(args.device)
         t_actions = torch.Tensor(t_actions).float().to(args.device)
         
-        a_preds = policy(t_states, t_goals)
-        #a_preds = policy(t_states)
+        if args.mask:
+            a_preds = policy(t_states)
+        elif args.policy == 'GCBC':
+            a_preds = policy(t_states, t_goals)
         loss = torch.mean(torch.linalg.norm(a_preds - t_actions, dim=-1)) # supervised learning loss
         
         loss.backward()
