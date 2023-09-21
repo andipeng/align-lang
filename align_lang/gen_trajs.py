@@ -18,6 +18,14 @@ phi_hat = {
     'block': ['red'],
 }
 
+
+"""
+set(
+    {"object": "tomato", "color": ""},
+    {""}
+)
+"""
+
 ########################## TASK DEF ####################################
 visual_man_task_kwargs = {'num_dragged_obj': 1,
      'num_base_obj': 1,

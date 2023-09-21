@@ -179,10 +179,8 @@ def generate_prompt_object_abstractions(preferences, rule, object_category, grou
 A user has the following preference rules: 
 {preferences}
 
-Object types:
-{object_list}
-Object colors:
-{object_colors}
+Features:
+{features}
     """
     user_prompt = f"""The command is "{rule}". In an instantiation of the environment that contains only some subset of the object types and colors, could the {object_category} have {group} "{candidate}"? Recall that the object types and colors are mutually exclusive. Think step-by-step and then finish with a new line that says "Final answer:" followed by "yes" or "no" and nothing else. If unsure, make your best guess."""
     return [
