@@ -16,7 +16,7 @@ from sentence_transformers import SentenceTransformer
 from align_lang.policies import GCBCPolicy, BCPolicy
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--policy', type=str, default='GCBC') # GCBC, BC, LGA
+parser.add_argument('--policy', type=str, default='gcbc') # gcbc, bc, lga
 parser.add_argument('--save_dir', type=str, default='policies')
 parser.add_argument('--data_dir', type=str, default='expert_data')
 parser.add_argument('--task', type=str, default='visual_manipulation')
@@ -42,7 +42,7 @@ print("========================================")
 print("Training Policy with %d trajectories" % len(trajs))
 print("========================================")
 
-if args.policy == 'GCBC':
+if args.policy == 'gcbc':
     policy = GCBCPolicy(act_size, args.hidden_layer_size)
 else:
     policy = BCPolicy(act_size, args.hidden_layer_size)
@@ -65,7 +65,7 @@ for epoch in range(args.epochs):  # loop over the dataset multiple times
 
         t_idx = np.random.randint(len(trajs), size=(args.batch_size,)) # Indices of traj
         t_idx_pertraj = np.random.randint(1, size=(args.batch_size,)) # Indices of timesteps in traj
-        if args.policy == 'LGA':
+        if args.policy == 'lga':
             t_states = np.concatenate([trajs[c_idx]['mask_obs'][t_idx][None] for (c_idx, t_idx) in zip(t_idx, t_idx_pertraj)])
         else:
             t_states = np.concatenate([trajs[c_idx]['obs'][t_idx][None] for (c_idx, t_idx) in zip(t_idx, t_idx_pertraj)])
@@ -76,7 +76,7 @@ for epoch in range(args.epochs):  # loop over the dataset multiple times
         t_goals = torch.Tensor(t_goals).float().to(args.device)
         t_actions = torch.Tensor(t_actions).float().to(args.device)
         
-        if args.policy == 'GCBC':
+        if args.policy == 'gcbc':
             a_preds = policy(t_states, t_goals)
         else:
             a_preds = policy(t_states)

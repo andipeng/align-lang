@@ -15,42 +15,11 @@ from sentence_transformers import SentenceTransformer
 
 from align_lang.policies import GCBCPolicy, BCPolicy
 from align_lang.utils import process_obs, process_segm, reconstruct_act
+from align_lang.configs.test import pick_config, place_config, rotate_config, sweep_config
 
 import vima_bench
 
-########################## PHI_HAT ####################################
-phi_hat = {
-    'block': ['red'],
-}
-
-########################## TASK DEF ####################################
-visual_man_task_kwargs = {'num_dragged_obj': 1,
-     'num_base_obj': 1,
-     'num_other_obj': 0,
-     'dragged_obj_loc': [1],
-     'base_obj_loc': [4],
-     'third_obj_loc' : [2],
-     'fourth_obj_loc' : [3],
-     'possible_dragged_obj': ['block'],
-     'possible_dragged_obj_texture': ['red'],
-     'possible_base_obj': ['pan'],
-     'possible_base_obj_texture': ['tiger'],
-     'possible_third_obj': ['bowl'],
-     'possible_third_obj_texture': ['blue'],
-     'possible_fourth_obj': ['pentagon'],
-     'possible_fourth_obj_texture': ['blue']}
-rotate_task_kwargs = {'num_dragged_obj': 1,
-               'num_distractors_obj': 0,
-               'possible_angles_of_rotation': 120,
-               'possible_dragged_obj': ['pan'],
-               'possible_dragged_obj_texture': ['blue']}
-sweep_task_kwargs = {'num_dragged_obj': 1,
-               'num_distractors_obj': 0,
-               'possible_dragged_obj': ['pan'],
-               'possible_dragged_obj_texture': ['blue']}
-
 ########################## VIDEO RECORD ####################################
-
 record_cfg = {'save_video': True,
      'save_video_path': 'rollouts/',
      'view': 'front',
@@ -58,37 +27,33 @@ record_cfg = {'save_video': True,
      'video_height': 320,
      'video_width': 368}
 
-########################## VIDEO RECORD ####################################
-
 parser = argparse.ArgumentParser()
 parser.add_argument('--policy_dir', type=str, default='policies')
-parser.add_argument('--policy', type=str, default='GCBC')
-parser.add_argument('--task', type=str, default='visual_manipulation')
+parser.add_argument('--policy', type=str, default='gcbc')
+parser.add_argument('--task', type=str, default='pick')
 parser.add_argument('--num_test_trajs', type=int, default=1)
 parser.add_argument('--video', type=bool, default=True)
-parser.add_argument('--max_steps', type=int, default=1)
 parser.add_argument('--device', type=str, default='cpu')
 
 args = parser.parse_args()
 
-########################## LANG DEF ####################################
+################################### TASK SETUP #################################
+
+if args.task == 'pick':
+    config = pick_config
+elif args.task == 'place':
+    config = place_config
+elif args.task == 'rotate':
+    config = rotate_config
+elif args.mask == 'sweep':
+    config = sweep_config
+
+env = vima_bench.make(task_name=config.task_name,task_kwargs=config.task_kwargs,record_cfg=record_cfg,hide_arm_rgb=config.hide_arm_rgb)
 
 lang_model = SentenceTransformer('all-MiniLM-L6-v2', device=args.device)
-lang_goal = 'bring me the block'
-lang_embed = lang_model.encode(lang_goal)
+lang_embed = lang_model.encode(config.lang_goal)
 
 ########################################################################
-
-#record_gui=True, display_debug_window=True, hide_arm_rgb=False
-if args.task == 'visual_manipulation':
-    task_kwargs = visual_man_task_kwargs
-    env = vima_bench.make(task_name=args.task,task_kwargs=task_kwargs,hide_arm_rgb=False,record_cfg=record_cfg)
-elif args.task == 'rotate':
-    task_kwargs = rotate_task_kwargs
-    env = vima_bench.make(task_name=args.task,task_kwargs=rotate_task_kwargs,hide_arm_rgb=False,record_cfg=record_cfg)
-elif args.task == 'sweep_without_touching':
-    task_kwargs = sweep_task_kwargs
-    env = vima_bench.make(task_name=args.task,task_kwargs=sweep_task_kwargs,hide_arm_rgb=False,record_cfg=record_cfg)
 
 print("========================================")
 print("Loading policy")
@@ -102,16 +67,15 @@ successes = []
 for i in tqdm(range(args.num_test_trajs)):
     os.makedirs('rollouts/' + str(i), exist_ok=True)
     obs = env.reset()
-    obj_type = env.meta_info['obj_id_to_info'][6]['obj_name']
-    goal_embed = lang_model.encode(obj_type)
+    #obj_type = env.meta_info['obj_id_to_info'][6]['obj_name']
     
     if args.video:
         video_name = str(i)
         env.start_rec(video_name)
-    for step in range(args.max_steps):
+    for step in range(config.max_steps):
         # constructs s_hat from phi_hat
         segm = obs['segm']['top']
-        s_hat = process_segm(segm, phi_hat, env.meta_info['obj_id_to_info'])
+        s_hat = process_segm(segm, config.phi_hat, env.meta_info['obj_id_to_info'])
         im = Image.fromarray(s_hat.astype(np.uint8))
         im.save('rollouts/'+str(i)+"/"+str(step)+'_mask.jpg')
             
@@ -122,21 +86,18 @@ for i in tqdm(range(args.num_test_trajs)):
         im.save('rollouts/'+str(i)+"/"+str(step)+'.jpg')
             
         # uses either s_hat or true obs
-        if args.policy == 'LGA':
+        if args.policy == 'lga':
             state = s_hat
         else:
             state = top_obs
             
         state = torch.Tensor(state[None]).to(args.device)
-        if args.policy == 'LGA':
+        if args.policy == 'lga':
             action = policy(state).cpu().detach().numpy()[0]
         else:
             goal = torch.Tensor(lang_embed[None]).to(args.device)
             action = policy(state,goal).cpu().detach().numpy()[0]
             
-        #rollouts['actions'].append(action)
-        #rollouts['action_starts'].append(action[0:2].copy())
-        #rollouts['action_ends'].append(action[6:8].copy())
         obs, _, done, info = env.step(action=reconstruct_act(action, env), skip_oracle=False)
         
     if done:
@@ -149,7 +110,7 @@ for i in tqdm(range(args.num_test_trajs)):
         
     # constructs s_hat from phi_hat
     segm = obs['segm']['top']
-    s_hat = process_segm(segm, phi_hat, env.meta_info['obj_id_to_info'])
+    s_hat = process_segm(segm, config.phi_hat, env.meta_info['obj_id_to_info'])
     im = Image.fromarray(s_hat.astype(np.uint8))
     im.save('rollouts/'+str(i)+"/"+str(step+1)+'_mask.jpg')
             

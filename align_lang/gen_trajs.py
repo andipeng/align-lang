@@ -9,75 +9,43 @@ import numpy as np
 import statistics
 
 from align_lang.utils import process_obs, process_segm, flatten_act
+from align_lang.configs.train import pick_config, place_config, rotate_config, sweep_config
 
 import vima_bench
 from sentence_transformers import SentenceTransformer
 
-########################## PHI_HAT ####################################
-phi_hat = {
-    'block': ['red'],
-}
-
-########################## TASK DEF ####################################
-visual_man_task_kwargs = {'num_dragged_obj': 1,
-     'num_base_obj': 1,
-     'num_other_obj': 0,
-     'dragged_obj_loc': [1],
-     'base_obj_loc': [4],
-     'third_obj_loc' : [1],
-     'fourth_obj_loc' : [3],
-     'possible_dragged_obj': ['block'],
-     'possible_dragged_obj_texture': ['red'],
-     'possible_base_obj': ['pan'],
-     'possible_base_obj_texture': ['tiger'],
-     'possible_third_obj': ['bowl'],
-     'possible_third_obj_texture': ['blue'],
-     'possible_fourth_obj': ['pentagon'],
-     'possible_fourth_obj_texture': ['blue']}
-rotate_task_kwargs = {'num_dragged_obj': 1,
-               'num_distractors_obj': 0,
-               'possible_angles_of_rotation': 120,
-               'possible_dragged_obj': ['pan'],
-               'possible_dragged_obj_texture': ['blue']}
-sweep_task_kwargs = {'num_dragged_obj': 1,
-               'num_distractors_obj': 0,
-               'possible_dragged_obj': ['pan'],
-               'possible_dragged_obj_texture': ['blue']}
-########################## TASK DEF ####################################
-
 parser = argparse.ArgumentParser()
 parser.add_argument('--save_dir', type=str, default='expert_data')
-parser.add_argument('--task', type=str, default='visual_manipulation')
+parser.add_argument('--task', type=str, default='pick')
 parser.add_argument('--mask', type=bool, default=False)
 parser.add_argument('--num_trajs', type=int, default=10)
-parser.add_argument('--max_steps', type=int, default=1)
 parser.add_argument('--device', type=str, default='cpu')
 parser.add_argument('--dart', type=bool, default=False)
-parser.add_argument('--dart_mu', type=int, default=0.0)
-parser.add_argument('--dart_std', type=int, default=0.05)
+parser.add_argument('--dart_mu', type=float, default=0.0)
+parser.add_argument('--dart_std', type=float, default=0.05)
 parser.add_argument('--dart_samples', type=int, default=5)
 args = parser.parse_args()
-
-########################## LANG DEF ####################################
-lang_model = SentenceTransformer('all-MiniLM-L6-v2', device=args.device)
-lang_goal = 'bring me the red block'
-lang_embed = lang_model.encode(lang_goal)
-
-########################################################################
 
 if not os.path.exists(args.save_dir):
     os.mkdir(args.save_dir)
 
-#record_gui=True, display_debug_window=True, hide_arm_rgb=False
-if args.task == 'visual_manipulation':
-    task_kwargs = visual_man_task_kwargs
-    env = vima_bench.make(task_name=args.task,task_kwargs=task_kwargs,hide_arm_rgb=False)
+################################### TASK SETUP #################################
+
+if args.task == 'pick':
+    config = pick_config
+elif args.task == 'place':
+    config = place_config
 elif args.task == 'rotate':
-    task_kwargs = rotate_task_kwargs
-    env = vima_bench.make(task_name=args.task,task_kwargs=rotate_task_kwargs,hide_arm_rgb=False)
-elif args.task == 'sweep_without_touching':
-    task_kwargs = sweep_task_kwargs
-    env = vima_bench.make(task_name=args.task,task_kwargs=sweep_task_kwargs,hide_arm_rgb=False)
+    config = rotate_config
+elif args.mask == 'sweep':
+    config = sweep_config
+
+env = vima_bench.make(task_name=config.task_name,task_kwargs=config.task_kwargs,record_gui=config.record_gui,hide_arm_rgb=config.hide_arm_rgb)
+
+lang_model = SentenceTransformer('all-MiniLM-L6-v2', device=args.device)
+lang_embed = lang_model.encode(config.lang_goal)
+
+########################################################################
 
 # generates random trajs within specified constraints
 def gen_trajs(env, num_trajs, task_name, task_kwargs, goal, phi_hat):
@@ -90,7 +58,7 @@ def gen_trajs(env, num_trajs, task_name, task_kwargs, goal, phi_hat):
         traj['meta'] = env.meta_info
         obj_type = env.meta_info['obj_id_to_info'][6]['obj_name']
         goal_embed = lang_model.encode(obj_type)
-        for step in range(args.max_steps):
+        for step in range(config.max_steps):
             mask_obs = obs['segm']['top'] # extracts segm
             top_obs = obs['rgb']['top'] # extracts top down view only
             traj['obs'].append(process_obs(top_obs))
@@ -130,6 +98,6 @@ def gen_trajs(env, num_trajs, task_name, task_kwargs, goal, phi_hat):
                 trajs.append(noisy_traj)
     return trajs
 
-trajs = gen_trajs(env=env, num_trajs=args.num_trajs, task_name=args.task, task_kwargs=task_kwargs, goal=lang_embed, phi_hat=phi_hat)
+trajs = gen_trajs(env=env, num_trajs=args.num_trajs, task_name=config.task_name, task_kwargs=config.task_kwargs, goal=lang_embed, phi_hat=config.phi_hat)
 pickle.dump(trajs, open(args.save_dir + '/trajs.pkl', 'wb'))
 env.close()
