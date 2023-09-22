@@ -7,7 +7,7 @@ task_kwargs = {
     'num_dragged_obj': 1,
     'num_base_obj': 1,
     'num_other_obj': 0,
-    'dragged_obj_loc': [1],
+    'dragged_obj_loc': [1,2],
     'base_obj_loc': [4],
     'third_obj_loc' : [1],
     'fourth_obj_loc' : [3],

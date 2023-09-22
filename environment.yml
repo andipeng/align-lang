@@ -17,3 +17,5 @@ dependencies:
   - tqdm
   - seaborn
   - jupyterlab
+  - sentence_transformers
+  - imageio-ffmpeg

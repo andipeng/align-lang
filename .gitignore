@@ -1,3 +1,9 @@
+###### ANDI ADDED
+*.pt
+*.jpg
+rollouts/
+user_study/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
