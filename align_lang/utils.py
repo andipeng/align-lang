@@ -3,6 +3,16 @@ import os
 import pickle
 import numpy as np
 import cv2
+import numpy as np
+
+# function that, given an abstraction function and phi, returns phi_hat
+def apply_abstraction(f, phi):
+    phi_hat = []
+    for obj in phi:
+        if obj[0] in f.keys(): # if found obj
+            if obj[1] in f[obj[0]]: # if found obj color
+                phi_hat.append([obj[0], obj[1]])
+    return phi_hat
 
 def process_obs(obs):
     obs = np.rollaxis(obs,0,3)
@@ -38,6 +48,11 @@ def reconstruct_act(action, env):
         for k, v in reconst_action.items()
     }
     return reconst_action
+
+def compare_act(action1, action2):
+    if np.linalg.norm(action1 - action2) < 0.1:
+        return True
+    return False
 
 def remove_obj(segm, obs, remove_obj):
     #if remove_obj == 'arm':

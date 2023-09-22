@@ -28,6 +28,9 @@ phi_hat = {
     'block': ['red'],
 }
 
+# ILGA PARAMS
+epsilon = 0.5
+
 # OPTIONAL
 record_gui = False
 display_debug_window = False

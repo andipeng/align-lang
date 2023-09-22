@@ -53,17 +53,25 @@ def gen_trajs(env, num_trajs, task_name, task_kwargs, goal, phi_hat):
     task = env.task
     oracle_fn = task.oracle(env)
     for traj in tqdm(range(num_trajs)):
-        traj = {'obs': [], 'mask_obs': [], 'acts': [], 'goals':[], 'meta': []}
+        traj = {'obs': [], 'mask_obs': [], 'obs_text': [], 'acts': [], 'goals':[], 'lang_goal': [], 'meta': []}
         obs = env.reset()
         traj['meta'] = env.meta_info
+        traj['lang_goal'] = config.lang_goal
         obj_type = env.meta_info['obj_id_to_info'][6]['obj_name']
-        goal_embed = lang_model.encode(obj_type)
+
+        # extracts ground truth text of scene objects
+        for obj in env.meta_info['obj_id_to_info']:
+            obj_name = env.meta_info['obj_id_to_info'][obj]['obj_name']
+            obj_texture = env.meta_info['obj_id_to_info'][obj]['texture_name']
+            traj['obs_text'].append([obj_name, obj_texture])
+
+        #goal_embed = lang_model.encode(obj_type)
         for step in range(config.max_steps):
             mask_obs = obs['segm']['top'] # extracts segm
             top_obs = obs['rgb']['top'] # extracts top down view only
             traj['obs'].append(process_obs(top_obs))
             traj['mask_obs'].append(process_segm(mask_obs, phi_hat, env.meta_info['obj_id_to_info']))
-            traj['goals'].append(goal_embed)
+            traj['goals'].append(lang_embed)
             # prompt, prompt_assets = env.prompt, env.prompt_assets
             oracle_action = oracle_fn.act(obs)
             # clip action
@@ -75,7 +83,9 @@ def gen_trajs(env, num_trajs, task_name, task_kwargs, goal, phi_hat):
             obs, _, done, info = env.step(action=oracle_action, skip_oracle=False)
         traj['obs'] = np.array(traj['obs'])
         traj['mask_obs'] = np.array(traj['mask_obs'])
+        traj['obs_text'] = np.array(traj['obs_text'])
         traj['acts'] = np.array(traj['acts'])
+        traj['lang_goal'] = np.array(traj['lang_goal'])
         traj['goals'] = np.array(traj['goals'])
         traj['meta'] = np.array(traj['meta'])
         trajs.append(traj)
