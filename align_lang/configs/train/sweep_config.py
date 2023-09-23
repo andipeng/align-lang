@@ -4,10 +4,14 @@ lang = 'sweep the food into the sink'
 
 # TASK CONFIG
 task_kwargs = {
-    'num_dragged_obj': 1,
-    'num_distractors_obj': 0,
-    'possible_dragged_obj': ['pan'],
-    'possible_dragged_obj_texture': ['red']
+    'constraint': False,
+    'dragged_obj_loc': [4],
+    'possible_base_obj': ['three-sided rectangle'],
+    'possible_base_obj_texture': ['blue'],
+    'possible_dragged_obj': ['small block'],
+    'possible_dragged_obj_texture': ['green'],
+    'possible_constraint_obj': ['line'],
+    'possible_constraint_obj_texture': ['red']
 }
 
 max_steps = 3
