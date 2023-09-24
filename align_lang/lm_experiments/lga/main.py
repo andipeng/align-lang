@@ -120,6 +120,7 @@ object_colors = """
   - purple paisley"""
 
 rules=[
+    "Bring me a fruit",
     #"Bring me the red heart",
     #"Bring me the heart",
     #"Bring me the tiger-colored object",

@@ -23,7 +23,7 @@ def openai_authenticate(azure=True):
     # openai.api_key = open(api_key_location).read().strip()
 
 
-@retry(wait=wait_random_exponential(min=1, max=60))
+# @retry(wait=wait_random_exponential(min=1, max=60))
 def openai_chatcompletion(messages, engine, temperature, azure, cache=None, cache_file=None):
     messages_cache_key = json.dumps(messages)
     if cache and messages_cache_key in cache:
@@ -46,7 +46,7 @@ def openai_chatcompletion(messages, engine, temperature, azure, cache=None, cach
     return choices, response["created"]
 
 
-@retry(wait=wait_random_exponential(min=1, max=60))
+# @retry(wait=wait_random_exponential(min=1, max=60))
 def openai_completion(prompt, engine, temperature, azure, cache=None, cache_file=None):
     if engine in ['gpt-4','gpt-4-32k','gpt-35-turbo','gpt-3.5-turbo']:
         return openai_chatcompletion(prompt, engine, temperature, azure, cache=cache, cache_file=cache_file)

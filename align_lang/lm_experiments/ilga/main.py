@@ -121,34 +121,9 @@ object_colors = """
   - purple paisley"""
 
 rules=[
-    #"Bring me the red heart",
-    #"Bring me the heart",
-    #"Bring me the tiger-colored object",
-    #"Bring me a letter from the word 'letter'",
-    #"Bring me a consonant with a warm color on it",
-    #"Bring me a vowel with multiple colors on it",
-    #"Bring me something to drink water out of",
-    #"Bring me something I can put food in",
-    #"Rotate the red heart",
-    #"Rotate a letter from the word 'letter'",
-    #"Rotate something I can put food in",
-    #"Sweep the hexagon into the square without touching the red pan",
-    #"Sweep the letter into the square without touching the pan",
-    #"Sweep the letter into the square without touching anything red",
     "Bring me a fruit."
 ]
 
-
-# def generate_prompt_verbs(rule):
-#     system_prompt = f"""You are interfacing with a robotics environment that has a robotic arm learning to act based on some linguistic command (e.g. "examine and pick up red bowl without touching the pallet"). At each interaction, the researcher will specify the command that you need to teach the robot. To fulfill each command, the robot may need to act on objects in different ways. Your job is to identify the different categories of ways the robot must interact with each relevant object (e.g. object to pick up, object to avoid, etc.). In other words, you are identifying verb abstractions present in the command. There may be one or more categories, and one or more objects may fall into the category. If there are a sequence of actions enacted upon the same set of objects (e.g. object to examine, object to pick up), then please merge these categories into one ("object to examine and pick up")"""
-#     user_prompt = f"""The command is "{rule}". How many categories of relevant objects are here? Merge categories that describe the same set of objects so that we have the shortest list of categories. Give the final answer in the form:
-# <n> categories: <comma-separated list of category names>
-
-# Specify category names in the form "object to <verb>". Do not include extra punctuation. Do not specify any concrete objects or features of objects that fall into those categories. Ignore all irrelevant object categories."""
-#     return [
-#         {"role": "system", "content": system_prompt},
-#         {"role": "user", "content": user_prompt},
-#     ]
 
 def get_preferences_prompt(rule: str, scene1: set, scene2: set):
     # diff_scenes = scene1 - scene2
@@ -173,7 +148,7 @@ What is most likely to have caused the difference in the user's trajectory and w
 
 
 
-def generate_prompt_object_abstractions(preferences, rule, object_category, group, candidate):
+def generate_prompt_state_abstractions(preferences, rule, object_category, group, candidate):
     system_prompt = f"""You are interfacing with a robotics environment that has a robotic arm learning to act on objects based on some linguistic command (e.g. "pick up red bowl"). At each interaction, the researcher will specify the command that you need to teach the robot. In order to teach the robot, you will need to help design the training distribution by specifying what properties the target object can have based on the given command. Target objects in this environment have two properties: object type, object color.  Any object type can be paired with any color, but an object can only take on exactly one object type and exactly one color.
 
 A user has the following preference rules: 
@@ -228,6 +203,7 @@ def main():
         # pick out most likely answer (potentially including ties)
 
 
+        generate_prompt_state_abstractions(preferences_list, rule, object_category, group, candidate)
 
         # if r > 10:
         #     continue
@@ -249,7 +225,7 @@ def main():
                     attempt=0
                     while not answer:
                         attempt+=1
-                        messages = generate_prompt_object_abstractions(rule, object_category, group, candidate)
+                        messages = generate_prompt_state_abstractions(rule, object_category, group, candidate)
                         choices, _ = openai_completion(messages, engine, 0.0, use_azure, openai_cache, openai_cache_file)
                         try:
                             answer = choices[0]['message']['content'].split("\nFinal answer: ")[-1].replace('\n', '').strip(".").strip()
