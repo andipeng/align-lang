@@ -1,0 +1,14 @@
+{
+    "task": "sweep_sink",
+    "scene1": [
+        ["food", "gray"],
+        ["sink", "blue"],
+        ["block", "wooden"]
+    ],
+    "scene2": [
+        ["food", "gray"],
+        ["sink", "blue"],
+        ["cross", "metal"],
+        ["apple", "green"]
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "task": "place_food",
+    "scene1": [
+        ["blue", "bin"],
+        ["blue", "bin"]
+    ],
+    "scene2":[
+        ["blue", "bin"],
+        ["green", "bin"],
+        ["orange", "orange"]
+    ]
+}

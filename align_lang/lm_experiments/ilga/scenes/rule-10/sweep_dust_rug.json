@@ -1,0 +1,14 @@
+{
+    "task": "sweep_dust_rug",
+    "scene1": [
+        ["food", "gray"],
+        ["square", "yellow"],
+        ["floor", "wooden"]
+    ],
+    "scene2": [
+        ["food", "gray"],
+        ["square", "yellow"],
+        ["rug", "carpet"],
+        ["banana", "yellow"]
+    ]
+}

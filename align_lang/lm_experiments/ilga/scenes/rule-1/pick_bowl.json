@@ -1,0 +1,12 @@
+{
+    "task": "pick_bowl",
+    "scene1": [
+        ["bowl", "green"],
+        ["bowl", "green"]
+    ],
+    "scene2":[
+        ["bowl", "green"],
+        ["cup", "green"],
+        ["flower", "red"]
+    ]
+}

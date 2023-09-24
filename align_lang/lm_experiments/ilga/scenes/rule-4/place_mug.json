@@ -1,0 +1,12 @@
+{
+    "task": "place_mug",
+    "scene1": [
+        ["coaster", "granite"],
+        ["coaster", "granite"]
+    ],
+    "scene2":[
+        ["phone", "glass"],
+        ["coaster", "granite"],
+        ["apple", "green"]
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "task": "sweep_food_hot",
+    "scene1": [
+        ["food", "green"],
+        ["sink", "blue"],
+        ["stove","gray"]
+    ],
+    "scene2": [
+        ["food", "green"],
+        ["sink", "blue"],
+        ["stove", "red"],
+        ["flower", "yellow"]
+    ]
+}

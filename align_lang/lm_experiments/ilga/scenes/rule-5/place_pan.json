@@ -1,0 +1,12 @@
+{
+    "task": "place_pan",
+    "scene1": [
+        ["coaster", "styrofoam"],
+        ["coaster", "styrofoam"]
+    ],
+    "scene2":[
+        ["pallet", "granite"],
+        ["coaster", "styrofoam"],
+        ["block", "red"]
+    ]
+}

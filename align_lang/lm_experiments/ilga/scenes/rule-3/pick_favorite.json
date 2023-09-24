@@ -1,0 +1,12 @@
+{
+    "task": "pick_favorite",
+    "scene1": [
+        ["apple", "red"],
+        ["apple", "red"]
+    ],
+    "scene2":[
+        ["apple", "red"],
+        ["apple", "green"],
+        ["banana", "yellow"]
+    ]
+}

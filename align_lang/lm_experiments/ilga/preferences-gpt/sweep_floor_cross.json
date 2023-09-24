@@ -1,0 +1,19 @@
+{
+    "preference_id": "sweep_sink_cross",
+    "preferences": {
+        "rule-11": [
+            [
+                "User prefers to avoid wooden blocks",
+                0.4
+            ],
+            [
+                "User prefers to move closer to green apples",
+                0.3
+            ],
+            [
+                "User avoids metal crosses",
+                0.3
+            ]
+        ]
+    }
+}

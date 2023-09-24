@@ -1,0 +1,12 @@
+{
+    "task": "pick_dry",
+    "scene1": [
+        ["bowl", "blue"],
+        ["bowl", "blue"]
+    ],
+    "scene2":[
+        ["bowl", "blue"],
+        ["bowl", "blue"],
+        ["drying rack", "wooden"]
+    ]
+}

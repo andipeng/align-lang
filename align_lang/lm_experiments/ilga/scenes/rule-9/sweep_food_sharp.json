@@ -1,0 +1,13 @@
+{
+    "task": "sweep_food_sharp",
+    "scene1": [
+        ["food", "green"],
+        ["sink", "blue"]
+    ],
+    "scene2": [
+        ["food", "green"],
+        ["sink", "blue"],
+        ["knife", "metal"],
+        ["flower", "blue"]
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "task": "pick_ripe",
+    "scene1": [
+        ["tomato", "red"],
+        ["tomato", "red"]
+    ],
+    "scene2":[
+        ["tomato", "red"],
+        ["tomato", "green"],
+        ["star", "yellow"]
+    ]
+}

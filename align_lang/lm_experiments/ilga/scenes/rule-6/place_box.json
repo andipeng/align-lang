@@ -1,0 +1,12 @@
+{
+    "task": "place_box",
+    "scene1": [
+        ["blue", "bin"],
+        ["blue", "bin"]
+    ],
+    "scene2":[
+        ["blue", "bin"],
+        ["green", "bin"],
+        ["apple", "red"]
+    ]
+}
