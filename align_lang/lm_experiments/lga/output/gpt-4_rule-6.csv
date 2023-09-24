@@ -1,0 +1,132 @@
+,rule,object_category,group,candidate,answer
+0,Put away the cardboard box,object to put away,object type,L-shaped block,no
+1,Put away the cardboard box,object to put away,object type,tomato,no
+2,Put away the cardboard box,object to put away,object type,peach,no
+3,Put away the cardboard box,object to put away,object type,apple,no
+4,Put away the cardboard box,object to put away,object type,banana,no
+5,Put away the cardboard box,object to put away,object type,pepper,no
+6,Put away the cardboard box,object to put away,object type,drying rack,no
+7,Put away the cardboard box,object to put away,object type,drying cloth,no
+8,Put away the cardboard box,object to put away,object type,dish towel,no
+9,Put away the cardboard box,object to put away,object type,plate,no
+10,Put away the cardboard box,object to put away,object type,mug,no
+11,Put away the cardboard box,object to put away,object type,cup,no
+12,Put away the cardboard box,object to put away,object type,saucer,no
+13,Put away the cardboard box,object to put away,object type,coaster,no
+14,Put away the cardboard box,object to put away,object type,block,no
+15,Put away the cardboard box,object to put away,object type,bowl,no
+16,Put away the cardboard box,object to put away,object type,container,no
+17,Put away the cardboard box,object to put away,object type,cross (block of this shape),no
+18,Put away the cardboard box,object to put away,object type,diamond (block of this shape),no
+19,Put away the cardboard box,object to put away,object type,flower (block of this shape),no
+20,Put away the cardboard box,object to put away,object type,heart (block of this shape),no
+21,Put away the cardboard box,object to put away,object type,hexagon (block of this shape),no
+22,Put away the cardboard box,object to put away,object type,letter A,no
+23,Put away the cardboard box,object to put away,object type,letter E,no
+24,Put away the cardboard box,object to put away,object type,letter G,no
+25,Put away the cardboard box,object to put away,object type,letter M,no
+26,Put away the cardboard box,object to put away,object type,letter R,no
+27,Put away the cardboard box,object to put away,object type,letter T,no
+28,Put away the cardboard box,object to put away,object type,letter V,no
+29,Put away the cardboard box,object to put away,object type,pallet,no
+30,Put away the cardboard box,object to put away,object type,pan,no
+31,Put away the cardboard box,object to put away,object type,pentagon (block of this shape),no
+32,Put away the cardboard box,object to put away,object type,ring (block of this shape),no
+33,Put away the cardboard box,object to put away,object type,round (block of this shape),no
+34,Put away the cardboard box,object to put away,object type,shorter block,no
+35,Put away the cardboard box,object to put away,object type,small block,no
+36,Put away the cardboard box,object to put away,object type,star (block of this shape),no
+37,Put away the cardboard box,object to put away,object type,triangle (block of this shape),no
+38,Put away the cardboard box,object to put away,object type,book,no
+39,Put away the cardboard box,object to put away,object type,iPad,no
+40,Put away the cardboard box,object to put away,object type,phone,no
+41,Put away the cardboard box,object to put away,object type,laptop,no
+42,Put away the cardboard box,object to put away,object type,bin,no
+43,Put away the cardboard box,object to put away,object type,stove,no
+44,Put away the cardboard box,object to put away,object type,sharp block,no
+45,Put away the cardboard box,object to put away,object type,knife,no
+46,Put away the cardboard box,object to put away,object type,rug,no
+47,Put away the cardboard box,object to put away,object type,box,yes
+48,Put away the cardboard box,object to put away,object color,brick,yes
+49,Put away the cardboard box,object to put away,object color,tiles,yes
+50,Put away the cardboard box,object to put away,object color,wooden,yes
+51,Put away the cardboard box,object to put away,object color,granite,yes
+52,Put away the cardboard box,object to put away,object color,plastic,yes
+53,Put away the cardboard box,object to put away,object color,carpet,yes
+54,Put away the cardboard box,object to put away,object color,polka dot,yes
+55,Put away the cardboard box,object to put away,object color,checkerboard,yes
+56,Put away the cardboard box,object to put away,object color,tiger,yes
+57,Put away the cardboard box,object to put away,object color,magma,yes
+58,Put away the cardboard box,object to put away,object color,rainbow,yes
+59,Put away the cardboard box,object to put away,object color,blue,yes
+60,Put away the cardboard box,object to put away,object color,cyan,yes
+61,Put away the cardboard box,object to put away,object color,green,yes
+62,Put away the cardboard box,object to put away,object color,olive,yes
+63,Put away the cardboard box,object to put away,object color,orange,yes
+64,Put away the cardboard box,object to put away,object color,pink,yes
+65,Put away the cardboard box,object to put away,object color,purple,yes
+66,Put away the cardboard box,object to put away,object color,red,yes
+67,Put away the cardboard box,object to put away,object color,yellow,yes
+68,Put away the cardboard box,object to put away,object color,dark blue,yes
+69,Put away the cardboard box,object to put away,object color,dark cyan,yes
+70,Put away the cardboard box,object to put away,object color,dark green,yes
+71,Put away the cardboard box,object to put away,object color,dark orange,yes
+72,Put away the cardboard box,object to put away,object color,dark pink,yes
+73,Put away the cardboard box,object to put away,object color,dark purple,yes
+74,Put away the cardboard box,object to put away,object color,dark red,yes
+75,Put away the cardboard box,object to put away,object color,dark yellow,yes
+76,Put away the cardboard box,object to put away,object color,red and yellow stripe,yes
+77,Put away the cardboard box,object to put away,object color,red and green stripe,yes
+78,Put away the cardboard box,object to put away,object color,red and blue stripe,yes
+79,Put away the cardboard box,object to put away,object color,red and purple stripe,yes
+80,Put away the cardboard box,object to put away,object color,yellow and green stripe,yes
+81,Put away the cardboard box,object to put away,object color,yellow and blue stripe,yes
+82,Put away the cardboard box,object to put away,object color,yellow and purple stripe,yes
+83,Put away the cardboard box,object to put away,object color,green and blue stripe,yes
+84,Put away the cardboard box,object to put away,object color,green and purple stripe,yes
+85,Put away the cardboard box,object to put away,object color,blue and purple stripe,yes
+86,Put away the cardboard box,object to put away,object color,dark red and yellow stripe,yes
+87,Put away the cardboard box,object to put away,object color,dark red and green stripe,yes
+88,Put away the cardboard box,object to put away,object color,dark red and blue stripe,yes
+89,Put away the cardboard box,object to put away,object color,dark red and purple stripe,yes
+90,Put away the cardboard box,object to put away,object color,dark yellow and green stripe,yes
+91,Put away the cardboard box,object to put away,object color,dark yellow and blue stripe,yes
+92,Put away the cardboard box,object to put away,object color,dark yellow and purple stripe,yes
+93,Put away the cardboard box,object to put away,object color,dark green and blue stripe,yes
+94,Put away the cardboard box,object to put away,object color,dark green and purple stripe,yes
+95,Put away the cardboard box,object to put away,object color,dark blue and purple stripe,yes
+96,Put away the cardboard box,object to put away,object color,red and yellow polka dot,yes
+97,Put away the cardboard box,object to put away,object color,red and green polka dot,yes
+98,Put away the cardboard box,object to put away,object color,red and blue polka dot,yes
+99,Put away the cardboard box,object to put away,object color,red and purple polka dot,yes
+100,Put away the cardboard box,object to put away,object color,yellow and green polka dot,yes
+101,Put away the cardboard box,object to put away,object color,yellow and blue polka dot,yes
+102,Put away the cardboard box,object to put away,object color,yellow and purple polka dot,yes
+103,Put away the cardboard box,object to put away,object color,green and blue polka dot,yes
+104,Put away the cardboard box,object to put away,object color,green and purple polka dot,yes
+105,Put away the cardboard box,object to put away,object color,blue and purple polka dot,yes
+106,Put away the cardboard box,object to put away,object color,dark red and yellow polka dot,yes
+107,Put away the cardboard box,object to put away,object color,dark red and green polka dot,yes
+108,Put away the cardboard box,object to put away,object color,dark red and blue polka dot,yes
+109,Put away the cardboard box,object to put away,object color,dark red and purple polka dot,yes
+110,Put away the cardboard box,object to put away,object color,dark yellow and green polka dot,yes
+111,Put away the cardboard box,object to put away,object color,dark yellow and blue polka dot,yes
+112,Put away the cardboard box,object to put away,object color,dark yellow and purple polka dot,yes
+113,Put away the cardboard box,object to put away,object color,dark green and blue polka dot,yes
+114,Put away the cardboard box,object to put away,object color,dark green and purple polka dot,yes
+115,Put away the cardboard box,object to put away,object color,dark blue and purple polka dot,yes
+116,Put away the cardboard box,object to put away,object color,red swirl,yes
+117,Put away the cardboard box,object to put away,object color,yellow swirl,yes
+118,Put away the cardboard box,object to put away,object color,green swirl,yes
+119,Put away the cardboard box,object to put away,object color,blue swirl,yes
+120,Put away the cardboard box,object to put away,object color,purple swirl,yes
+121,Put away the cardboard box,object to put away,object color,dark red swirl,yes
+122,Put away the cardboard box,object to put away,object color,dark yellow swirl,yes
+123,Put away the cardboard box,object to put away,object color,dark green swirl,yes
+124,Put away the cardboard box,object to put away,object color,dark blue swirl,yes
+125,Put away the cardboard box,object to put away,object color,dark purple swirl,yes
+126,Put away the cardboard box,object to put away,object color,red paisley,yes
+127,Put away the cardboard box,object to put away,object color,yellow paisley,yes
+128,Put away the cardboard box,object to put away,object color,green paisley,yes
+129,Put away the cardboard box,object to put away,object color,blue paisley,yes
+130,Put away the cardboard box,object to put away,object color,purple paisley,yes

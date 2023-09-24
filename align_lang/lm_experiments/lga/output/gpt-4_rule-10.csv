@@ -1,0 +1,263 @@
+,rule,object_category,group,candidate,answer
+0,Sweep the dust into the trash,object to sweep,object type,L-shaped block,no
+1,Sweep the dust into the trash,object to sweep,object type,tomato,no
+2,Sweep the dust into the trash,object to sweep,object type,peach,no
+3,Sweep the dust into the trash,object to sweep,object type,apple,no
+4,Sweep the dust into the trash,object to sweep,object type,banana,yes
+5,Sweep the dust into the trash,object to sweep,object type,pepper,yes
+6,Sweep the dust into the trash,object to sweep,object type,drying rack,no
+7,Sweep the dust into the trash,object to sweep,object type,drying cloth,yes
+8,Sweep the dust into the trash,object to sweep,object type,dish towel,yes
+9,Sweep the dust into the trash,object to sweep,object type,plate,no
+10,Sweep the dust into the trash,object to sweep,object type,mug,no
+11,Sweep the dust into the trash,object to sweep,object type,cup,no
+12,Sweep the dust into the trash,object to sweep,object type,saucer,no
+13,Sweep the dust into the trash,object to sweep,object type,coaster,yes
+14,Sweep the dust into the trash,object to sweep,object type,block,yes
+15,Sweep the dust into the trash,object to sweep,object type,bowl,no
+16,Sweep the dust into the trash,object to sweep,object type,container,yes
+17,Sweep the dust into the trash,object to sweep,object type,cross (block of this shape),no
+18,Sweep the dust into the trash,object to sweep,object type,diamond (block of this shape),no
+19,Sweep the dust into the trash,object to sweep,object type,flower (block of this shape),no
+20,Sweep the dust into the trash,object to sweep,object type,heart (block of this shape),no
+21,Sweep the dust into the trash,object to sweep,object type,hexagon (block of this shape),no
+22,Sweep the dust into the trash,object to sweep,object type,letter A,no
+23,Sweep the dust into the trash,object to sweep,object type,letter E,no
+24,Sweep the dust into the trash,object to sweep,object type,letter G,no
+25,Sweep the dust into the trash,object to sweep,object type,letter M,no
+26,Sweep the dust into the trash,object to sweep,object type,letter R,no
+27,Sweep the dust into the trash,object to sweep,object type,letter T,no
+28,Sweep the dust into the trash,object to sweep,object type,letter V,no
+29,Sweep the dust into the trash,object to sweep,object type,pallet,no
+30,Sweep the dust into the trash,object to sweep,object type,pan,no
+31,Sweep the dust into the trash,object to sweep,object type,pentagon (block of this shape),yes
+32,Sweep the dust into the trash,object to sweep,object type,ring (block of this shape),yes
+33,Sweep the dust into the trash,object to sweep,object type,round (block of this shape),yes
+34,Sweep the dust into the trash,object to sweep,object type,shorter block,no
+35,Sweep the dust into the trash,object to sweep,object type,small block,no
+36,Sweep the dust into the trash,object to sweep,object type,star (block of this shape),no
+37,Sweep the dust into the trash,object to sweep,object type,triangle (block of this shape),no
+38,Sweep the dust into the trash,object to sweep,object type,book,yes
+39,Sweep the dust into the trash,object to sweep,object type,iPad,no
+40,Sweep the dust into the trash,object to sweep,object type,phone,no
+41,Sweep the dust into the trash,object to sweep,object type,laptop,no
+42,Sweep the dust into the trash,object to sweep,object type,bin,no
+43,Sweep the dust into the trash,object to sweep,object type,stove,no
+44,Sweep the dust into the trash,object to sweep,object type,sharp block,no
+45,Sweep the dust into the trash,object to sweep,object type,knife,no
+46,Sweep the dust into the trash,object to sweep,object type,rug,no
+47,Sweep the dust into the trash,object to sweep,object type,box,yes
+48,Sweep the dust into the trash,object to sweep,object color,brick,yes
+49,Sweep the dust into the trash,object to sweep,object color,tiles,yes
+50,Sweep the dust into the trash,object to sweep,object color,wooden,yes
+51,Sweep the dust into the trash,object to sweep,object color,granite,yes
+52,Sweep the dust into the trash,object to sweep,object color,plastic,no
+53,Sweep the dust into the trash,object to sweep,object color,carpet,no
+54,Sweep the dust into the trash,object to sweep,object color,polka dot,no
+55,Sweep the dust into the trash,object to sweep,object color,checkerboard,yes
+56,Sweep the dust into the trash,object to sweep,object color,tiger,yes
+57,Sweep the dust into the trash,object to sweep,object color,magma,yes
+58,Sweep the dust into the trash,object to sweep,object color,rainbow,yes
+59,Sweep the dust into the trash,object to sweep,object color,blue,yes
+60,Sweep the dust into the trash,object to sweep,object color,cyan,yes
+61,Sweep the dust into the trash,object to sweep,object color,green,yes
+62,Sweep the dust into the trash,object to sweep,object color,olive,yes
+63,Sweep the dust into the trash,object to sweep,object color,orange,yes
+64,Sweep the dust into the trash,object to sweep,object color,pink,yes
+65,Sweep the dust into the trash,object to sweep,object color,purple,yes
+66,Sweep the dust into the trash,object to sweep,object color,red,yes
+67,Sweep the dust into the trash,object to sweep,object color,yellow,yes
+68,Sweep the dust into the trash,object to sweep,object color,dark blue,yes
+69,Sweep the dust into the trash,object to sweep,object color,dark cyan,yes
+70,Sweep the dust into the trash,object to sweep,object color,dark green,yes
+71,Sweep the dust into the trash,object to sweep,object color,dark orange,yes
+72,Sweep the dust into the trash,object to sweep,object color,dark pink,yes
+73,Sweep the dust into the trash,object to sweep,object color,dark purple,yes
+74,Sweep the dust into the trash,object to sweep,object color,dark red,yes
+75,Sweep the dust into the trash,object to sweep,object color,dark yellow,yes
+76,Sweep the dust into the trash,object to sweep,object color,red and yellow stripe,yes
+77,Sweep the dust into the trash,object to sweep,object color,red and green stripe,yes
+78,Sweep the dust into the trash,object to sweep,object color,red and blue stripe,yes
+79,Sweep the dust into the trash,object to sweep,object color,red and purple stripe,yes
+80,Sweep the dust into the trash,object to sweep,object color,yellow and green stripe,yes
+81,Sweep the dust into the trash,object to sweep,object color,yellow and blue stripe,no
+82,Sweep the dust into the trash,object to sweep,object color,yellow and purple stripe,yes
+83,Sweep the dust into the trash,object to sweep,object color,green and blue stripe,yes
+84,Sweep the dust into the trash,object to sweep,object color,green and purple stripe,yes
+85,Sweep the dust into the trash,object to sweep,object color,blue and purple stripe,yes
+86,Sweep the dust into the trash,object to sweep,object color,dark red and yellow stripe,yes
+87,Sweep the dust into the trash,object to sweep,object color,dark red and green stripe,no
+88,Sweep the dust into the trash,object to sweep,object color,dark red and blue stripe,yes
+89,Sweep the dust into the trash,object to sweep,object color,dark red and purple stripe,no
+90,Sweep the dust into the trash,object to sweep,object color,dark yellow and green stripe,no
+91,Sweep the dust into the trash,object to sweep,object color,dark yellow and blue stripe,no
+92,Sweep the dust into the trash,object to sweep,object color,dark yellow and purple stripe,yes
+93,Sweep the dust into the trash,object to sweep,object color,dark green and blue stripe,yes
+94,Sweep the dust into the trash,object to sweep,object color,dark green and purple stripe,yes
+95,Sweep the dust into the trash,object to sweep,object color,dark blue and purple stripe,yes
+96,Sweep the dust into the trash,object to sweep,object color,red and yellow polka dot,yes
+97,Sweep the dust into the trash,object to sweep,object color,red and green polka dot,yes
+98,Sweep the dust into the trash,object to sweep,object color,red and blue polka dot,yes
+99,Sweep the dust into the trash,object to sweep,object color,red and purple polka dot,yes
+100,Sweep the dust into the trash,object to sweep,object color,yellow and green polka dot,no
+101,Sweep the dust into the trash,object to sweep,object color,yellow and blue polka dot,yes
+102,Sweep the dust into the trash,object to sweep,object color,yellow and purple polka dot,yes
+103,Sweep the dust into the trash,object to sweep,object color,green and blue polka dot,no
+104,Sweep the dust into the trash,object to sweep,object color,green and purple polka dot,yes
+105,Sweep the dust into the trash,object to sweep,object color,blue and purple polka dot,yes
+106,Sweep the dust into the trash,object to sweep,object color,dark red and yellow polka dot,yes
+107,Sweep the dust into the trash,object to sweep,object color,dark red and green polka dot,yes
+108,Sweep the dust into the trash,object to sweep,object color,dark red and blue polka dot,yes
+109,Sweep the dust into the trash,object to sweep,object color,dark red and purple polka dot,yes
+110,Sweep the dust into the trash,object to sweep,object color,dark yellow and green polka dot,yes
+111,Sweep the dust into the trash,object to sweep,object color,dark yellow and blue polka dot,yes
+112,Sweep the dust into the trash,object to sweep,object color,dark yellow and purple polka dot,yes
+113,Sweep the dust into the trash,object to sweep,object color,dark green and blue polka dot,yes
+114,Sweep the dust into the trash,object to sweep,object color,dark green and purple polka dot,yes
+115,Sweep the dust into the trash,object to sweep,object color,dark blue and purple polka dot,no
+116,Sweep the dust into the trash,object to sweep,object color,red swirl,yes
+117,Sweep the dust into the trash,object to sweep,object color,yellow swirl,yes
+118,Sweep the dust into the trash,object to sweep,object color,green swirl,yes
+119,Sweep the dust into the trash,object to sweep,object color,blue swirl,yes
+120,Sweep the dust into the trash,object to sweep,object color,purple swirl,yes
+121,Sweep the dust into the trash,object to sweep,object color,dark red swirl,yes
+122,Sweep the dust into the trash,object to sweep,object color,dark yellow swirl,yes
+123,Sweep the dust into the trash,object to sweep,object color,dark green swirl,yes
+124,Sweep the dust into the trash,object to sweep,object color,dark blue swirl,yes
+125,Sweep the dust into the trash,object to sweep,object color,dark purple swirl,no
+126,Sweep the dust into the trash,object to sweep,object color,red paisley,yes
+127,Sweep the dust into the trash,object to sweep,object color,yellow paisley,no
+128,Sweep the dust into the trash,object to sweep,object color,green paisley,no
+129,Sweep the dust into the trash,object to sweep,object color,blue paisley,no
+130,Sweep the dust into the trash,object to sweep,object color,purple paisley,no
+131,Sweep the dust into the trash,object to receive swept material,object type,L-shaped block,no
+132,Sweep the dust into the trash,object to receive swept material,object type,tomato,no
+133,Sweep the dust into the trash,object to receive swept material,object type,peach,no
+134,Sweep the dust into the trash,object to receive swept material,object type,apple,no
+135,Sweep the dust into the trash,object to receive swept material,object type,banana,no
+136,Sweep the dust into the trash,object to receive swept material,object type,pepper,no
+137,Sweep the dust into the trash,object to receive swept material,object type,drying rack,no
+138,Sweep the dust into the trash,object to receive swept material,object type,drying cloth,no
+139,Sweep the dust into the trash,object to receive swept material,object type,dish towel,no
+140,Sweep the dust into the trash,object to receive swept material,object type,plate,no
+141,Sweep the dust into the trash,object to receive swept material,object type,mug,no
+142,Sweep the dust into the trash,object to receive swept material,object type,cup,yes
+143,Sweep the dust into the trash,object to receive swept material,object type,saucer,no
+144,Sweep the dust into the trash,object to receive swept material,object type,coaster,no
+145,Sweep the dust into the trash,object to receive swept material,object type,block,no
+146,Sweep the dust into the trash,object to receive swept material,object type,bowl,no
+147,Sweep the dust into the trash,object to receive swept material,object type,container,yes
+148,Sweep the dust into the trash,object to receive swept material,object type,cross (block of this shape),no
+149,Sweep the dust into the trash,object to receive swept material,object type,diamond (block of this shape),no
+150,Sweep the dust into the trash,object to receive swept material,object type,flower (block of this shape),no
+151,Sweep the dust into the trash,object to receive swept material,object type,heart (block of this shape),no
+152,Sweep the dust into the trash,object to receive swept material,object type,hexagon (block of this shape),no
+153,Sweep the dust into the trash,object to receive swept material,object type,letter A,no
+154,Sweep the dust into the trash,object to receive swept material,object type,letter E,no
+155,Sweep the dust into the trash,object to receive swept material,object type,letter G,no
+156,Sweep the dust into the trash,object to receive swept material,object type,letter M,no
+157,Sweep the dust into the trash,object to receive swept material,object type,letter R,no
+158,Sweep the dust into the trash,object to receive swept material,object type,letter T,no
+159,Sweep the dust into the trash,object to receive swept material,object type,letter V,no
+160,Sweep the dust into the trash,object to receive swept material,object type,pallet,no
+161,Sweep the dust into the trash,object to receive swept material,object type,pan,no
+162,Sweep the dust into the trash,object to receive swept material,object type,pentagon (block of this shape),no
+163,Sweep the dust into the trash,object to receive swept material,object type,ring (block of this shape),no
+164,Sweep the dust into the trash,object to receive swept material,object type,round (block of this shape),no
+165,Sweep the dust into the trash,object to receive swept material,object type,shorter block,no
+166,Sweep the dust into the trash,object to receive swept material,object type,small block,no
+167,Sweep the dust into the trash,object to receive swept material,object type,star (block of this shape),no
+168,Sweep the dust into the trash,object to receive swept material,object type,triangle (block of this shape),no
+169,Sweep the dust into the trash,object to receive swept material,object type,book,no
+170,Sweep the dust into the trash,object to receive swept material,object type,iPad,no
+171,Sweep the dust into the trash,object to receive swept material,object type,phone,no
+172,Sweep the dust into the trash,object to receive swept material,object type,laptop,no
+173,Sweep the dust into the trash,object to receive swept material,object type,bin,yes
+174,Sweep the dust into the trash,object to receive swept material,object type,stove,no
+175,Sweep the dust into the trash,object to receive swept material,object type,sharp block,no
+176,Sweep the dust into the trash,object to receive swept material,object type,knife,no
+177,Sweep the dust into the trash,object to receive swept material,object type,rug,no
+178,Sweep the dust into the trash,object to receive swept material,object type,box,yes
+179,Sweep the dust into the trash,object to receive swept material,object color,brick,yes
+180,Sweep the dust into the trash,object to receive swept material,object color,tiles,yes
+181,Sweep the dust into the trash,object to receive swept material,object color,wooden,yes
+182,Sweep the dust into the trash,object to receive swept material,object color,granite,yes
+183,Sweep the dust into the trash,object to receive swept material,object color,plastic,yes
+184,Sweep the dust into the trash,object to receive swept material,object color,carpet,yes
+185,Sweep the dust into the trash,object to receive swept material,object color,polka dot,yes
+186,Sweep the dust into the trash,object to receive swept material,object color,checkerboard,yes
+187,Sweep the dust into the trash,object to receive swept material,object color,tiger,yes
+188,Sweep the dust into the trash,object to receive swept material,object color,magma,yes
+189,Sweep the dust into the trash,object to receive swept material,object color,rainbow,yes
+190,Sweep the dust into the trash,object to receive swept material,object color,blue,yes
+191,Sweep the dust into the trash,object to receive swept material,object color,cyan,yes
+192,Sweep the dust into the trash,object to receive swept material,object color,green,yes
+193,Sweep the dust into the trash,object to receive swept material,object color,olive,yes
+194,Sweep the dust into the trash,object to receive swept material,object color,orange,yes
+195,Sweep the dust into the trash,object to receive swept material,object color,pink,yes
+196,Sweep the dust into the trash,object to receive swept material,object color,purple,yes
+197,Sweep the dust into the trash,object to receive swept material,object color,red,yes
+198,Sweep the dust into the trash,object to receive swept material,object color,yellow,yes
+199,Sweep the dust into the trash,object to receive swept material,object color,dark blue,yes
+200,Sweep the dust into the trash,object to receive swept material,object color,dark cyan,yes
+201,Sweep the dust into the trash,object to receive swept material,object color,dark green,yes
+202,Sweep the dust into the trash,object to receive swept material,object color,dark orange,yes
+203,Sweep the dust into the trash,object to receive swept material,object color,dark pink,yes
+204,Sweep the dust into the trash,object to receive swept material,object color,dark purple,yes
+205,Sweep the dust into the trash,object to receive swept material,object color,dark red,yes
+206,Sweep the dust into the trash,object to receive swept material,object color,dark yellow,yes
+207,Sweep the dust into the trash,object to receive swept material,object color,red and yellow stripe,yes
+208,Sweep the dust into the trash,object to receive swept material,object color,red and green stripe,yes
+209,Sweep the dust into the trash,object to receive swept material,object color,red and blue stripe,yes
+210,Sweep the dust into the trash,object to receive swept material,object color,red and purple stripe,yes
+211,Sweep the dust into the trash,object to receive swept material,object color,yellow and green stripe,yes
+212,Sweep the dust into the trash,object to receive swept material,object color,yellow and blue stripe,yes
+213,Sweep the dust into the trash,object to receive swept material,object color,yellow and purple stripe,yes
+214,Sweep the dust into the trash,object to receive swept material,object color,green and blue stripe,yes
+215,Sweep the dust into the trash,object to receive swept material,object color,green and purple stripe,yes
+216,Sweep the dust into the trash,object to receive swept material,object color,blue and purple stripe,yes
+217,Sweep the dust into the trash,object to receive swept material,object color,dark red and yellow stripe,yes
+218,Sweep the dust into the trash,object to receive swept material,object color,dark red and green stripe,yes
+219,Sweep the dust into the trash,object to receive swept material,object color,dark red and blue stripe,yes
+220,Sweep the dust into the trash,object to receive swept material,object color,dark red and purple stripe,yes
+221,Sweep the dust into the trash,object to receive swept material,object color,dark yellow and green stripe,yes
+222,Sweep the dust into the trash,object to receive swept material,object color,dark yellow and blue stripe,yes
+223,Sweep the dust into the trash,object to receive swept material,object color,dark yellow and purple stripe,yes
+224,Sweep the dust into the trash,object to receive swept material,object color,dark green and blue stripe,yes
+225,Sweep the dust into the trash,object to receive swept material,object color,dark green and purple stripe,yes
+226,Sweep the dust into the trash,object to receive swept material,object color,dark blue and purple stripe,yes
+227,Sweep the dust into the trash,object to receive swept material,object color,red and yellow polka dot,yes
+228,Sweep the dust into the trash,object to receive swept material,object color,red and green polka dot,yes
+229,Sweep the dust into the trash,object to receive swept material,object color,red and blue polka dot,yes
+230,Sweep the dust into the trash,object to receive swept material,object color,red and purple polka dot,yes
+231,Sweep the dust into the trash,object to receive swept material,object color,yellow and green polka dot,yes
+232,Sweep the dust into the trash,object to receive swept material,object color,yellow and blue polka dot,yes
+233,Sweep the dust into the trash,object to receive swept material,object color,yellow and purple polka dot,yes
+234,Sweep the dust into the trash,object to receive swept material,object color,green and blue polka dot,yes
+235,Sweep the dust into the trash,object to receive swept material,object color,green and purple polka dot,yes
+236,Sweep the dust into the trash,object to receive swept material,object color,blue and purple polka dot,yes
+237,Sweep the dust into the trash,object to receive swept material,object color,dark red and yellow polka dot,yes
+238,Sweep the dust into the trash,object to receive swept material,object color,dark red and green polka dot,yes
+239,Sweep the dust into the trash,object to receive swept material,object color,dark red and blue polka dot,yes
+240,Sweep the dust into the trash,object to receive swept material,object color,dark red and purple polka dot,yes
+241,Sweep the dust into the trash,object to receive swept material,object color,dark yellow and green polka dot,yes
+242,Sweep the dust into the trash,object to receive swept material,object color,dark yellow and blue polka dot,yes
+243,Sweep the dust into the trash,object to receive swept material,object color,dark yellow and purple polka dot,yes
+244,Sweep the dust into the trash,object to receive swept material,object color,dark green and blue polka dot,yes
+245,Sweep the dust into the trash,object to receive swept material,object color,dark green and purple polka dot,yes
+246,Sweep the dust into the trash,object to receive swept material,object color,dark blue and purple polka dot,yes
+247,Sweep the dust into the trash,object to receive swept material,object color,red swirl,yes
+248,Sweep the dust into the trash,object to receive swept material,object color,yellow swirl,yes
+249,Sweep the dust into the trash,object to receive swept material,object color,green swirl,yes
+250,Sweep the dust into the trash,object to receive swept material,object color,blue swirl,yes
+251,Sweep the dust into the trash,object to receive swept material,object color,purple swirl,yes
+252,Sweep the dust into the trash,object to receive swept material,object color,dark red swirl,yes
+253,Sweep the dust into the trash,object to receive swept material,object color,dark yellow swirl,yes
+254,Sweep the dust into the trash,object to receive swept material,object color,dark green swirl,yes
+255,Sweep the dust into the trash,object to receive swept material,object color,dark blue swirl,yes
+256,Sweep the dust into the trash,object to receive swept material,object color,dark purple swirl,yes
+257,Sweep the dust into the trash,object to receive swept material,object color,red paisley,yes
+258,Sweep the dust into the trash,object to receive swept material,object color,yellow paisley,yes
+259,Sweep the dust into the trash,object to receive swept material,object color,green paisley,yes
+260,Sweep the dust into the trash,object to receive swept material,object color,blue paisley,yes
+261,Sweep the dust into the trash,object to receive swept material,object color,purple paisley,yes

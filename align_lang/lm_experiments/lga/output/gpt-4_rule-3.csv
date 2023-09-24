@@ -1,0 +1,132 @@
+,rule,object_category,group,candidate,answer
+0,Bring me my favorite food,object to bring,object type,L-shaped block,no
+1,Bring me my favorite food,object to bring,object type,tomato,yes
+2,Bring me my favorite food,object to bring,object type,peach,yes
+3,Bring me my favorite food,object to bring,object type,apple,yes
+4,Bring me my favorite food,object to bring,object type,banana,yes
+5,Bring me my favorite food,object to bring,object type,pepper,yes
+6,Bring me my favorite food,object to bring,object type,drying rack,no
+7,Bring me my favorite food,object to bring,object type,drying cloth,no
+8,Bring me my favorite food,object to bring,object type,dish towel,no
+9,Bring me my favorite food,object to bring,object type,plate,no
+10,Bring me my favorite food,object to bring,object type,mug,no
+11,Bring me my favorite food,object to bring,object type,cup,no
+12,Bring me my favorite food,object to bring,object type,saucer,no
+13,Bring me my favorite food,object to bring,object type,coaster,no
+14,Bring me my favorite food,object to bring,object type,block,no
+15,Bring me my favorite food,object to bring,object type,bowl,no
+16,Bring me my favorite food,object to bring,object type,container,no
+17,Bring me my favorite food,object to bring,object type,cross (block of this shape),no
+18,Bring me my favorite food,object to bring,object type,diamond (block of this shape),no
+19,Bring me my favorite food,object to bring,object type,flower (block of this shape),no
+20,Bring me my favorite food,object to bring,object type,heart (block of this shape),no
+21,Bring me my favorite food,object to bring,object type,hexagon (block of this shape),no
+22,Bring me my favorite food,object to bring,object type,letter A,no
+23,Bring me my favorite food,object to bring,object type,letter E,no
+24,Bring me my favorite food,object to bring,object type,letter G,no
+25,Bring me my favorite food,object to bring,object type,letter M,no
+26,Bring me my favorite food,object to bring,object type,letter R,no
+27,Bring me my favorite food,object to bring,object type,letter T,no
+28,Bring me my favorite food,object to bring,object type,letter V,no
+29,Bring me my favorite food,object to bring,object type,pallet,no
+30,Bring me my favorite food,object to bring,object type,pan,no
+31,Bring me my favorite food,object to bring,object type,pentagon (block of this shape),no
+32,Bring me my favorite food,object to bring,object type,ring (block of this shape),no
+33,Bring me my favorite food,object to bring,object type,round (block of this shape),no
+34,Bring me my favorite food,object to bring,object type,shorter block,no
+35,Bring me my favorite food,object to bring,object type,small block,no
+36,Bring me my favorite food,object to bring,object type,star (block of this shape),no
+37,Bring me my favorite food,object to bring,object type,triangle (block of this shape),no
+38,Bring me my favorite food,object to bring,object type,book,yes
+39,Bring me my favorite food,object to bring,object type,iPad,no
+40,Bring me my favorite food,object to bring,object type,phone,no
+41,Bring me my favorite food,object to bring,object type,laptop,no
+42,Bring me my favorite food,object to bring,object type,bin,no
+43,Bring me my favorite food,object to bring,object type,stove,no
+44,Bring me my favorite food,object to bring,object type,sharp block,no
+45,Bring me my favorite food,object to bring,object type,knife,no
+46,Bring me my favorite food,object to bring,object type,rug,no
+47,Bring me my favorite food,object to bring,object type,box,no
+48,Bring me my favorite food,object to bring,object color,brick,yes
+49,Bring me my favorite food,object to bring,object color,tiles,yes
+50,Bring me my favorite food,object to bring,object color,wooden,yes
+51,Bring me my favorite food,object to bring,object color,granite,yes
+52,Bring me my favorite food,object to bring,object color,plastic,yes
+53,Bring me my favorite food,object to bring,object color,carpet,yes
+54,Bring me my favorite food,object to bring,object color,polka dot,yes
+55,Bring me my favorite food,object to bring,object color,checkerboard,yes
+56,Bring me my favorite food,object to bring,object color,tiger,yes
+57,Bring me my favorite food,object to bring,object color,magma,yes
+58,Bring me my favorite food,object to bring,object color,rainbow,yes
+59,Bring me my favorite food,object to bring,object color,blue,yes
+60,Bring me my favorite food,object to bring,object color,cyan,yes
+61,Bring me my favorite food,object to bring,object color,green,yes
+62,Bring me my favorite food,object to bring,object color,olive,yes
+63,Bring me my favorite food,object to bring,object color,orange,yes
+64,Bring me my favorite food,object to bring,object color,pink,yes
+65,Bring me my favorite food,object to bring,object color,purple,yes
+66,Bring me my favorite food,object to bring,object color,red,yes
+67,Bring me my favorite food,object to bring,object color,yellow,yes
+68,Bring me my favorite food,object to bring,object color,dark blue,yes
+69,Bring me my favorite food,object to bring,object color,dark cyan,yes
+70,Bring me my favorite food,object to bring,object color,dark green,yes
+71,Bring me my favorite food,object to bring,object color,dark orange,yes
+72,Bring me my favorite food,object to bring,object color,dark pink,yes
+73,Bring me my favorite food,object to bring,object color,dark purple,yes
+74,Bring me my favorite food,object to bring,object color,dark red,yes
+75,Bring me my favorite food,object to bring,object color,dark yellow,yes
+76,Bring me my favorite food,object to bring,object color,red and yellow stripe,yes
+77,Bring me my favorite food,object to bring,object color,red and green stripe,yes
+78,Bring me my favorite food,object to bring,object color,red and blue stripe,yes
+79,Bring me my favorite food,object to bring,object color,red and purple stripe,yes
+80,Bring me my favorite food,object to bring,object color,yellow and green stripe,yes
+81,Bring me my favorite food,object to bring,object color,yellow and blue stripe,yes
+82,Bring me my favorite food,object to bring,object color,yellow and purple stripe,yes
+83,Bring me my favorite food,object to bring,object color,green and blue stripe,yes
+84,Bring me my favorite food,object to bring,object color,green and purple stripe,yes
+85,Bring me my favorite food,object to bring,object color,blue and purple stripe,yes
+86,Bring me my favorite food,object to bring,object color,dark red and yellow stripe,yes
+87,Bring me my favorite food,object to bring,object color,dark red and green stripe,yes
+88,Bring me my favorite food,object to bring,object color,dark red and blue stripe,yes
+89,Bring me my favorite food,object to bring,object color,dark red and purple stripe,yes
+90,Bring me my favorite food,object to bring,object color,dark yellow and green stripe,yes
+91,Bring me my favorite food,object to bring,object color,dark yellow and blue stripe,yes
+92,Bring me my favorite food,object to bring,object color,dark yellow and purple stripe,yes
+93,Bring me my favorite food,object to bring,object color,dark green and blue stripe,yes
+94,Bring me my favorite food,object to bring,object color,dark green and purple stripe,yes
+95,Bring me my favorite food,object to bring,object color,dark blue and purple stripe,yes
+96,Bring me my favorite food,object to bring,object color,red and yellow polka dot,yes
+97,Bring me my favorite food,object to bring,object color,red and green polka dot,yes
+98,Bring me my favorite food,object to bring,object color,red and blue polka dot,yes
+99,Bring me my favorite food,object to bring,object color,red and purple polka dot,yes
+100,Bring me my favorite food,object to bring,object color,yellow and green polka dot,yes
+101,Bring me my favorite food,object to bring,object color,yellow and blue polka dot,yes
+102,Bring me my favorite food,object to bring,object color,yellow and purple polka dot,yes
+103,Bring me my favorite food,object to bring,object color,green and blue polka dot,yes
+104,Bring me my favorite food,object to bring,object color,green and purple polka dot,yes
+105,Bring me my favorite food,object to bring,object color,blue and purple polka dot,yes
+106,Bring me my favorite food,object to bring,object color,dark red and yellow polka dot,yes
+107,Bring me my favorite food,object to bring,object color,dark red and green polka dot,yes
+108,Bring me my favorite food,object to bring,object color,dark red and blue polka dot,yes
+109,Bring me my favorite food,object to bring,object color,dark red and purple polka dot,yes
+110,Bring me my favorite food,object to bring,object color,dark yellow and green polka dot,yes
+111,Bring me my favorite food,object to bring,object color,dark yellow and blue polka dot,yes
+112,Bring me my favorite food,object to bring,object color,dark yellow and purple polka dot,yes
+113,Bring me my favorite food,object to bring,object color,dark green and blue polka dot,yes
+114,Bring me my favorite food,object to bring,object color,dark green and purple polka dot,yes
+115,Bring me my favorite food,object to bring,object color,dark blue and purple polka dot,yes
+116,Bring me my favorite food,object to bring,object color,red swirl,yes
+117,Bring me my favorite food,object to bring,object color,yellow swirl,yes
+118,Bring me my favorite food,object to bring,object color,green swirl,yes
+119,Bring me my favorite food,object to bring,object color,blue swirl,yes
+120,Bring me my favorite food,object to bring,object color,purple swirl,yes
+121,Bring me my favorite food,object to bring,object color,dark red swirl,yes
+122,Bring me my favorite food,object to bring,object color,dark yellow swirl,yes
+123,Bring me my favorite food,object to bring,object color,dark green swirl,yes
+124,Bring me my favorite food,object to bring,object color,dark blue swirl,yes
+125,Bring me my favorite food,object to bring,object color,dark purple swirl,yes
+126,Bring me my favorite food,object to bring,object color,red paisley,yes
+127,Bring me my favorite food,object to bring,object color,yellow paisley,yes
+128,Bring me my favorite food,object to bring,object color,green paisley,yes
+129,Bring me my favorite food,object to bring,object color,blue paisley,yes
+130,Bring me my favorite food,object to bring,object color,purple paisley,yes

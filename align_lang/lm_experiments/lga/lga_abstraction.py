@@ -1,16 +1,28 @@
-from utils import openai_authenticate, openai_completion, load_openai_cache
+from align_lang.lm_experiments.utils import openai_authenticate, openai_completion, load_openai_cache
 import pandas as pd
 import os
 from tqdm import tqdm
 
-
 engine = 'gpt-4'
-results_path = f'results'
+results_path = f'output'
 use_azure = False
 openai_cache_file = f'openai_cache_{engine}.jsonl'
 
 object_list = """
   - L-shaped block
+  - tomato
+  - peach
+  - apple
+  - banana
+  - pepper
+  - drying rack
+  - drying cloth
+  - dish towel
+  - plate
+  - mug
+  - cup
+  - saucer
+  - coaster
   - block
   - bowl
   - container
@@ -34,13 +46,24 @@ object_list = """
   - shorter block
   - small block
   - star (block of this shape)
-  - triangle (block of this shape)"""
+  - triangle (block of this shape)
+  - book
+  - iPad
+  - phone
+  - laptop
+  - bin
+  - stove
+  - sharp block
+  - knife
+  - rug
+  - box"""
 object_colors = """
   - brick
   - tiles
   - wooden
   - granite
   - plastic
+  - carpet
   - polka dot
   - checkerboard
   - tiger
@@ -120,7 +143,20 @@ object_colors = """
   - purple paisley"""
 
 rules=[
+    # ILGA tasks
     "Bring me a fruit",
+    "Bring me something to put food in",
+    "Bring me a cereal bowl",
+    "Bring me my favorite food",
+    "Put down the mug",
+    "Put down the pan",
+    "Put away the cardboard box",
+    "Put away the food",
+    "Sweep the scraps into the sink",
+    "Sweep the food into the sink",
+    "Sweep the dust into the trash",
+    "Sweep the floor in my room",
+    ""
     #"Bring me the red heart",
     #"Bring me the heart",
     #"Bring me the tiger-colored object",
