@@ -1,0 +1,69 @@
+,rule,candidate,answer
+0,Sweep the dust into the bin,brick small block,no
+1,Sweep the dust into the bin,brick bin,no
+2,Sweep the dust into the bin,brick floor,yes
+3,Sweep the dust into the bin,brick rug,no
+4,Sweep the dust into the bin,tiles small block,no
+5,Sweep the dust into the bin,tiles bin,no
+6,Sweep the dust into the bin,tiles floor,yes
+7,Sweep the dust into the bin,tiles rug,no
+8,Sweep the dust into the bin,wooden small block,no
+9,Sweep the dust into the bin,wooden bin,no
+10,Sweep the dust into the bin,wooden floor,yes
+11,Sweep the dust into the bin,wooden rug,yes
+12,Sweep the dust into the bin,granite small block,no
+13,Sweep the dust into the bin,granite bin,no
+14,Sweep the dust into the bin,granite floor,yes
+15,Sweep the dust into the bin,granite rug,no
+16,Sweep the dust into the bin,plastic small block,no
+17,Sweep the dust into the bin,plastic bin,no
+18,Sweep the dust into the bin,plastic floor,yes
+19,Sweep the dust into the bin,plastic rug,no
+20,Sweep the dust into the bin,styrofoam small block,no
+21,Sweep the dust into the bin,styrofoam bin,no
+22,Sweep the dust into the bin,styrofoam floor,yes
+23,Sweep the dust into the bin,styrofoam rug,yes
+24,Sweep the dust into the bin,carpet small block,no
+25,Sweep the dust into the bin,carpet bin,no
+26,Sweep the dust into the bin,carpet floor,no
+27,Sweep the dust into the bin,carpet rug,no
+28,Sweep the dust into the bin,tiger small block,no
+29,Sweep the dust into the bin,tiger bin,no
+30,Sweep the dust into the bin,tiger floor,yes
+31,Sweep the dust into the bin,tiger rug,no
+32,Sweep the dust into the bin,rainbow small block,no
+33,Sweep the dust into the bin,rainbow bin,no
+34,Sweep the dust into the bin,rainbow floor,yes
+35,Sweep the dust into the bin,rainbow rug,no
+36,Sweep the dust into the bin,blue small block,no
+37,Sweep the dust into the bin,blue bin,no
+38,Sweep the dust into the bin,blue floor,yes
+39,Sweep the dust into the bin,blue rug,no
+40,Sweep the dust into the bin,green small block,no
+41,Sweep the dust into the bin,green bin,no
+42,Sweep the dust into the bin,green floor,yes
+43,Sweep the dust into the bin,green rug,no
+44,Sweep the dust into the bin,olive small block,no
+45,Sweep the dust into the bin,olive bin,no
+46,Sweep the dust into the bin,olive floor,yes
+47,Sweep the dust into the bin,olive rug,no
+48,Sweep the dust into the bin,orange small block,no
+49,Sweep the dust into the bin,orange bin,no
+50,Sweep the dust into the bin,orange floor,yes
+51,Sweep the dust into the bin,orange rug,no
+52,Sweep the dust into the bin,pink small block,no
+53,Sweep the dust into the bin,pink bin,no
+54,Sweep the dust into the bin,pink floor,yes
+55,Sweep the dust into the bin,pink rug,no
+56,Sweep the dust into the bin,purple small block,no
+57,Sweep the dust into the bin,purple bin,no
+58,Sweep the dust into the bin,purple floor,yes
+59,Sweep the dust into the bin,purple rug,no
+60,Sweep the dust into the bin,red small block,no
+61,Sweep the dust into the bin,red bin,no
+62,Sweep the dust into the bin,red floor,yes
+63,Sweep the dust into the bin,red rug,no
+64,Sweep the dust into the bin,yellow small block,no
+65,Sweep the dust into the bin,yellow bin,no
+66,Sweep the dust into the bin,yellow floor,yes
+67,Sweep the dust into the bin,yellow rug,no

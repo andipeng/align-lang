@@ -11,15 +11,72 @@ use_azure = False
 openai_cache_file = f'openai_cache_{engine}.jsonl'
 
 object_list = """
-  - peach
+  - L-shaped block
   - tomato
-  - apple"""
+  - peach
+  - apple
+  - banana
+  - pepper
+  - drying rack
+  - drying cloth
+  - dish towel
+  - plate
+  - mug
+  - cup
+  - saucer
+  - coaster
+  - block
+  - bowl
+  - container
+  - cross (block of this shape)
+  - diamond (block of this shape)
+  - flower (block of this shape)
+  - heart (block of this shape)
+  - hexagon (block of this shape)
+  - letter A
+  - letter E
+  - letter G
+  - letter M
+  - letter R
+  - letter T
+  - letter V
+  - pallet
+  - pan
+  - pentagon (block of this shape)
+  - ring (block of this shape)
+  - round (block of this shape)
+  - shorter block
+  - small block
+  - star (block of this shape)
+  - triangle (block of this shape)
+  - book
+  - iPad
+  - phone
+  - laptop
+  - bin
+  - stove
+  - sharp block
+  - knife
+  - rug
+  - box"""
 object_colors = """
-  - red
-  - green
-  - yellow
+  - brick
+  - tiles
+  - wooden
   - granite
-  - plastic"""
+  - plastic
+  - styrofoam
+  - carpet
+  - tiger
+  - rainbow
+  - blue
+  - green
+  - olive
+  - orange
+  - pink
+  - purple
+  - red
+  - yellow"""
 
 types=object_list.split('\n  - ')[1:]
 colors=object_colors.split('\n  - ')[1:]
@@ -33,7 +90,20 @@ print(group_dict)
 
 
 rules=[
-    "Bring me a fruit."
+    # ILGA tasks
+    #"Bring me a fruit"
+    #"Bring me something to put food in"
+    #"Bring me a cereal bowl"
+    #"Bring me my favorite food"
+    #"Put down the mug"
+    #"Put down the pan"
+    #"Put away the cardboard box"
+    #"Put away the food"
+    "Sweep the scraps into the sink"
+    #"Sweep the food into the sink"
+    #"Sweep the dust into the trash"
+    #"Sweep the floor in my room"
+    ""
 ]
 
 def generate_prompt_state_abstractions(preference_rule, rule, candidate):
@@ -43,8 +113,8 @@ def generate_prompt_state_abstractions(preference_rule, rule, candidate):
 Object list:
 {composed_objects}
     """
-    print(system_prompt)
-    user_prompt = f"""The command is "{rule}". A user has the following preference rules for the command: "{preference_rule}". In an instantiation of the environment that contains only some subset of the objects, is the object likely to be "{candidate}"? Recall that the object types and colors are mutually exclusive. Think step-by-step and then finish with a new line that says "Final answer:" followed by "yes" or "no" and nothing else. If unsure, make your best guess."""
+    #print(system_prompt)
+    user_prompt = f"""The command is "{rule}". A user has the following preference rules for the command: "{preference_rule}". In an instantiation of the environment that contains only some subset of the objects, is the presence of a {candidate} important for the robot to know about? Recall that the object types and colors are mutually exclusive. Think step-by-step and then finish with a new line that says "Final answer:" followed by "yes" or "no" and nothing else. If unsure, make your best guess."""
     #print(user_prompt)
     return [
         {"role": "system", "content": system_prompt},
@@ -59,17 +129,10 @@ def main(args):
     for r, rule in tqdm(enumerate(rules)):
         print(rule)
 
-        preferences_list = json.load(open(f"preferences/{args.preference_file}.json"))["preferences"][f"rule-{r}"]
+        preferences_list = json.load(open(f"preferences-gpt/{args.preference_file}.json"))["preferences"][f"rule-{r}"]
         top_preference = max(preferences_list, key=lambda x: x[1])
         top_preference = top_preference[0]
         rows = []
-
-        # # sample two (similar) scenes where trajs differ
-        # preferences_prompt = get_preferences_prompt(rule, scene1, scene2)
-        # choices, _ = openai_completion(preferences_prompt, engine, 0.0, use_azure, openai_cache, openai_cache_file)
-        # preferences_list = json.loads(choices[0]['message']['content'])
-        # # pick out most likely answer (potentially including ties)
-
 
         # generate_prompt_state_abstractions(preferences_list, rule, candidate)
         for c, candidate in enumerate(composed_objects):
