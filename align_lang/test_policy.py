@@ -15,7 +15,7 @@ from sentence_transformers import SentenceTransformer
 
 from align_lang.policies import GCBCPolicy, BCPolicy
 from align_lang.utils import process_obs, process_segm, reconstruct_act
-from align_lang.configs.test import pick_config, place_config, rotate_config, sweep_config
+from align_lang.configs.test import pick_dry_config, pick_food_config, pick_ripe_config, place_content_config, place_electronic_config, place_stable_config, sweep_hot_config, sweep_rug_config, sweep_sharp_config
 
 import vima_bench
 
@@ -29,8 +29,8 @@ record_cfg = {'save_video': True,
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--policy_dir', type=str, default='policies')
-parser.add_argument('--policy', type=str, default='gcbc')
-parser.add_argument('--task', type=str, default='pick')
+parser.add_argument('--policy', type=str, default='gcbc') # gcbc, lga, ilga
+parser.add_argument('--task', type=str, default='pick_dry')
 parser.add_argument('--num_test_trajs', type=int, default=1)
 parser.add_argument('--video', type=bool, default=True)
 parser.add_argument('--device', type=str, default='cpu')
@@ -39,14 +39,24 @@ args = parser.parse_args()
 
 ################################### TASK SETUP #################################
 
-if args.task == 'pick':
-    config = pick_config
-elif args.task == 'place':
-    config = place_config
-elif args.task == 'rotate':
-    config = rotate_config
-elif args.mask == 'sweep':
-    config = sweep_config
+if args.task == 'pick_dry':
+    config = pick_dry_config
+elif args.task == 'pick_food':
+    config = pick_food_config
+elif args.task == 'pick_ripe':
+    config = pick_ripe_config
+elif args.mask == 'place_content':
+    config = place_content_config
+elif args.mask == 'place_stable':
+    config = place_stable_config
+elif args.mask == 'place_electronic':
+    config = place_electronic_config
+elif args.mask == 'sweep_hot':
+    config = sweep_hot_config
+elif args.mask == 'sweep_rug':
+    config = sweep_rug_config
+elif args.mask == 'sweep_sharp':
+    config = sweep_sharp_config
 
 env = vima_bench.make(task_name=config.task_name,task_kwargs=config.task_kwargs,record_cfg=record_cfg,hide_arm_rgb=config.hide_arm_rgb)
 
@@ -75,9 +85,14 @@ for i in tqdm(range(args.num_test_trajs)):
     for step in range(config.max_steps):
         # constructs s_hat from phi_hat
         segm = obs['segm']['top']
-        s_hat = process_segm(segm, config.phi_hat, env.meta_info['obj_id_to_info'])
-        im = Image.fromarray(s_hat.astype(np.uint8))
-        im.save('rollouts/'+str(i)+"/"+str(step)+'_mask.jpg')
+        if args.policy == "lga":
+            s_hat = process_segm(segm, config.lga_phi_hat, env.meta_info['obj_id_to_info'])
+            im = Image.fromarray(s_hat.astype(np.uint8))
+            im.save('rollouts/'+str(i)+"/"+str(step)+'_lga_shat.jpg')
+        elif args.policy == "ilga":
+            s_hat = process_segm(segm, config.ilga_phi_hat, env.meta_info['obj_id_to_info'])
+            im = Image.fromarray(s_hat.astype(np.uint8))
+            im.save('rollouts/'+str(i)+"/"+str(step)+'_ilga_shat.jpg')
             
         # saves rgb image as well
         top_obs = obs['rgb']['top']
@@ -86,13 +101,13 @@ for i in tqdm(range(args.num_test_trajs)):
         im.save('rollouts/'+str(i)+"/"+str(step)+'.jpg')
             
         # uses either s_hat or true obs
-        if args.policy == 'lga':
-            state = s_hat
-        else:
+        if args.policy == 'gcbc':
             state = top_obs
+        else:
+            state = s_hat
             
         state = torch.Tensor(state[None]).to(args.device)
-        if args.policy == 'lga':
+        if args.policy == 'lga' or args.policy == 'ilga':
             action = policy(state).cpu().detach().numpy()[0]
         else:
             goal = torch.Tensor(lang_embed[None]).to(args.device)
@@ -110,9 +125,14 @@ for i in tqdm(range(args.num_test_trajs)):
         
     # constructs s_hat from phi_hat
     segm = obs['segm']['top']
-    s_hat = process_segm(segm, config.phi_hat, env.meta_info['obj_id_to_info'])
-    im = Image.fromarray(s_hat.astype(np.uint8))
-    im.save('rollouts/'+str(i)+"/"+str(step+1)+'_mask.jpg')
+    if args.policy == 'lga':
+        s_hat = process_segm(segm, config.lga_phi_hat, env.meta_info['obj_id_to_info'])
+        im = Image.fromarray(s_hat.astype(np.uint8))
+        im.save('rollouts/'+str(i)+"/"+str(step+1)+'lga_shat.jpg')
+    elif args.policy == 'ilga':
+        s_hat = process_segm(segm, config.ilga_phi_hat, env.meta_info['obj_id_to_info'])
+        im = Image.fromarray(s_hat.astype(np.uint8))
+        im.save('rollouts/'+str(i)+"/"+str(step+1)+'ilga_shat.jpg')
             
     # saves rgb image as well
     top_obs = obs['rgb']['top']

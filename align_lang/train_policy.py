@@ -16,7 +16,7 @@ from sentence_transformers import SentenceTransformer
 from align_lang.policies import GCBCPolicy, BCPolicy
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--policy', type=str, default='gcbc') # gcbc, bc, lga
+parser.add_argument('--policy', type=str, default='gcbc') # gcbc, lga, ilga
 parser.add_argument('--save_dir', type=str, default='policies')
 parser.add_argument('--data_dir', type=str, default='expert_data')
 parser.add_argument('--task', type=str, default='visual_manipulation')
@@ -66,7 +66,9 @@ for epoch in range(args.epochs):  # loop over the dataset multiple times
         t_idx = np.random.randint(len(trajs), size=(args.batch_size,)) # Indices of traj
         t_idx_pertraj = np.random.randint(1, size=(args.batch_size,)) # Indices of timesteps in traj
         if args.policy == 'lga':
-            t_states = np.concatenate([trajs[c_idx]['mask_obs'][t_idx][None] for (c_idx, t_idx) in zip(t_idx, t_idx_pertraj)])
+            t_states = np.concatenate([trajs[c_idx]['lga_obs'][t_idx][None] for (c_idx, t_idx) in zip(t_idx, t_idx_pertraj)])
+        elif args.policy == 'ilga':
+            t_states = np.concatenate([trajs[c_idx]['ilga_obs'][t_idx][None] for (c_idx, t_idx) in zip(t_idx, t_idx_pertraj)])
         else:
             t_states = np.concatenate([trajs[c_idx]['obs'][t_idx][None] for (c_idx, t_idx) in zip(t_idx, t_idx_pertraj)])
         t_goals = np.concatenate([trajs[c_idx]['goals'][t_idx][None] for (c_idx, t_idx) in zip(t_idx, t_idx_pertraj)])
@@ -98,4 +100,4 @@ torch.save(policy, args.save_dir + '/' + args.policy + '_policy.pt')
 print('Finished Training')
 
 plt.plot(losses)
-plt.savefig(args.save_dir + '/training_loss.png')
+plt.savefig(args.save_dir + '/' + args.policy + '_training_loss.png')
