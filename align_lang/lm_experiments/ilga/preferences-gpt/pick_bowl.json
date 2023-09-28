@@ -1,0 +1,15 @@
+{
+    "preference_id": "pick_bowl",
+    "preferences": {
+        "rule-1": [
+            [
+                "User prefers to use bowls for putting food in",
+                0.8
+            ],
+            [
+                "User avoids picking items near flowers",
+                0.2
+            ]
+        ]
+    }
+}

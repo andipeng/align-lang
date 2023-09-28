@@ -1,0 +1,10 @@
+{
+    "preference_id": "put_away_guests",
+    "preferences": {
+        "rule-0": [
+            [
+                "Please get things toserve the guests we have over with the food we made."
+            ]
+        ]
+    }
+}

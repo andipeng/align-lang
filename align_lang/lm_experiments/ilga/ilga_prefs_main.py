@@ -19,11 +19,11 @@ rules=[
     #"Put down the mug full of water",
     #"Put down the pan",
     #"Put away the cardboard box",
-    #"Put away the food",
+    #"Put away the food in the right place",
     #"Sweep the scraps into the sink",
     #"Sweep the food into the sink",
     #"Sweep the dust into the trash",
-    "Sweep the floor in my room",
+    #"Sweep the floor in my room",
 ]
 
 def get_preferences_prompt(rule: str, scene1: set, scene2: set):

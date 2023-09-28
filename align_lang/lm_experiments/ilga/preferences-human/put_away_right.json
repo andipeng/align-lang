@@ -1,0 +1,10 @@
+{
+    "preference_id": "put_away_right",
+    "preferences": {
+        "rule-0": [
+            [
+                "Please put away food neatly into containers and boxes in a very neat and orderly manner, and in the correct sequence."
+            ]
+        ]
+    }
+}

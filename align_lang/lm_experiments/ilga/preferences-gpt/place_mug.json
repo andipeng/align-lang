@@ -1,0 +1,19 @@
+{
+    "preference_id": "place_mug",
+    "preferences": {
+        "rule-4": [
+            [
+                "Preference for not placing the mug near electronic devices",
+                0.8
+            ],
+            [
+                "Preference for not placing the mug near other objects",
+                0.1
+            ],
+            [
+                "Preference for not placing the mug near food items",
+                0.1
+            ]
+        ]
+    }
+}

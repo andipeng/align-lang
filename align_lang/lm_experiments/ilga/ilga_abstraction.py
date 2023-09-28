@@ -11,54 +11,11 @@ use_azure = False
 openai_cache_file = f'openai_cache_{engine}.jsonl'
 
 object_list = """
-  - L-shaped block
   - tomato
   - peach
   - apple
   - banana
-  - pepper
-  - drying rack
-  - drying cloth
-  - dish towel
-  - plate
-  - mug
-  - cup
-  - saucer
-  - coaster
-  - block
-  - bowl
-  - container
-  - cross (block of this shape)
-  - diamond (block of this shape)
-  - flower (block of this shape)
-  - heart (block of this shape)
-  - hexagon (block of this shape)
-  - letter A
-  - letter E
-  - letter G
-  - letter M
-  - letter R
-  - letter T
-  - letter V
-  - pallet
-  - pan
-  - pentagon (block of this shape)
-  - ring (block of this shape)
-  - round (block of this shape)
-  - shorter block
-  - small block
-  - star (block of this shape)
-  - triangle (block of this shape)
-  - book
-  - iPad
-  - phone
-  - laptop
-  - bin
-  - stove
-  - sharp block
-  - knife
-  - rug
-  - box"""
+  - pepper"""
 object_colors = """
   - brick
   - tiles
@@ -94,12 +51,12 @@ rules=[
     #"Bring me a fruit"
     #"Bring me something to put food in"
     #"Bring me a cereal bowl"
-    #"Bring me my favorite food"
+    "Bring me my favorite food"
     #"Put down the mug"
     #"Put down the pan"
     #"Put away the cardboard box"
     #"Put away the food"
-    "Sweep the scraps into the sink"
+    #"Sweep the scraps into the sink"
     #"Sweep the food into the sink"
     #"Sweep the dust into the trash"
     #"Sweep the floor in my room"
@@ -129,9 +86,12 @@ def main(args):
     for r, rule in tqdm(enumerate(rules)):
         print(rule)
 
-        preferences_list = json.load(open(f"preferences-gpt/{args.preference_file}.json"))["preferences"][f"rule-{r}"]
-        top_preference = max(preferences_list, key=lambda x: x[1])
-        top_preference = top_preference[0]
+        preferences_list = json.load(open(f"preferences-human/{args.preference_file}.json"))["preferences"][f"rule-{r}"]
+        if len(preferences_list) > 1:
+            top_preference = max(preferences_list, key=lambda x: x[1])
+            top_preference = top_preference[0]
+        else:
+            top_preference = preferences_list[0]
         rows = []
 
         # generate_prompt_state_abstractions(preferences_list, rule, candidate)
@@ -159,13 +119,6 @@ def main(args):
         df.to_csv(f'{results_path}/{engine}_rule-{r}_{args.preference_file}.csv')
         r+=1
         print()
-
-
-
-# class ArgumentParser(Tap):
-#     preference_file: str = None  # preference file we want to load
-    
-
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

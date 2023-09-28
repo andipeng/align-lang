@@ -1,0 +1,19 @@
+{
+    "preference_id": "sweep_dust_rug",
+    "preferences": {
+        "rule-10": [
+            [
+                "Preference for sweeping on wooden floors over carpets",
+                0.7
+            ],
+            [
+                "Preference to avoid sweeping near food",
+                0.2
+            ],
+            [
+                "Preference to avoid sweeping near bananas",
+                0.1
+            ]
+        ]
+    }
+}

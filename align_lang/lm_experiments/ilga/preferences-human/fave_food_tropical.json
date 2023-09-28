@@ -1,0 +1,10 @@
+{
+    "preference_id": "favorite_food_tropical",
+    "preferences": {
+        "rule-0": [
+            [
+                "I like tropical fruits and would like you to bring me different fruits of the tropical type."
+            ]
+        ]
+    }
+}

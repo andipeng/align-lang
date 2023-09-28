@@ -1,0 +1,10 @@
+{
+    "preference_id": "sweep_careful",
+    "preferences": {
+        "rule-0": [
+            [
+                "Please sweep the blocks into the sink in a very slow and careful manner without hitting dangerous or sharp things."
+            ]
+        ]
+    }
+}
