@@ -27,19 +27,23 @@ class GCBCPolicy(nn.Module):
 
 class BCPolicy(nn.Module):
     def __init__(
-        self, action_dim, hidden_size, output_mod=None):
+        self, mask, input_dim, action_dim, hidden_size, output_mod=None):
         super().__init__()
         self.cnn = nn.Sequential(
-            nn.Conv2d(3, 32, kernel_size=8, stride=4), nn.ReLU(inplace=True), nn.BatchNorm2d(32), #(b_size,3,36,72)=>(b_size,32,8,17)
+            nn.Conv2d(input_dim, 32, kernel_size=8, stride=4), nn.ReLU(inplace=True), nn.BatchNorm2d(32), #(b_size,3,36,72)=>(b_size,32,8,17)
             nn.Conv2d(32, 64, kernel_size=4, stride=2), nn.ReLU(inplace=True), nn.BatchNorm2d(64), #(b_size,32,8,17)=>(b_size,64,3,7)
             nn.Conv2d(64, 32, kernel_size=3, stride=1), nn.LeakyReLU(inplace=True), nn.BatchNorm2d(32), Flatten(), #(b_size,64,3,7)=>(b_size,32,1,5)=>(b_size,32*1*5)
             nn.Linear(32*1*5, action_dim)#, nn.LeakyReLU(inplace=True), nn.BatchNorm1d(32), #(b_size,32*1*5)=>(b_size,action_dim)
         )
         self.apply(weight_init)
+        self.mask = mask
 
     def forward(self, state):
-        state = state/255.0 # process image + switch channels
-        state = state.permute(0,3,1,2)
+        if self.mask:
+            state = state.unsqueeze(1)
+        else:
+            state = state/255.0 # process image + switch channels
+            state = state.permute(0,3,1,2)
         action = self.cnn(state)
         return action
 

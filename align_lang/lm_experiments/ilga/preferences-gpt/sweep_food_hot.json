@@ -4,11 +4,11 @@
         "rule-8": [
             [
                 "User prefers to avoid hot objects",
-                0.7
+                0.8
             ],
             [
                 "User prefers to approach gray objects",
-                0.3
+                0.2
             ]
         ]
     }

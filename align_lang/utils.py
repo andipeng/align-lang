@@ -22,14 +22,24 @@ def process_obs(obs):
     return processed_obs
 
 def process_segm(segm, phi_hat, env_obj_info):
-    # searches if obj + properties are in phi_hat, replaces with mask
+    # searches if obj + properties are in phi_hat, keeps
     for obj in env_obj_info:
         if env_obj_info[obj]['obj_name'] in phi_hat.keys():
             if env_obj_info[obj]['texture_name'] in phi_hat[env_obj_info[obj]['obj_name']]:
+                #import pdb; pdb.set_trace()
                 segm[segm == obj] = 255
-    segm[segm < 255] = 0
+    # keeps phi_hat objs, masks out rest (arm=2)
+    segm[segm != 255] = 0
+    segm[segm == 255] = 1
     # reshape + resize
-    segm = cv2.merge((segm,segm,segm))
+    segm = cv2.resize(segm, dsize=(72, 36), interpolation=cv2.INTER_LINEAR_EXACT)
+    return segm
+
+def process_raw_segm(segm):
+    # converts all objs to mask
+    segm[segm <= 1] = 0
+    segm[segm > 1] = 1
+    # reshape + resize
     segm = cv2.resize(segm, dsize=(72, 36), interpolation=cv2.INTER_LINEAR_EXACT)
     return segm
 
@@ -50,7 +60,7 @@ def reconstruct_act(action, env):
     return reconst_action
 
 def compare_act(action1, action2):
-    if np.linalg.norm(action1 - action2) < 0.1:
+    if np.linalg.norm(action1 - action2) < 0.2:
         return True
     return False
 

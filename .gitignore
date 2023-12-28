@@ -2,7 +2,9 @@
 *.pt
 *.jpg
 rollouts/
+results/
 user_study/
+spot_data/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,263 +1,215 @@
 ,rule,object_category,group,candidate,answer
-0,Sweep the floor in my room,object to sweep,object type,L-shaped block,no
-1,Sweep the floor in my room,object to sweep,object type,tomato,no
-2,Sweep the floor in my room,object to sweep,object type,peach,no
-3,Sweep the floor in my room,object to sweep,object type,apple,no
-4,Sweep the floor in my room,object to sweep,object type,banana,no
-5,Sweep the floor in my room,object to sweep,object type,pepper,no
-6,Sweep the floor in my room,object to sweep,object type,drying rack,no
-7,Sweep the floor in my room,object to sweep,object type,drying cloth,yes
-8,Sweep the floor in my room,object to sweep,object type,dish towel,yes
-9,Sweep the floor in my room,object to sweep,object type,plate,no
-10,Sweep the floor in my room,object to sweep,object type,mug,no
-11,Sweep the floor in my room,object to sweep,object type,cup,no
-12,Sweep the floor in my room,object to sweep,object type,saucer,no
-13,Sweep the floor in my room,object to sweep,object type,coaster,no
-14,Sweep the floor in my room,object to sweep,object type,block,no
-15,Sweep the floor in my room,object to sweep,object type,bowl,no
-16,Sweep the floor in my room,object to sweep,object type,container,no
-17,Sweep the floor in my room,object to sweep,object type,cross (block of this shape),no
-18,Sweep the floor in my room,object to sweep,object type,diamond (block of this shape),no
-19,Sweep the floor in my room,object to sweep,object type,flower (block of this shape),no
-20,Sweep the floor in my room,object to sweep,object type,heart (block of this shape),no
-21,Sweep the floor in my room,object to sweep,object type,hexagon (block of this shape),no
-22,Sweep the floor in my room,object to sweep,object type,letter A,no
-23,Sweep the floor in my room,object to sweep,object type,letter E,no
-24,Sweep the floor in my room,object to sweep,object type,letter G,no
-25,Sweep the floor in my room,object to sweep,object type,letter M,no
-26,Sweep the floor in my room,object to sweep,object type,letter R,no
-27,Sweep the floor in my room,object to sweep,object type,letter T,no
-28,Sweep the floor in my room,object to sweep,object type,letter V,no
-29,Sweep the floor in my room,object to sweep,object type,pallet,no
-30,Sweep the floor in my room,object to sweep,object type,pan,no
-31,Sweep the floor in my room,object to sweep,object type,pentagon (block of this shape),no
-32,Sweep the floor in my room,object to sweep,object type,ring (block of this shape),no
-33,Sweep the floor in my room,object to sweep,object type,round (block of this shape),no
-34,Sweep the floor in my room,object to sweep,object type,shorter block,no
-35,Sweep the floor in my room,object to sweep,object type,small block,no
-36,Sweep the floor in my room,object to sweep,object type,star (block of this shape),no
-37,Sweep the floor in my room,object to sweep,object type,triangle (block of this shape),no
-38,Sweep the floor in my room,object to sweep,object type,book,no
-39,Sweep the floor in my room,object to sweep,object type,iPad,no
-40,Sweep the floor in my room,object to sweep,object type,phone,no
-41,Sweep the floor in my room,object to sweep,object type,laptop,no
-42,Sweep the floor in my room,object to sweep,object type,bin,no
-43,Sweep the floor in my room,object to sweep,object type,stove,no
-44,Sweep the floor in my room,object to sweep,object type,sharp block,no
-45,Sweep the floor in my room,object to sweep,object type,knife,no
-46,Sweep the floor in my room,object to sweep,object type,rug,yes
-47,Sweep the floor in my room,object to sweep,object type,box,no
-48,Sweep the floor in my room,object to sweep,object color,brick,no
-49,Sweep the floor in my room,object to sweep,object color,tiles,no
-50,Sweep the floor in my room,object to sweep,object color,wooden,no
-51,Sweep the floor in my room,object to sweep,object color,granite,yes
-52,Sweep the floor in my room,object to sweep,object color,plastic,no
-53,Sweep the floor in my room,object to sweep,object color,carpet,no
-54,Sweep the floor in my room,object to sweep,object color,polka dot,no
-55,Sweep the floor in my room,object to sweep,object color,checkerboard,no
-56,Sweep the floor in my room,object to sweep,object color,tiger,no
-57,Sweep the floor in my room,object to sweep,object color,magma,no
-58,Sweep the floor in my room,object to sweep,object color,rainbow,yes
-59,Sweep the floor in my room,object to sweep,object color,blue,yes
-60,Sweep the floor in my room,object to sweep,object color,cyan,no
-61,Sweep the floor in my room,object to sweep,object color,green,no
-62,Sweep the floor in my room,object to sweep,object color,olive,yes
-63,Sweep the floor in my room,object to sweep,object color,orange,yes
-64,Sweep the floor in my room,object to sweep,object color,pink,yes
-65,Sweep the floor in my room,object to sweep,object color,purple,no
-66,Sweep the floor in my room,object to sweep,object color,red,yes
-67,Sweep the floor in my room,object to sweep,object color,yellow,no
-68,Sweep the floor in my room,object to sweep,object color,dark blue,yes
-69,Sweep the floor in my room,object to sweep,object color,dark cyan,yes
-70,Sweep the floor in my room,object to sweep,object color,dark green,yes
-71,Sweep the floor in my room,object to sweep,object color,dark orange,yes
-72,Sweep the floor in my room,object to sweep,object color,dark pink,no
-73,Sweep the floor in my room,object to sweep,object color,dark purple,yes
-74,Sweep the floor in my room,object to sweep,object color,dark red,no
-75,Sweep the floor in my room,object to sweep,object color,dark yellow,yes
-76,Sweep the floor in my room,object to sweep,object color,red and yellow stripe,no
-77,Sweep the floor in my room,object to sweep,object color,red and green stripe,no
-78,Sweep the floor in my room,object to sweep,object color,red and blue stripe,no
-79,Sweep the floor in my room,object to sweep,object color,red and purple stripe,yes
-80,Sweep the floor in my room,object to sweep,object color,yellow and green stripe,no
-81,Sweep the floor in my room,object to sweep,object color,yellow and blue stripe,yes
-82,Sweep the floor in my room,object to sweep,object color,yellow and purple stripe,no
-83,Sweep the floor in my room,object to sweep,object color,green and blue stripe,yes
-84,Sweep the floor in my room,object to sweep,object color,green and purple stripe,no
-85,Sweep the floor in my room,object to sweep,object color,blue and purple stripe,no
-86,Sweep the floor in my room,object to sweep,object color,dark red and yellow stripe,no
-87,Sweep the floor in my room,object to sweep,object color,dark red and green stripe,no
-88,Sweep the floor in my room,object to sweep,object color,dark red and blue stripe,no
-89,Sweep the floor in my room,object to sweep,object color,dark red and purple stripe,no
-90,Sweep the floor in my room,object to sweep,object color,dark yellow and green stripe,no
-91,Sweep the floor in my room,object to sweep,object color,dark yellow and blue stripe,yes
-92,Sweep the floor in my room,object to sweep,object color,dark yellow and purple stripe,no
-93,Sweep the floor in my room,object to sweep,object color,dark green and blue stripe,no
-94,Sweep the floor in my room,object to sweep,object color,dark green and purple stripe,no
-95,Sweep the floor in my room,object to sweep,object color,dark blue and purple stripe,no
-96,Sweep the floor in my room,object to sweep,object color,red and yellow polka dot,yes
-97,Sweep the floor in my room,object to sweep,object color,red and green polka dot,yes
-98,Sweep the floor in my room,object to sweep,object color,red and blue polka dot,no
-99,Sweep the floor in my room,object to sweep,object color,red and purple polka dot,yes
-100,Sweep the floor in my room,object to sweep,object color,yellow and green polka dot,yes
-101,Sweep the floor in my room,object to sweep,object color,yellow and blue polka dot,no
-102,Sweep the floor in my room,object to sweep,object color,yellow and purple polka dot,no
-103,Sweep the floor in my room,object to sweep,object color,green and blue polka dot,no
-104,Sweep the floor in my room,object to sweep,object color,green and purple polka dot,yes
-105,Sweep the floor in my room,object to sweep,object color,blue and purple polka dot,yes
-106,Sweep the floor in my room,object to sweep,object color,dark red and yellow polka dot,no
-107,Sweep the floor in my room,object to sweep,object color,dark red and green polka dot,no
-108,Sweep the floor in my room,object to sweep,object color,dark red and blue polka dot,no
-109,Sweep the floor in my room,object to sweep,object color,dark red and purple polka dot,no
-110,Sweep the floor in my room,object to sweep,object color,dark yellow and green polka dot,no
-111,Sweep the floor in my room,object to sweep,object color,dark yellow and blue polka dot,yes
-112,Sweep the floor in my room,object to sweep,object color,dark yellow and purple polka dot,no
-113,Sweep the floor in my room,object to sweep,object color,dark green and blue polka dot,no
-114,Sweep the floor in my room,object to sweep,object color,dark green and purple polka dot,no
-115,Sweep the floor in my room,object to sweep,object color,dark blue and purple polka dot,no
-116,Sweep the floor in my room,object to sweep,object color,red swirl,no
-117,Sweep the floor in my room,object to sweep,object color,yellow swirl,no
-118,Sweep the floor in my room,object to sweep,object color,green swirl,no
-119,Sweep the floor in my room,object to sweep,object color,blue swirl,no
-120,Sweep the floor in my room,object to sweep,object color,purple swirl,no
-121,Sweep the floor in my room,object to sweep,object color,dark red swirl,no
-122,Sweep the floor in my room,object to sweep,object color,dark yellow swirl,no
-123,Sweep the floor in my room,object to sweep,object color,dark green swirl,no
-124,Sweep the floor in my room,object to sweep,object color,dark blue swirl,yes
-125,Sweep the floor in my room,object to sweep,object color,dark purple swirl,yes
-126,Sweep the floor in my room,object to sweep,object color,red paisley,yes
-127,Sweep the floor in my room,object to sweep,object color,yellow paisley,no
-128,Sweep the floor in my room,object to sweep,object color,green paisley,no
-129,Sweep the floor in my room,object to sweep,object color,blue paisley,no
-130,Sweep the floor in my room,object to sweep,object color,purple paisley,no
-131,Sweep the floor in my room,object to sweep,object type,L-shaped block,no
-132,Sweep the floor in my room,object to sweep,object type,tomato,no
-133,Sweep the floor in my room,object to sweep,object type,peach,no
-134,Sweep the floor in my room,object to sweep,object type,apple,no
-135,Sweep the floor in my room,object to sweep,object type,banana,no
-136,Sweep the floor in my room,object to sweep,object type,pepper,no
-137,Sweep the floor in my room,object to sweep,object type,drying rack,no
-138,Sweep the floor in my room,object to sweep,object type,drying cloth,no
-139,Sweep the floor in my room,object to sweep,object type,dish towel,no
-140,Sweep the floor in my room,object to sweep,object type,plate,no
-141,Sweep the floor in my room,object to sweep,object type,mug,no
-142,Sweep the floor in my room,object to sweep,object type,cup,yes
-143,Sweep the floor in my room,object to sweep,object type,saucer,no
-144,Sweep the floor in my room,object to sweep,object type,coaster,no
-145,Sweep the floor in my room,object to sweep,object type,block,no
-146,Sweep the floor in my room,object to sweep,object type,bowl,no
-147,Sweep the floor in my room,object to sweep,object type,container,yes
-148,Sweep the floor in my room,object to sweep,object type,cross (block of this shape),no
-149,Sweep the floor in my room,object to sweep,object type,diamond (block of this shape),no
-150,Sweep the floor in my room,object to sweep,object type,flower (block of this shape),no
-151,Sweep the floor in my room,object to sweep,object type,heart (block of this shape),no
-152,Sweep the floor in my room,object to sweep,object type,hexagon (block of this shape),no
-153,Sweep the floor in my room,object to sweep,object type,letter A,no
-154,Sweep the floor in my room,object to sweep,object type,letter E,no
-155,Sweep the floor in my room,object to sweep,object type,letter G,no
-156,Sweep the floor in my room,object to sweep,object type,letter M,no
-157,Sweep the floor in my room,object to sweep,object type,letter R,no
-158,Sweep the floor in my room,object to sweep,object type,letter T,no
-159,Sweep the floor in my room,object to sweep,object type,letter V,no
-160,Sweep the floor in my room,object to sweep,object type,pallet,no
-161,Sweep the floor in my room,object to sweep,object type,pan,no
-162,Sweep the floor in my room,object to sweep,object type,pentagon (block of this shape),no
-163,Sweep the floor in my room,object to sweep,object type,ring (block of this shape),no
-164,Sweep the floor in my room,object to sweep,object type,round (block of this shape),no
-165,Sweep the floor in my room,object to sweep,object type,shorter block,no
-166,Sweep the floor in my room,object to sweep,object type,small block,no
-167,Sweep the floor in my room,object to sweep,object type,star (block of this shape),no
-168,Sweep the floor in my room,object to sweep,object type,triangle (block of this shape),no
-169,Sweep the floor in my room,object to sweep,object type,book,no
-170,Sweep the floor in my room,object to sweep,object type,iPad,no
-171,Sweep the floor in my room,object to sweep,object type,phone,no
-172,Sweep the floor in my room,object to sweep,object type,laptop,no
-173,Sweep the floor in my room,object to sweep,object type,bin,yes
-174,Sweep the floor in my room,object to sweep,object type,stove,no
-175,Sweep the floor in my room,object to sweep,object type,sharp block,no
-176,Sweep the floor in my room,object to sweep,object type,knife,no
-177,Sweep the floor in my room,object to sweep,object type,rug,no
-178,Sweep the floor in my room,object to sweep,object type,box,yes
-179,Sweep the floor in my room,object to sweep,object color,brick,yes
-180,Sweep the floor in my room,object to sweep,object color,tiles,yes
-181,Sweep the floor in my room,object to sweep,object color,wooden,yes
-182,Sweep the floor in my room,object to sweep,object color,granite,yes
-183,Sweep the floor in my room,object to sweep,object color,plastic,yes
-184,Sweep the floor in my room,object to sweep,object color,carpet,yes
-185,Sweep the floor in my room,object to sweep,object color,polka dot,yes
-186,Sweep the floor in my room,object to sweep,object color,checkerboard,yes
-187,Sweep the floor in my room,object to sweep,object color,tiger,yes
-188,Sweep the floor in my room,object to sweep,object color,magma,yes
-189,Sweep the floor in my room,object to sweep,object color,rainbow,yes
-190,Sweep the floor in my room,object to sweep,object color,blue,yes
-191,Sweep the floor in my room,object to sweep,object color,cyan,yes
-192,Sweep the floor in my room,object to sweep,object color,green,yes
-193,Sweep the floor in my room,object to sweep,object color,olive,yes
-194,Sweep the floor in my room,object to sweep,object color,orange,yes
-195,Sweep the floor in my room,object to sweep,object color,pink,yes
-196,Sweep the floor in my room,object to sweep,object color,purple,yes
-197,Sweep the floor in my room,object to sweep,object color,red,yes
-198,Sweep the floor in my room,object to sweep,object color,yellow,yes
-199,Sweep the floor in my room,object to sweep,object color,dark blue,yes
-200,Sweep the floor in my room,object to sweep,object color,dark cyan,yes
-201,Sweep the floor in my room,object to sweep,object color,dark green,yes
-202,Sweep the floor in my room,object to sweep,object color,dark orange,yes
-203,Sweep the floor in my room,object to sweep,object color,dark pink,yes
-204,Sweep the floor in my room,object to sweep,object color,dark purple,yes
-205,Sweep the floor in my room,object to sweep,object color,dark red,yes
-206,Sweep the floor in my room,object to sweep,object color,dark yellow,yes
-207,Sweep the floor in my room,object to sweep,object color,red and yellow stripe,yes
-208,Sweep the floor in my room,object to sweep,object color,red and green stripe,yes
-209,Sweep the floor in my room,object to sweep,object color,red and blue stripe,yes
-210,Sweep the floor in my room,object to sweep,object color,red and purple stripe,yes
-211,Sweep the floor in my room,object to sweep,object color,yellow and green stripe,yes
-212,Sweep the floor in my room,object to sweep,object color,yellow and blue stripe,yes
-213,Sweep the floor in my room,object to sweep,object color,yellow and purple stripe,yes
-214,Sweep the floor in my room,object to sweep,object color,green and blue stripe,yes
-215,Sweep the floor in my room,object to sweep,object color,green and purple stripe,yes
-216,Sweep the floor in my room,object to sweep,object color,blue and purple stripe,yes
-217,Sweep the floor in my room,object to sweep,object color,dark red and yellow stripe,yes
-218,Sweep the floor in my room,object to sweep,object color,dark red and green stripe,yes
-219,Sweep the floor in my room,object to sweep,object color,dark red and blue stripe,yes
-220,Sweep the floor in my room,object to sweep,object color,dark red and purple stripe,yes
-221,Sweep the floor in my room,object to sweep,object color,dark yellow and green stripe,yes
-222,Sweep the floor in my room,object to sweep,object color,dark yellow and blue stripe,yes
-223,Sweep the floor in my room,object to sweep,object color,dark yellow and purple stripe,yes
-224,Sweep the floor in my room,object to sweep,object color,dark green and blue stripe,yes
-225,Sweep the floor in my room,object to sweep,object color,dark green and purple stripe,yes
-226,Sweep the floor in my room,object to sweep,object color,dark blue and purple stripe,yes
-227,Sweep the floor in my room,object to sweep,object color,red and yellow polka dot,yes
-228,Sweep the floor in my room,object to sweep,object color,red and green polka dot,yes
-229,Sweep the floor in my room,object to sweep,object color,red and blue polka dot,yes
-230,Sweep the floor in my room,object to sweep,object color,red and purple polka dot,yes
-231,Sweep the floor in my room,object to sweep,object color,yellow and green polka dot,yes
-232,Sweep the floor in my room,object to sweep,object color,yellow and blue polka dot,yes
-233,Sweep the floor in my room,object to sweep,object color,yellow and purple polka dot,yes
-234,Sweep the floor in my room,object to sweep,object color,green and blue polka dot,yes
-235,Sweep the floor in my room,object to sweep,object color,green and purple polka dot,yes
-236,Sweep the floor in my room,object to sweep,object color,blue and purple polka dot,yes
-237,Sweep the floor in my room,object to sweep,object color,dark red and yellow polka dot,yes
-238,Sweep the floor in my room,object to sweep,object color,dark red and green polka dot,yes
-239,Sweep the floor in my room,object to sweep,object color,dark red and blue polka dot,yes
-240,Sweep the floor in my room,object to sweep,object color,dark red and purple polka dot,yes
-241,Sweep the floor in my room,object to sweep,object color,dark yellow and green polka dot,yes
-242,Sweep the floor in my room,object to sweep,object color,dark yellow and blue polka dot,yes
-243,Sweep the floor in my room,object to sweep,object color,dark yellow and purple polka dot,yes
-244,Sweep the floor in my room,object to sweep,object color,dark green and blue polka dot,yes
-245,Sweep the floor in my room,object to sweep,object color,dark green and purple polka dot,yes
-246,Sweep the floor in my room,object to sweep,object color,dark blue and purple polka dot,yes
-247,Sweep the floor in my room,object to sweep,object color,red swirl,yes
-248,Sweep the floor in my room,object to sweep,object color,yellow swirl,yes
-249,Sweep the floor in my room,object to sweep,object color,green swirl,yes
-250,Sweep the floor in my room,object to sweep,object color,blue swirl,yes
-251,Sweep the floor in my room,object to sweep,object color,purple swirl,yes
-252,Sweep the floor in my room,object to sweep,object color,dark red swirl,yes
-253,Sweep the floor in my room,object to sweep,object color,dark yellow swirl,yes
-254,Sweep the floor in my room,object to sweep,object color,dark green swirl,yes
-255,Sweep the floor in my room,object to sweep,object color,dark blue swirl,yes
-256,Sweep the floor in my room,object to sweep,object color,dark purple swirl,yes
-257,Sweep the floor in my room,object to sweep,object color,red paisley,yes
-258,Sweep the floor in my room,object to sweep,object color,yellow paisley,yes
-259,Sweep the floor in my room,object to sweep,object color,green paisley,yes
-260,Sweep the floor in my room,object to sweep,object color,blue paisley,yes
-261,Sweep the floor in my room,object to sweep,object color,purple paisley,yes
+0,Sweep the block into the square without touching the pan,object to sweep,object type,L-shaped block,no
+1,Sweep the block into the square without touching the pan,object to sweep,object type,block,yes
+2,Sweep the block into the square without touching the pan,object to sweep,object type,bowl,no
+3,Sweep the block into the square without touching the pan,object to sweep,object type,container,no
+4,Sweep the block into the square without touching the pan,object to sweep,object type,cross (block of this shape),no
+5,Sweep the block into the square without touching the pan,object to sweep,object type,diamond (block of this shape),no
+6,Sweep the block into the square without touching the pan,object to sweep,object type,flower (block of this shape),no
+7,Sweep the block into the square without touching the pan,object to sweep,object type,heart (block of this shape),no
+8,Sweep the block into the square without touching the pan,object to sweep,object type,hexagon (block of this shape),no
+9,Sweep the block into the square without touching the pan,object to sweep,object type,letter A,no
+10,Sweep the block into the square without touching the pan,object to sweep,object type,letter E,no
+11,Sweep the block into the square without touching the pan,object to sweep,object type,letter G,no
+12,Sweep the block into the square without touching the pan,object to sweep,object type,letter M,no
+13,Sweep the block into the square without touching the pan,object to sweep,object type,letter R,no
+14,Sweep the block into the square without touching the pan,object to sweep,object type,letter T,no
+15,Sweep the block into the square without touching the pan,object to sweep,object type,letter V,no
+16,Sweep the block into the square without touching the pan,object to sweep,object type,pallet,no
+17,Sweep the block into the square without touching the pan,object to sweep,object type,pan,no
+18,Sweep the block into the square without touching the pan,object to sweep,object type,pentagon (block of this shape),no
+19,Sweep the block into the square without touching the pan,object to sweep,object type,ring (block of this shape),no
+20,Sweep the block into the square without touching the pan,object to sweep,object type,round (block of this shape),no
+21,Sweep the block into the square without touching the pan,object to sweep,object type,shorter block,no
+22,Sweep the block into the square without touching the pan,object to sweep,object type,small block,no
+23,Sweep the block into the square without touching the pan,object to sweep,object type,star (block of this shape),no
+24,Sweep the block into the square without touching the pan,object to sweep,object type,triangle (block of this shape),no
+25,Sweep the block into the square without touching the pan,object to sweep,object color,brick,yes
+26,Sweep the block into the square without touching the pan,object to sweep,object color,tiles,yes
+27,Sweep the block into the square without touching the pan,object to sweep,object color,wooden,yes
+28,Sweep the block into the square without touching the pan,object to sweep,object color,granite,yes
+29,Sweep the block into the square without touching the pan,object to sweep,object color,plastic,yes
+30,Sweep the block into the square without touching the pan,object to sweep,object color,polka dot,yes
+31,Sweep the block into the square without touching the pan,object to sweep,object color,checkerboard,yes
+32,Sweep the block into the square without touching the pan,object to sweep,object color,tiger,yes
+33,Sweep the block into the square without touching the pan,object to sweep,object color,magma,yes
+34,Sweep the block into the square without touching the pan,object to sweep,object color,rainbow,yes
+35,Sweep the block into the square without touching the pan,object to sweep,object color,blue,yes
+36,Sweep the block into the square without touching the pan,object to sweep,object color,cyan,yes
+37,Sweep the block into the square without touching the pan,object to sweep,object color,green,yes
+38,Sweep the block into the square without touching the pan,object to sweep,object color,olive,yes
+39,Sweep the block into the square without touching the pan,object to sweep,object color,orange,yes
+40,Sweep the block into the square without touching the pan,object to sweep,object color,pink,yes
+41,Sweep the block into the square without touching the pan,object to sweep,object color,purple,yes
+42,Sweep the block into the square without touching the pan,object to sweep,object color,red,yes
+43,Sweep the block into the square without touching the pan,object to sweep,object color,yellow,yes
+44,Sweep the block into the square without touching the pan,object to sweep,object color,dark blue,yes
+45,Sweep the block into the square without touching the pan,object to sweep,object color,dark cyan,yes
+46,Sweep the block into the square without touching the pan,object to sweep,object color,dark green,yes
+47,Sweep the block into the square without touching the pan,object to sweep,object color,dark orange,yes
+48,Sweep the block into the square without touching the pan,object to sweep,object color,dark pink,yes
+49,Sweep the block into the square without touching the pan,object to sweep,object color,dark purple,yes
+50,Sweep the block into the square without touching the pan,object to sweep,object color,dark red,yes
+51,Sweep the block into the square without touching the pan,object to sweep,object color,dark yellow,yes
+52,Sweep the block into the square without touching the pan,object to sweep,object color,red and yellow stripe,yes
+53,Sweep the block into the square without touching the pan,object to sweep,object color,red and green stripe,yes
+54,Sweep the block into the square without touching the pan,object to sweep,object color,red and blue stripe,yes
+55,Sweep the block into the square without touching the pan,object to sweep,object color,red and purple stripe,yes
+56,Sweep the block into the square without touching the pan,object to sweep,object color,yellow and green stripe,yes
+57,Sweep the block into the square without touching the pan,object to sweep,object color,yellow and blue stripe,yes
+58,Sweep the block into the square without touching the pan,object to sweep,object color,yellow and purple stripe,yes
+59,Sweep the block into the square without touching the pan,object to sweep,object color,green and blue stripe,yes
+60,Sweep the block into the square without touching the pan,object to sweep,object color,green and purple stripe,yes
+61,Sweep the block into the square without touching the pan,object to sweep,object color,blue and purple stripe,yes
+62,Sweep the block into the square without touching the pan,object to sweep,object color,dark red and yellow stripe,yes
+63,Sweep the block into the square without touching the pan,object to sweep,object color,dark red and green stripe,yes
+64,Sweep the block into the square without touching the pan,object to sweep,object color,dark red and blue stripe,yes
+65,Sweep the block into the square without touching the pan,object to sweep,object color,dark red and purple stripe,yes
+66,Sweep the block into the square without touching the pan,object to sweep,object color,dark yellow and green stripe,yes
+67,Sweep the block into the square without touching the pan,object to sweep,object color,dark yellow and blue stripe,yes
+68,Sweep the block into the square without touching the pan,object to sweep,object color,dark yellow and purple stripe,yes
+69,Sweep the block into the square without touching the pan,object to sweep,object color,dark green and blue stripe,yes
+70,Sweep the block into the square without touching the pan,object to sweep,object color,dark green and purple stripe,yes
+71,Sweep the block into the square without touching the pan,object to sweep,object color,dark blue and purple stripe,yes
+72,Sweep the block into the square without touching the pan,object to sweep,object color,red and yellow polka dot,yes
+73,Sweep the block into the square without touching the pan,object to sweep,object color,red and green polka dot,yes
+74,Sweep the block into the square without touching the pan,object to sweep,object color,red and blue polka dot,yes
+75,Sweep the block into the square without touching the pan,object to sweep,object color,red and purple polka dot,yes
+76,Sweep the block into the square without touching the pan,object to sweep,object color,yellow and green polka dot,yes
+77,Sweep the block into the square without touching the pan,object to sweep,object color,yellow and blue polka dot,yes
+78,Sweep the block into the square without touching the pan,object to sweep,object color,yellow and purple polka dot,yes
+79,Sweep the block into the square without touching the pan,object to sweep,object color,green and blue polka dot,yes
+80,Sweep the block into the square without touching the pan,object to sweep,object color,green and purple polka dot,yes
+81,Sweep the block into the square without touching the pan,object to sweep,object color,blue and purple polka dot,yes
+82,Sweep the block into the square without touching the pan,object to sweep,object color,dark red and yellow polka dot,yes
+83,Sweep the block into the square without touching the pan,object to sweep,object color,dark red and green polka dot,yes
+84,Sweep the block into the square without touching the pan,object to sweep,object color,dark red and blue polka dot,yes
+85,Sweep the block into the square without touching the pan,object to sweep,object color,dark red and purple polka dot,yes
+86,Sweep the block into the square without touching the pan,object to sweep,object color,dark yellow and green polka dot,yes
+87,Sweep the block into the square without touching the pan,object to sweep,object color,dark yellow and blue polka dot,yes
+88,Sweep the block into the square without touching the pan,object to sweep,object color,dark yellow and purple polka dot,yes
+89,Sweep the block into the square without touching the pan,object to sweep,object color,dark green and blue polka dot,yes
+90,Sweep the block into the square without touching the pan,object to sweep,object color,dark green and purple polka dot,yes
+91,Sweep the block into the square without touching the pan,object to sweep,object color,dark blue and purple polka dot,yes
+92,Sweep the block into the square without touching the pan,object to sweep,object color,red swirl,yes
+93,Sweep the block into the square without touching the pan,object to sweep,object color,yellow swirl,yes
+94,Sweep the block into the square without touching the pan,object to sweep,object color,green swirl,yes
+95,Sweep the block into the square without touching the pan,object to sweep,object color,blue swirl,yes
+96,Sweep the block into the square without touching the pan,object to sweep,object color,purple swirl,yes
+97,Sweep the block into the square without touching the pan,object to sweep,object color,dark red swirl,yes
+98,Sweep the block into the square without touching the pan,object to sweep,object color,dark yellow swirl,yes
+99,Sweep the block into the square without touching the pan,object to sweep,object color,dark green swirl,yes
+100,Sweep the block into the square without touching the pan,object to sweep,object color,dark blue swirl,yes
+101,Sweep the block into the square without touching the pan,object to sweep,object color,dark purple swirl,yes
+102,Sweep the block into the square without touching the pan,object to sweep,object color,red paisley,yes
+103,Sweep the block into the square without touching the pan,object to sweep,object color,yellow paisley,yes
+104,Sweep the block into the square without touching the pan,object to sweep,object color,green paisley,yes
+105,Sweep the block into the square without touching the pan,object to sweep,object color,blue paisley,yes
+106,Sweep the block into the square without touching the pan,object to sweep,object color,purple paisley,yes
+107,Sweep the block into the square without touching the pan,object to avoid,object type,L-shaped block,no
+108,Sweep the block into the square without touching the pan,object to avoid,object type,block,no
+109,Sweep the block into the square without touching the pan,object to avoid,object type,bowl,no
+110,Sweep the block into the square without touching the pan,object to avoid,object type,container,no
+111,Sweep the block into the square without touching the pan,object to avoid,object type,cross (block of this shape),no
+112,Sweep the block into the square without touching the pan,object to avoid,object type,diamond (block of this shape),no
+113,Sweep the block into the square without touching the pan,object to avoid,object type,flower (block of this shape),no
+114,Sweep the block into the square without touching the pan,object to avoid,object type,heart (block of this shape),no
+115,Sweep the block into the square without touching the pan,object to avoid,object type,hexagon (block of this shape),no
+116,Sweep the block into the square without touching the pan,object to avoid,object type,letter A,no
+117,Sweep the block into the square without touching the pan,object to avoid,object type,letter E,no
+118,Sweep the block into the square without touching the pan,object to avoid,object type,letter G,no
+119,Sweep the block into the square without touching the pan,object to avoid,object type,letter M,no
+120,Sweep the block into the square without touching the pan,object to avoid,object type,letter R,no
+121,Sweep the block into the square without touching the pan,object to avoid,object type,letter T,no
+122,Sweep the block into the square without touching the pan,object to avoid,object type,letter V,no
+123,Sweep the block into the square without touching the pan,object to avoid,object type,pallet,no
+124,Sweep the block into the square without touching the pan,object to avoid,object type,pan,yes
+125,Sweep the block into the square without touching the pan,object to avoid,object type,pentagon (block of this shape),no
+126,Sweep the block into the square without touching the pan,object to avoid,object type,ring (block of this shape),no
+127,Sweep the block into the square without touching the pan,object to avoid,object type,round (block of this shape),no
+128,Sweep the block into the square without touching the pan,object to avoid,object type,shorter block,no
+129,Sweep the block into the square without touching the pan,object to avoid,object type,small block,no
+130,Sweep the block into the square without touching the pan,object to avoid,object type,star (block of this shape),no
+131,Sweep the block into the square without touching the pan,object to avoid,object type,triangle (block of this shape),no
+132,Sweep the block into the square without touching the pan,object to avoid,object color,brick,yes
+133,Sweep the block into the square without touching the pan,object to avoid,object color,tiles,yes
+134,Sweep the block into the square without touching the pan,object to avoid,object color,wooden,yes
+135,Sweep the block into the square without touching the pan,object to avoid,object color,granite,yes
+136,Sweep the block into the square without touching the pan,object to avoid,object color,plastic,yes
+137,Sweep the block into the square without touching the pan,object to avoid,object color,polka dot,yes
+138,Sweep the block into the square without touching the pan,object to avoid,object color,checkerboard,yes
+139,Sweep the block into the square without touching the pan,object to avoid,object color,tiger,yes
+140,Sweep the block into the square without touching the pan,object to avoid,object color,magma,yes
+141,Sweep the block into the square without touching the pan,object to avoid,object color,rainbow,yes
+142,Sweep the block into the square without touching the pan,object to avoid,object color,blue,yes
+143,Sweep the block into the square without touching the pan,object to avoid,object color,cyan,yes
+144,Sweep the block into the square without touching the pan,object to avoid,object color,green,yes
+145,Sweep the block into the square without touching the pan,object to avoid,object color,olive,yes
+146,Sweep the block into the square without touching the pan,object to avoid,object color,orange,yes
+147,Sweep the block into the square without touching the pan,object to avoid,object color,pink,yes
+148,Sweep the block into the square without touching the pan,object to avoid,object color,purple,yes
+149,Sweep the block into the square without touching the pan,object to avoid,object color,red,yes
+150,Sweep the block into the square without touching the pan,object to avoid,object color,yellow,yes
+151,Sweep the block into the square without touching the pan,object to avoid,object color,dark blue,yes
+152,Sweep the block into the square without touching the pan,object to avoid,object color,dark cyan,yes
+153,Sweep the block into the square without touching the pan,object to avoid,object color,dark green,yes
+154,Sweep the block into the square without touching the pan,object to avoid,object color,dark orange,yes
+155,Sweep the block into the square without touching the pan,object to avoid,object color,dark pink,yes
+156,Sweep the block into the square without touching the pan,object to avoid,object color,dark purple,yes
+157,Sweep the block into the square without touching the pan,object to avoid,object color,dark red,yes
+158,Sweep the block into the square without touching the pan,object to avoid,object color,dark yellow,yes
+159,Sweep the block into the square without touching the pan,object to avoid,object color,red and yellow stripe,yes
+160,Sweep the block into the square without touching the pan,object to avoid,object color,red and green stripe,yes
+161,Sweep the block into the square without touching the pan,object to avoid,object color,red and blue stripe,yes
+162,Sweep the block into the square without touching the pan,object to avoid,object color,red and purple stripe,yes
+163,Sweep the block into the square without touching the pan,object to avoid,object color,yellow and green stripe,yes
+164,Sweep the block into the square without touching the pan,object to avoid,object color,yellow and blue stripe,yes
+165,Sweep the block into the square without touching the pan,object to avoid,object color,yellow and purple stripe,yes
+166,Sweep the block into the square without touching the pan,object to avoid,object color,green and blue stripe,yes
+167,Sweep the block into the square without touching the pan,object to avoid,object color,green and purple stripe,yes
+168,Sweep the block into the square without touching the pan,object to avoid,object color,blue and purple stripe,yes
+169,Sweep the block into the square without touching the pan,object to avoid,object color,dark red and yellow stripe,yes
+170,Sweep the block into the square without touching the pan,object to avoid,object color,dark red and green stripe,yes
+171,Sweep the block into the square without touching the pan,object to avoid,object color,dark red and blue stripe,yes
+172,Sweep the block into the square without touching the pan,object to avoid,object color,dark red and purple stripe,yes
+173,Sweep the block into the square without touching the pan,object to avoid,object color,dark yellow and green stripe,yes
+174,Sweep the block into the square without touching the pan,object to avoid,object color,dark yellow and blue stripe,yes
+175,Sweep the block into the square without touching the pan,object to avoid,object color,dark yellow and purple stripe,yes
+176,Sweep the block into the square without touching the pan,object to avoid,object color,dark green and blue stripe,yes
+177,Sweep the block into the square without touching the pan,object to avoid,object color,dark green and purple stripe,yes
+178,Sweep the block into the square without touching the pan,object to avoid,object color,dark blue and purple stripe,yes
+179,Sweep the block into the square without touching the pan,object to avoid,object color,red and yellow polka dot,yes
+180,Sweep the block into the square without touching the pan,object to avoid,object color,red and green polka dot,yes
+181,Sweep the block into the square without touching the pan,object to avoid,object color,red and blue polka dot,yes
+182,Sweep the block into the square without touching the pan,object to avoid,object color,red and purple polka dot,yes
+183,Sweep the block into the square without touching the pan,object to avoid,object color,yellow and green polka dot,yes
+184,Sweep the block into the square without touching the pan,object to avoid,object color,yellow and blue polka dot,yes
+185,Sweep the block into the square without touching the pan,object to avoid,object color,yellow and purple polka dot,yes
+186,Sweep the block into the square without touching the pan,object to avoid,object color,green and blue polka dot,yes
+187,Sweep the block into the square without touching the pan,object to avoid,object color,green and purple polka dot,yes
+188,Sweep the block into the square without touching the pan,object to avoid,object color,blue and purple polka dot,yes
+189,Sweep the block into the square without touching the pan,object to avoid,object color,dark red and yellow polka dot,yes
+190,Sweep the block into the square without touching the pan,object to avoid,object color,dark red and green polka dot,yes
+191,Sweep the block into the square without touching the pan,object to avoid,object color,dark red and blue polka dot,yes
+192,Sweep the block into the square without touching the pan,object to avoid,object color,dark red and purple polka dot,yes
+193,Sweep the block into the square without touching the pan,object to avoid,object color,dark yellow and green polka dot,yes
+194,Sweep the block into the square without touching the pan,object to avoid,object color,dark yellow and blue polka dot,yes
+195,Sweep the block into the square without touching the pan,object to avoid,object color,dark yellow and purple polka dot,yes
+196,Sweep the block into the square without touching the pan,object to avoid,object color,dark green and blue polka dot,yes
+197,Sweep the block into the square without touching the pan,object to avoid,object color,dark green and purple polka dot,yes
+198,Sweep the block into the square without touching the pan,object to avoid,object color,dark blue and purple polka dot,no
+199,Sweep the block into the square without touching the pan,object to avoid,object color,red swirl,yes
+200,Sweep the block into the square without touching the pan,object to avoid,object color,yellow swirl,yes
+201,Sweep the block into the square without touching the pan,object to avoid,object color,green swirl,yes
+202,Sweep the block into the square without touching the pan,object to avoid,object color,blue swirl,yes
+203,Sweep the block into the square without touching the pan,object to avoid,object color,purple swirl,yes
+204,Sweep the block into the square without touching the pan,object to avoid,object color,dark red swirl,yes
+205,Sweep the block into the square without touching the pan,object to avoid,object color,dark yellow swirl,yes
+206,Sweep the block into the square without touching the pan,object to avoid,object color,dark green swirl,yes
+207,Sweep the block into the square without touching the pan,object to avoid,object color,dark blue swirl,yes
+208,Sweep the block into the square without touching the pan,object to avoid,object color,dark purple swirl,yes
+209,Sweep the block into the square without touching the pan,object to avoid,object color,red paisley,no
+210,Sweep the block into the square without touching the pan,object to avoid,object color,yellow paisley,no
+211,Sweep the block into the square without touching the pan,object to avoid,object color,green paisley,no
+212,Sweep the block into the square without touching the pan,object to avoid,object color,blue paisley,no
+213,Sweep the block into the square without touching the pan,object to avoid,object color,purple paisley,no

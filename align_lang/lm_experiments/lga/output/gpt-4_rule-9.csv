@@ -1,263 +1,108 @@
 ,rule,object_category,group,candidate,answer
-0,Sweep the food into the sink,object to sweep,object type,L-shaped block,no
-1,Sweep the food into the sink,object to sweep,object type,tomato,yes
-2,Sweep the food into the sink,object to sweep,object type,peach,yes
-3,Sweep the food into the sink,object to sweep,object type,apple,yes
-4,Sweep the food into the sink,object to sweep,object type,banana,yes
-5,Sweep the food into the sink,object to sweep,object type,pepper,yes
-6,Sweep the food into the sink,object to sweep,object type,drying rack,no
-7,Sweep the food into the sink,object to sweep,object type,drying cloth,no
-8,Sweep the food into the sink,object to sweep,object type,dish towel,no
-9,Sweep the food into the sink,object to sweep,object type,plate,no
-10,Sweep the food into the sink,object to sweep,object type,mug,yes
-11,Sweep the food into the sink,object to sweep,object type,cup,no
-12,Sweep the food into the sink,object to sweep,object type,saucer,no
-13,Sweep the food into the sink,object to sweep,object type,coaster,no
-14,Sweep the food into the sink,object to sweep,object type,block,no
-15,Sweep the food into the sink,object to sweep,object type,bowl,no
-16,Sweep the food into the sink,object to sweep,object type,container,no
-17,Sweep the food into the sink,object to sweep,object type,cross (block of this shape),no
-18,Sweep the food into the sink,object to sweep,object type,diamond (block of this shape),no
-19,Sweep the food into the sink,object to sweep,object type,flower (block of this shape),no
-20,Sweep the food into the sink,object to sweep,object type,heart (block of this shape),no
-21,Sweep the food into the sink,object to sweep,object type,hexagon (block of this shape),no
-22,Sweep the food into the sink,object to sweep,object type,letter A,no
-23,Sweep the food into the sink,object to sweep,object type,letter E,no
-24,Sweep the food into the sink,object to sweep,object type,letter G,no
-25,Sweep the food into the sink,object to sweep,object type,letter M,no
-26,Sweep the food into the sink,object to sweep,object type,letter R,no
-27,Sweep the food into the sink,object to sweep,object type,letter T,no
-28,Sweep the food into the sink,object to sweep,object type,letter V,no
-29,Sweep the food into the sink,object to sweep,object type,pallet,no
-30,Sweep the food into the sink,object to sweep,object type,pan,no
-31,Sweep the food into the sink,object to sweep,object type,pentagon (block of this shape),no
-32,Sweep the food into the sink,object to sweep,object type,ring (block of this shape),no
-33,Sweep the food into the sink,object to sweep,object type,round (block of this shape),no
-34,Sweep the food into the sink,object to sweep,object type,shorter block,no
-35,Sweep the food into the sink,object to sweep,object type,small block,no
-36,Sweep the food into the sink,object to sweep,object type,star (block of this shape),no
-37,Sweep the food into the sink,object to sweep,object type,triangle (block of this shape),no
-38,Sweep the food into the sink,object to sweep,object type,book,no
-39,Sweep the food into the sink,object to sweep,object type,iPad,no
-40,Sweep the food into the sink,object to sweep,object type,phone,no
-41,Sweep the food into the sink,object to sweep,object type,laptop,no
-42,Sweep the food into the sink,object to sweep,object type,bin,no
-43,Sweep the food into the sink,object to sweep,object type,stove,no
-44,Sweep the food into the sink,object to sweep,object type,sharp block,no
-45,Sweep the food into the sink,object to sweep,object type,knife,no
-46,Sweep the food into the sink,object to sweep,object type,rug,no
-47,Sweep the food into the sink,object to sweep,object type,box,no
-48,Sweep the food into the sink,object to sweep,object color,brick,yes
-49,Sweep the food into the sink,object to sweep,object color,tiles,yes
-50,Sweep the food into the sink,object to sweep,object color,wooden,yes
-51,Sweep the food into the sink,object to sweep,object color,granite,yes
-52,Sweep the food into the sink,object to sweep,object color,plastic,yes
-53,Sweep the food into the sink,object to sweep,object color,carpet,yes
-54,Sweep the food into the sink,object to sweep,object color,polka dot,yes
-55,Sweep the food into the sink,object to sweep,object color,checkerboard,yes
-56,Sweep the food into the sink,object to sweep,object color,tiger,yes
-57,Sweep the food into the sink,object to sweep,object color,magma,yes
-58,Sweep the food into the sink,object to sweep,object color,rainbow,yes
-59,Sweep the food into the sink,object to sweep,object color,blue,yes
-60,Sweep the food into the sink,object to sweep,object color,cyan,yes
-61,Sweep the food into the sink,object to sweep,object color,green,yes
-62,Sweep the food into the sink,object to sweep,object color,olive,yes
-63,Sweep the food into the sink,object to sweep,object color,orange,yes
-64,Sweep the food into the sink,object to sweep,object color,pink,yes
-65,Sweep the food into the sink,object to sweep,object color,purple,yes
-66,Sweep the food into the sink,object to sweep,object color,red,yes
-67,Sweep the food into the sink,object to sweep,object color,yellow,yes
-68,Sweep the food into the sink,object to sweep,object color,dark blue,yes
-69,Sweep the food into the sink,object to sweep,object color,dark cyan,yes
-70,Sweep the food into the sink,object to sweep,object color,dark green,yes
-71,Sweep the food into the sink,object to sweep,object color,dark orange,yes
-72,Sweep the food into the sink,object to sweep,object color,dark pink,yes
-73,Sweep the food into the sink,object to sweep,object color,dark purple,yes
-74,Sweep the food into the sink,object to sweep,object color,dark red,yes
-75,Sweep the food into the sink,object to sweep,object color,dark yellow,yes
-76,Sweep the food into the sink,object to sweep,object color,red and yellow stripe,yes
-77,Sweep the food into the sink,object to sweep,object color,red and green stripe,yes
-78,Sweep the food into the sink,object to sweep,object color,red and blue stripe,yes
-79,Sweep the food into the sink,object to sweep,object color,red and purple stripe,yes
-80,Sweep the food into the sink,object to sweep,object color,yellow and green stripe,yes
-81,Sweep the food into the sink,object to sweep,object color,yellow and blue stripe,yes
-82,Sweep the food into the sink,object to sweep,object color,yellow and purple stripe,yes
-83,Sweep the food into the sink,object to sweep,object color,green and blue stripe,yes
-84,Sweep the food into the sink,object to sweep,object color,green and purple stripe,yes
-85,Sweep the food into the sink,object to sweep,object color,blue and purple stripe,yes
-86,Sweep the food into the sink,object to sweep,object color,dark red and yellow stripe,yes
-87,Sweep the food into the sink,object to sweep,object color,dark red and green stripe,yes
-88,Sweep the food into the sink,object to sweep,object color,dark red and blue stripe,yes
-89,Sweep the food into the sink,object to sweep,object color,dark red and purple stripe,yes
-90,Sweep the food into the sink,object to sweep,object color,dark yellow and green stripe,yes
-91,Sweep the food into the sink,object to sweep,object color,dark yellow and blue stripe,yes
-92,Sweep the food into the sink,object to sweep,object color,dark yellow and purple stripe,yes
-93,Sweep the food into the sink,object to sweep,object color,dark green and blue stripe,yes
-94,Sweep the food into the sink,object to sweep,object color,dark green and purple stripe,yes
-95,Sweep the food into the sink,object to sweep,object color,dark blue and purple stripe,yes
-96,Sweep the food into the sink,object to sweep,object color,red and yellow polka dot,yes
-97,Sweep the food into the sink,object to sweep,object color,red and green polka dot,yes
-98,Sweep the food into the sink,object to sweep,object color,red and blue polka dot,yes
-99,Sweep the food into the sink,object to sweep,object color,red and purple polka dot,yes
-100,Sweep the food into the sink,object to sweep,object color,yellow and green polka dot,yes
-101,Sweep the food into the sink,object to sweep,object color,yellow and blue polka dot,yes
-102,Sweep the food into the sink,object to sweep,object color,yellow and purple polka dot,yes
-103,Sweep the food into the sink,object to sweep,object color,green and blue polka dot,yes
-104,Sweep the food into the sink,object to sweep,object color,green and purple polka dot,yes
-105,Sweep the food into the sink,object to sweep,object color,blue and purple polka dot,yes
-106,Sweep the food into the sink,object to sweep,object color,dark red and yellow polka dot,yes
-107,Sweep the food into the sink,object to sweep,object color,dark red and green polka dot,yes
-108,Sweep the food into the sink,object to sweep,object color,dark red and blue polka dot,yes
-109,Sweep the food into the sink,object to sweep,object color,dark red and purple polka dot,yes
-110,Sweep the food into the sink,object to sweep,object color,dark yellow and green polka dot,yes
-111,Sweep the food into the sink,object to sweep,object color,dark yellow and blue polka dot,yes
-112,Sweep the food into the sink,object to sweep,object color,dark yellow and purple polka dot,yes
-113,Sweep the food into the sink,object to sweep,object color,dark green and blue polka dot,yes
-114,Sweep the food into the sink,object to sweep,object color,dark green and purple polka dot,yes
-115,Sweep the food into the sink,object to sweep,object color,dark blue and purple polka dot,no
-116,Sweep the food into the sink,object to sweep,object color,red swirl,yes
-117,Sweep the food into the sink,object to sweep,object color,yellow swirl,yes
-118,Sweep the food into the sink,object to sweep,object color,green swirl,yes
-119,Sweep the food into the sink,object to sweep,object color,blue swirl,no
-120,Sweep the food into the sink,object to sweep,object color,purple swirl,yes
-121,Sweep the food into the sink,object to sweep,object color,dark red swirl,yes
-122,Sweep the food into the sink,object to sweep,object color,dark yellow swirl,yes
-123,Sweep the food into the sink,object to sweep,object color,dark green swirl,yes
-124,Sweep the food into the sink,object to sweep,object color,dark blue swirl,yes
-125,Sweep the food into the sink,object to sweep,object color,dark purple swirl,yes
-126,Sweep the food into the sink,object to sweep,object color,red paisley,yes
-127,Sweep the food into the sink,object to sweep,object color,yellow paisley,yes
-128,Sweep the food into the sink,object to sweep,object color,green paisley,yes
-129,Sweep the food into the sink,object to sweep,object color,blue paisley,yes
-130,Sweep the food into the sink,object to sweep,object color,purple paisley,yes
-131,Sweep the food into the sink,object to receive swept items,object type,L-shaped block,no
-132,Sweep the food into the sink,object to receive swept items,object type,tomato,no
-133,Sweep the food into the sink,object to receive swept items,object type,peach,no
-134,Sweep the food into the sink,object to receive swept items,object type,apple,no
-135,Sweep the food into the sink,object to receive swept items,object type,banana,no
-136,Sweep the food into the sink,object to receive swept items,object type,pepper,no
-137,Sweep the food into the sink,object to receive swept items,object type,drying rack,no
-138,Sweep the food into the sink,object to receive swept items,object type,drying cloth,no
-139,Sweep the food into the sink,object to receive swept items,object type,dish towel,no
-140,Sweep the food into the sink,object to receive swept items,object type,plate,no
-141,Sweep the food into the sink,object to receive swept items,object type,mug,no
-142,Sweep the food into the sink,object to receive swept items,object type,cup,no
-143,Sweep the food into the sink,object to receive swept items,object type,saucer,no
-144,Sweep the food into the sink,object to receive swept items,object type,coaster,no
-145,Sweep the food into the sink,object to receive swept items,object type,block,no
-146,Sweep the food into the sink,object to receive swept items,object type,bowl,no
-147,Sweep the food into the sink,object to receive swept items,object type,container,no
-148,Sweep the food into the sink,object to receive swept items,object type,cross (block of this shape),no
-149,Sweep the food into the sink,object to receive swept items,object type,diamond (block of this shape),no
-150,Sweep the food into the sink,object to receive swept items,object type,flower (block of this shape),no
-151,Sweep the food into the sink,object to receive swept items,object type,heart (block of this shape),no
-152,Sweep the food into the sink,object to receive swept items,object type,hexagon (block of this shape),no
-153,Sweep the food into the sink,object to receive swept items,object type,letter A,no
-154,Sweep the food into the sink,object to receive swept items,object type,letter E,no
-155,Sweep the food into the sink,object to receive swept items,object type,letter G,no
-156,Sweep the food into the sink,object to receive swept items,object type,letter M,no
-157,Sweep the food into the sink,object to receive swept items,object type,letter R,no
-158,Sweep the food into the sink,object to receive swept items,object type,letter T,no
-159,Sweep the food into the sink,object to receive swept items,object type,letter V,no
-160,Sweep the food into the sink,object to receive swept items,object type,pallet,no
-161,Sweep the food into the sink,object to receive swept items,object type,pan,no
-162,Sweep the food into the sink,object to receive swept items,object type,pentagon (block of this shape),no
-163,Sweep the food into the sink,object to receive swept items,object type,ring (block of this shape),no
-164,Sweep the food into the sink,object to receive swept items,object type,round (block of this shape),no
-165,Sweep the food into the sink,object to receive swept items,object type,shorter block,no
-166,Sweep the food into the sink,object to receive swept items,object type,small block,no
-167,Sweep the food into the sink,object to receive swept items,object type,star (block of this shape),no
-168,Sweep the food into the sink,object to receive swept items,object type,triangle (block of this shape),no
-169,Sweep the food into the sink,object to receive swept items,object type,book,no
-170,Sweep the food into the sink,object to receive swept items,object type,iPad,no
-171,Sweep the food into the sink,object to receive swept items,object type,phone,no
-172,Sweep the food into the sink,object to receive swept items,object type,laptop,no
-173,Sweep the food into the sink,object to receive swept items,object type,bin,no
-174,Sweep the food into the sink,object to receive swept items,object type,stove,no
-175,Sweep the food into the sink,object to receive swept items,object type,sharp block,no
-176,Sweep the food into the sink,object to receive swept items,object type,knife,no
-177,Sweep the food into the sink,object to receive swept items,object type,rug,no
-178,Sweep the food into the sink,object to receive swept items,object type,box,no
-179,Sweep the food into the sink,object to receive swept items,object color,brick,no
-180,Sweep the food into the sink,object to receive swept items,object color,tiles,no
-181,Sweep the food into the sink,object to receive swept items,object color,wooden,no
-182,Sweep the food into the sink,object to receive swept items,object color,granite,no
-183,Sweep the food into the sink,object to receive swept items,object color,plastic,no
-184,Sweep the food into the sink,object to receive swept items,object color,carpet,yes
-185,Sweep the food into the sink,object to receive swept items,object color,polka dot,no
-186,Sweep the food into the sink,object to receive swept items,object color,checkerboard,no
-187,Sweep the food into the sink,object to receive swept items,object color,tiger,no
-188,Sweep the food into the sink,object to receive swept items,object color,magma,no
-189,Sweep the food into the sink,object to receive swept items,object color,rainbow,no
-190,Sweep the food into the sink,object to receive swept items,object color,blue,no
-191,Sweep the food into the sink,object to receive swept items,object color,cyan,no
-192,Sweep the food into the sink,object to receive swept items,object color,green,no
-193,Sweep the food into the sink,object to receive swept items,object color,olive,no
-194,Sweep the food into the sink,object to receive swept items,object color,orange,no
-195,Sweep the food into the sink,object to receive swept items,object color,pink,yes
-196,Sweep the food into the sink,object to receive swept items,object color,purple,no
-197,Sweep the food into the sink,object to receive swept items,object color,red,no
-198,Sweep the food into the sink,object to receive swept items,object color,yellow,no
-199,Sweep the food into the sink,object to receive swept items,object color,dark blue,no
-200,Sweep the food into the sink,object to receive swept items,object color,dark cyan,no
-201,Sweep the food into the sink,object to receive swept items,object color,dark green,no
-202,Sweep the food into the sink,object to receive swept items,object color,dark orange,no
-203,Sweep the food into the sink,object to receive swept items,object color,dark pink,no
-204,Sweep the food into the sink,object to receive swept items,object color,dark purple,no
-205,Sweep the food into the sink,object to receive swept items,object color,dark red,no
-206,Sweep the food into the sink,object to receive swept items,object color,dark yellow,no
-207,Sweep the food into the sink,object to receive swept items,object color,red and yellow stripe,no
-208,Sweep the food into the sink,object to receive swept items,object color,red and green stripe,no
-209,Sweep the food into the sink,object to receive swept items,object color,red and blue stripe,no
-210,Sweep the food into the sink,object to receive swept items,object color,red and purple stripe,no
-211,Sweep the food into the sink,object to receive swept items,object color,yellow and green stripe,no
-212,Sweep the food into the sink,object to receive swept items,object color,yellow and blue stripe,no
-213,Sweep the food into the sink,object to receive swept items,object color,yellow and purple stripe,no
-214,Sweep the food into the sink,object to receive swept items,object color,green and blue stripe,no
-215,Sweep the food into the sink,object to receive swept items,object color,green and purple stripe,no
-216,Sweep the food into the sink,object to receive swept items,object color,blue and purple stripe,no
-217,Sweep the food into the sink,object to receive swept items,object color,dark red and yellow stripe,no
-218,Sweep the food into the sink,object to receive swept items,object color,dark red and green stripe,no
-219,Sweep the food into the sink,object to receive swept items,object color,dark red and blue stripe,no
-220,Sweep the food into the sink,object to receive swept items,object color,dark red and purple stripe,no
-221,Sweep the food into the sink,object to receive swept items,object color,dark yellow and green stripe,no
-222,Sweep the food into the sink,object to receive swept items,object color,dark yellow and blue stripe,no
-223,Sweep the food into the sink,object to receive swept items,object color,dark yellow and purple stripe,no
-224,Sweep the food into the sink,object to receive swept items,object color,dark green and blue stripe,no
-225,Sweep the food into the sink,object to receive swept items,object color,dark green and purple stripe,no
-226,Sweep the food into the sink,object to receive swept items,object color,dark blue and purple stripe,no
-227,Sweep the food into the sink,object to receive swept items,object color,red and yellow polka dot,yes
-228,Sweep the food into the sink,object to receive swept items,object color,red and green polka dot,no
-229,Sweep the food into the sink,object to receive swept items,object color,red and blue polka dot,yes
-230,Sweep the food into the sink,object to receive swept items,object color,red and purple polka dot,no
-231,Sweep the food into the sink,object to receive swept items,object color,yellow and green polka dot,no
-232,Sweep the food into the sink,object to receive swept items,object color,yellow and blue polka dot,no
-233,Sweep the food into the sink,object to receive swept items,object color,yellow and purple polka dot,no
-234,Sweep the food into the sink,object to receive swept items,object color,green and blue polka dot,no
-235,Sweep the food into the sink,object to receive swept items,object color,green and purple polka dot,no
-236,Sweep the food into the sink,object to receive swept items,object color,blue and purple polka dot,yes
-237,Sweep the food into the sink,object to receive swept items,object color,dark red and yellow polka dot,no
-238,Sweep the food into the sink,object to receive swept items,object color,dark red and green polka dot,no
-239,Sweep the food into the sink,object to receive swept items,object color,dark red and blue polka dot,no
-240,Sweep the food into the sink,object to receive swept items,object color,dark red and purple polka dot,no
-241,Sweep the food into the sink,object to receive swept items,object color,dark yellow and green polka dot,no
-242,Sweep the food into the sink,object to receive swept items,object color,dark yellow and blue polka dot,no
-243,Sweep the food into the sink,object to receive swept items,object color,dark yellow and purple polka dot,no
-244,Sweep the food into the sink,object to receive swept items,object color,dark green and blue polka dot,no
-245,Sweep the food into the sink,object to receive swept items,object color,dark green and purple polka dot,no
-246,Sweep the food into the sink,object to receive swept items,object color,dark blue and purple polka dot,no
-247,Sweep the food into the sink,object to receive swept items,object color,red swirl,no
-248,Sweep the food into the sink,object to receive swept items,object color,yellow swirl,no
-249,Sweep the food into the sink,object to receive swept items,object color,green swirl,no
-250,Sweep the food into the sink,object to receive swept items,object color,blue swirl,no
-251,Sweep the food into the sink,object to receive swept items,object color,purple swirl,no
-252,Sweep the food into the sink,object to receive swept items,object color,dark red swirl,no
-253,Sweep the food into the sink,object to receive swept items,object color,dark yellow swirl,no
-254,Sweep the food into the sink,object to receive swept items,object color,dark green swirl,no
-255,Sweep the food into the sink,object to receive swept items,object color,dark blue swirl,no
-256,Sweep the food into the sink,object to receive swept items,object color,dark purple swirl,no
-257,Sweep the food into the sink,object to receive swept items,object color,red paisley,no
-258,Sweep the food into the sink,object to receive swept items,object color,yellow paisley,no
-259,Sweep the food into the sink,object to receive swept items,object color,green paisley,no
-260,Sweep the food into the sink,object to receive swept items,object color,blue paisley,no
-261,Sweep the food into the sink,object to receive swept items,object color,purple paisley,no
+0,Rotate a letter from the word 'letter',object to rotate,object type,L-shaped block,no
+1,Rotate a letter from the word 'letter',object to rotate,object type,block,no
+2,Rotate a letter from the word 'letter',object to rotate,object type,bowl,no
+3,Rotate a letter from the word 'letter',object to rotate,object type,container,no
+4,Rotate a letter from the word 'letter',object to rotate,object type,cross (block of this shape),no
+5,Rotate a letter from the word 'letter',object to rotate,object type,diamond (block of this shape),no
+6,Rotate a letter from the word 'letter',object to rotate,object type,flower (block of this shape),no
+7,Rotate a letter from the word 'letter',object to rotate,object type,heart (block of this shape),no
+8,Rotate a letter from the word 'letter',object to rotate,object type,hexagon (block of this shape),no
+9,Rotate a letter from the word 'letter',object to rotate,object type,letter A,no
+10,Rotate a letter from the word 'letter',object to rotate,object type,letter E,yes
+11,Rotate a letter from the word 'letter',object to rotate,object type,letter G,no
+12,Rotate a letter from the word 'letter',object to rotate,object type,letter M,no
+13,Rotate a letter from the word 'letter',object to rotate,object type,letter R,yes
+14,Rotate a letter from the word 'letter',object to rotate,object type,letter T,yes
+15,Rotate a letter from the word 'letter',object to rotate,object type,letter V,no
+16,Rotate a letter from the word 'letter',object to rotate,object type,pallet,no
+17,Rotate a letter from the word 'letter',object to rotate,object type,pan,no
+18,Rotate a letter from the word 'letter',object to rotate,object type,pentagon (block of this shape),no
+19,Rotate a letter from the word 'letter',object to rotate,object type,ring (block of this shape),no
+20,Rotate a letter from the word 'letter',object to rotate,object type,round (block of this shape),no
+21,Rotate a letter from the word 'letter',object to rotate,object type,shorter block,no
+22,Rotate a letter from the word 'letter',object to rotate,object type,small block,no
+23,Rotate a letter from the word 'letter',object to rotate,object type,star (block of this shape),no
+24,Rotate a letter from the word 'letter',object to rotate,object type,triangle (block of this shape),no
+25,Rotate a letter from the word 'letter',object to rotate,object color,brick,yes
+26,Rotate a letter from the word 'letter',object to rotate,object color,tiles,yes
+27,Rotate a letter from the word 'letter',object to rotate,object color,wooden,yes
+28,Rotate a letter from the word 'letter',object to rotate,object color,granite,yes
+29,Rotate a letter from the word 'letter',object to rotate,object color,plastic,yes
+30,Rotate a letter from the word 'letter',object to rotate,object color,polka dot,yes
+31,Rotate a letter from the word 'letter',object to rotate,object color,checkerboard,yes
+32,Rotate a letter from the word 'letter',object to rotate,object color,tiger,yes
+33,Rotate a letter from the word 'letter',object to rotate,object color,magma,yes
+34,Rotate a letter from the word 'letter',object to rotate,object color,rainbow,yes
+35,Rotate a letter from the word 'letter',object to rotate,object color,blue,yes
+36,Rotate a letter from the word 'letter',object to rotate,object color,cyan,yes
+37,Rotate a letter from the word 'letter',object to rotate,object color,green,yes
+38,Rotate a letter from the word 'letter',object to rotate,object color,olive,yes
+39,Rotate a letter from the word 'letter',object to rotate,object color,orange,yes
+40,Rotate a letter from the word 'letter',object to rotate,object color,pink,yes
+41,Rotate a letter from the word 'letter',object to rotate,object color,purple,yes
+42,Rotate a letter from the word 'letter',object to rotate,object color,red,yes
+43,Rotate a letter from the word 'letter',object to rotate,object color,yellow,yes
+44,Rotate a letter from the word 'letter',object to rotate,object color,dark blue,yes
+45,Rotate a letter from the word 'letter',object to rotate,object color,dark cyan,yes
+46,Rotate a letter from the word 'letter',object to rotate,object color,dark green,yes
+47,Rotate a letter from the word 'letter',object to rotate,object color,dark orange,yes
+48,Rotate a letter from the word 'letter',object to rotate,object color,dark pink,yes
+49,Rotate a letter from the word 'letter',object to rotate,object color,dark purple,yes
+50,Rotate a letter from the word 'letter',object to rotate,object color,dark red,yes
+51,Rotate a letter from the word 'letter',object to rotate,object color,dark yellow,yes
+52,Rotate a letter from the word 'letter',object to rotate,object color,red and yellow stripe,yes
+53,Rotate a letter from the word 'letter',object to rotate,object color,red and green stripe,yes
+54,Rotate a letter from the word 'letter',object to rotate,object color,red and blue stripe,yes
+55,Rotate a letter from the word 'letter',object to rotate,object color,red and purple stripe,yes
+56,Rotate a letter from the word 'letter',object to rotate,object color,yellow and green stripe,yes
+57,Rotate a letter from the word 'letter',object to rotate,object color,yellow and blue stripe,yes
+58,Rotate a letter from the word 'letter',object to rotate,object color,yellow and purple stripe,yes
+59,Rotate a letter from the word 'letter',object to rotate,object color,green and blue stripe,yes
+60,Rotate a letter from the word 'letter',object to rotate,object color,green and purple stripe,yes
+61,Rotate a letter from the word 'letter',object to rotate,object color,blue and purple stripe,yes
+62,Rotate a letter from the word 'letter',object to rotate,object color,dark red and yellow stripe,yes
+63,Rotate a letter from the word 'letter',object to rotate,object color,dark red and green stripe,yes
+64,Rotate a letter from the word 'letter',object to rotate,object color,dark red and blue stripe,yes
+65,Rotate a letter from the word 'letter',object to rotate,object color,dark red and purple stripe,yes
+66,Rotate a letter from the word 'letter',object to rotate,object color,dark yellow and green stripe,yes
+67,Rotate a letter from the word 'letter',object to rotate,object color,dark yellow and blue stripe,yes
+68,Rotate a letter from the word 'letter',object to rotate,object color,dark yellow and purple stripe,yes
+69,Rotate a letter from the word 'letter',object to rotate,object color,dark green and blue stripe,yes
+70,Rotate a letter from the word 'letter',object to rotate,object color,dark green and purple stripe,yes
+71,Rotate a letter from the word 'letter',object to rotate,object color,dark blue and purple stripe,yes
+72,Rotate a letter from the word 'letter',object to rotate,object color,red and yellow polka dot,yes
+73,Rotate a letter from the word 'letter',object to rotate,object color,red and green polka dot,yes
+74,Rotate a letter from the word 'letter',object to rotate,object color,red and blue polka dot,yes
+75,Rotate a letter from the word 'letter',object to rotate,object color,red and purple polka dot,yes
+76,Rotate a letter from the word 'letter',object to rotate,object color,yellow and green polka dot,yes
+77,Rotate a letter from the word 'letter',object to rotate,object color,yellow and blue polka dot,yes
+78,Rotate a letter from the word 'letter',object to rotate,object color,yellow and purple polka dot,yes
+79,Rotate a letter from the word 'letter',object to rotate,object color,green and blue polka dot,yes
+80,Rotate a letter from the word 'letter',object to rotate,object color,green and purple polka dot,yes
+81,Rotate a letter from the word 'letter',object to rotate,object color,blue and purple polka dot,yes
+82,Rotate a letter from the word 'letter',object to rotate,object color,dark red and yellow polka dot,yes
+83,Rotate a letter from the word 'letter',object to rotate,object color,dark red and green polka dot,yes
+84,Rotate a letter from the word 'letter',object to rotate,object color,dark red and blue polka dot,yes
+85,Rotate a letter from the word 'letter',object to rotate,object color,dark red and purple polka dot,yes
+86,Rotate a letter from the word 'letter',object to rotate,object color,dark yellow and green polka dot,yes
+87,Rotate a letter from the word 'letter',object to rotate,object color,dark yellow and blue polka dot,yes
+88,Rotate a letter from the word 'letter',object to rotate,object color,dark yellow and purple polka dot,yes
+89,Rotate a letter from the word 'letter',object to rotate,object color,dark green and blue polka dot,yes
+90,Rotate a letter from the word 'letter',object to rotate,object color,dark green and purple polka dot,yes
+91,Rotate a letter from the word 'letter',object to rotate,object color,dark blue and purple polka dot,yes
+92,Rotate a letter from the word 'letter',object to rotate,object color,red swirl,yes
+93,Rotate a letter from the word 'letter',object to rotate,object color,yellow swirl,yes
+94,Rotate a letter from the word 'letter',object to rotate,object color,green swirl,yes
+95,Rotate a letter from the word 'letter',object to rotate,object color,blue swirl,yes
+96,Rotate a letter from the word 'letter',object to rotate,object color,purple swirl,yes
+97,Rotate a letter from the word 'letter',object to rotate,object color,dark red swirl,yes
+98,Rotate a letter from the word 'letter',object to rotate,object color,dark yellow swirl,yes
+99,Rotate a letter from the word 'letter',object to rotate,object color,dark green swirl,yes
+100,Rotate a letter from the word 'letter',object to rotate,object color,dark blue swirl,yes
+101,Rotate a letter from the word 'letter',object to rotate,object color,dark purple swirl,yes
+102,Rotate a letter from the word 'letter',object to rotate,object color,red paisley,yes
+103,Rotate a letter from the word 'letter',object to rotate,object color,yellow paisley,yes
+104,Rotate a letter from the word 'letter',object to rotate,object color,green paisley,yes
+105,Rotate a letter from the word 'letter',object to rotate,object color,blue paisley,yes
+106,Rotate a letter from the word 'letter',object to rotate,object color,purple paisley,yes

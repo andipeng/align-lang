@@ -1,263 +1,108 @@
 ,rule,object_category,group,candidate,answer
-0,Sweep the scraps into the sink,object to sweep,object type,L-shaped block,yes
-1,Sweep the scraps into the sink,object to sweep,object type,tomato,yes
-2,Sweep the scraps into the sink,object to sweep,object type,peach,no
-3,Sweep the scraps into the sink,object to sweep,object type,apple,yes
-4,Sweep the scraps into the sink,object to sweep,object type,banana,no
-5,Sweep the scraps into the sink,object to sweep,object type,pepper,yes
-6,Sweep the scraps into the sink,object to sweep,object type,drying rack,no
-7,Sweep the scraps into the sink,object to sweep,object type,drying cloth,no
-8,Sweep the scraps into the sink,object to sweep,object type,dish towel,no
-9,Sweep the scraps into the sink,object to sweep,object type,plate,no
-10,Sweep the scraps into the sink,object to sweep,object type,mug,no
-11,Sweep the scraps into the sink,object to sweep,object type,cup,no
-12,Sweep the scraps into the sink,object to sweep,object type,saucer,no
-13,Sweep the scraps into the sink,object to sweep,object type,coaster,no
-14,Sweep the scraps into the sink,object to sweep,object type,block,yes
-15,Sweep the scraps into the sink,object to sweep,object type,bowl,no
-16,Sweep the scraps into the sink,object to sweep,object type,container,no
-17,Sweep the scraps into the sink,object to sweep,object type,cross (block of this shape),yes
-18,Sweep the scraps into the sink,object to sweep,object type,diamond (block of this shape),yes
-19,Sweep the scraps into the sink,object to sweep,object type,flower (block of this shape),yes
-20,Sweep the scraps into the sink,object to sweep,object type,heart (block of this shape),yes
-21,Sweep the scraps into the sink,object to sweep,object type,hexagon (block of this shape),yes
-22,Sweep the scraps into the sink,object to sweep,object type,letter A,yes
-23,Sweep the scraps into the sink,object to sweep,object type,letter E,yes
-24,Sweep the scraps into the sink,object to sweep,object type,letter G,yes
-25,Sweep the scraps into the sink,object to sweep,object type,letter M,no
-26,Sweep the scraps into the sink,object to sweep,object type,letter R,yes
-27,Sweep the scraps into the sink,object to sweep,object type,letter T,yes
-28,Sweep the scraps into the sink,object to sweep,object type,letter V,yes
-29,Sweep the scraps into the sink,object to sweep,object type,pallet,no
-30,Sweep the scraps into the sink,object to sweep,object type,pan,no
-31,Sweep the scraps into the sink,object to sweep,object type,pentagon (block of this shape),yes
-32,Sweep the scraps into the sink,object to sweep,object type,ring (block of this shape),yes
-33,Sweep the scraps into the sink,object to sweep,object type,round (block of this shape),no
-34,Sweep the scraps into the sink,object to sweep,object type,shorter block,yes
-35,Sweep the scraps into the sink,object to sweep,object type,small block,yes
-36,Sweep the scraps into the sink,object to sweep,object type,star (block of this shape),yes
-37,Sweep the scraps into the sink,object to sweep,object type,triangle (block of this shape),yes
-38,Sweep the scraps into the sink,object to sweep,object type,book,no
-39,Sweep the scraps into the sink,object to sweep,object type,iPad,no
-40,Sweep the scraps into the sink,object to sweep,object type,phone,no
-41,Sweep the scraps into the sink,object to sweep,object type,laptop,no
-42,Sweep the scraps into the sink,object to sweep,object type,bin,no
-43,Sweep the scraps into the sink,object to sweep,object type,stove,no
-44,Sweep the scraps into the sink,object to sweep,object type,sharp block,yes
-45,Sweep the scraps into the sink,object to sweep,object type,knife,no
-46,Sweep the scraps into the sink,object to sweep,object type,rug,no
-47,Sweep the scraps into the sink,object to sweep,object type,box,no
-48,Sweep the scraps into the sink,object to sweep,object color,brick,yes
-49,Sweep the scraps into the sink,object to sweep,object color,tiles,yes
-50,Sweep the scraps into the sink,object to sweep,object color,wooden,yes
-51,Sweep the scraps into the sink,object to sweep,object color,granite,yes
-52,Sweep the scraps into the sink,object to sweep,object color,plastic,yes
-53,Sweep the scraps into the sink,object to sweep,object color,carpet,yes
-54,Sweep the scraps into the sink,object to sweep,object color,polka dot,yes
-55,Sweep the scraps into the sink,object to sweep,object color,checkerboard,yes
-56,Sweep the scraps into the sink,object to sweep,object color,tiger,yes
-57,Sweep the scraps into the sink,object to sweep,object color,magma,yes
-58,Sweep the scraps into the sink,object to sweep,object color,rainbow,yes
-59,Sweep the scraps into the sink,object to sweep,object color,blue,yes
-60,Sweep the scraps into the sink,object to sweep,object color,cyan,yes
-61,Sweep the scraps into the sink,object to sweep,object color,green,yes
-62,Sweep the scraps into the sink,object to sweep,object color,olive,yes
-63,Sweep the scraps into the sink,object to sweep,object color,orange,yes
-64,Sweep the scraps into the sink,object to sweep,object color,pink,yes
-65,Sweep the scraps into the sink,object to sweep,object color,purple,yes
-66,Sweep the scraps into the sink,object to sweep,object color,red,yes
-67,Sweep the scraps into the sink,object to sweep,object color,yellow,yes
-68,Sweep the scraps into the sink,object to sweep,object color,dark blue,yes
-69,Sweep the scraps into the sink,object to sweep,object color,dark cyan,yes
-70,Sweep the scraps into the sink,object to sweep,object color,dark green,yes
-71,Sweep the scraps into the sink,object to sweep,object color,dark orange,yes
-72,Sweep the scraps into the sink,object to sweep,object color,dark pink,yes
-73,Sweep the scraps into the sink,object to sweep,object color,dark purple,yes
-74,Sweep the scraps into the sink,object to sweep,object color,dark red,yes
-75,Sweep the scraps into the sink,object to sweep,object color,dark yellow,yes
-76,Sweep the scraps into the sink,object to sweep,object color,red and yellow stripe,yes
-77,Sweep the scraps into the sink,object to sweep,object color,red and green stripe,yes
-78,Sweep the scraps into the sink,object to sweep,object color,red and blue stripe,yes
-79,Sweep the scraps into the sink,object to sweep,object color,red and purple stripe,yes
-80,Sweep the scraps into the sink,object to sweep,object color,yellow and green stripe,yes
-81,Sweep the scraps into the sink,object to sweep,object color,yellow and blue stripe,yes
-82,Sweep the scraps into the sink,object to sweep,object color,yellow and purple stripe,yes
-83,Sweep the scraps into the sink,object to sweep,object color,green and blue stripe,yes
-84,Sweep the scraps into the sink,object to sweep,object color,green and purple stripe,yes
-85,Sweep the scraps into the sink,object to sweep,object color,blue and purple stripe,yes
-86,Sweep the scraps into the sink,object to sweep,object color,dark red and yellow stripe,yes
-87,Sweep the scraps into the sink,object to sweep,object color,dark red and green stripe,yes
-88,Sweep the scraps into the sink,object to sweep,object color,dark red and blue stripe,yes
-89,Sweep the scraps into the sink,object to sweep,object color,dark red and purple stripe,yes
-90,Sweep the scraps into the sink,object to sweep,object color,dark yellow and green stripe,yes
-91,Sweep the scraps into the sink,object to sweep,object color,dark yellow and blue stripe,yes
-92,Sweep the scraps into the sink,object to sweep,object color,dark yellow and purple stripe,yes
-93,Sweep the scraps into the sink,object to sweep,object color,dark green and blue stripe,yes
-94,Sweep the scraps into the sink,object to sweep,object color,dark green and purple stripe,yes
-95,Sweep the scraps into the sink,object to sweep,object color,dark blue and purple stripe,yes
-96,Sweep the scraps into the sink,object to sweep,object color,red and yellow polka dot,yes
-97,Sweep the scraps into the sink,object to sweep,object color,red and green polka dot,yes
-98,Sweep the scraps into the sink,object to sweep,object color,red and blue polka dot,yes
-99,Sweep the scraps into the sink,object to sweep,object color,red and purple polka dot,yes
-100,Sweep the scraps into the sink,object to sweep,object color,yellow and green polka dot,yes
-101,Sweep the scraps into the sink,object to sweep,object color,yellow and blue polka dot,yes
-102,Sweep the scraps into the sink,object to sweep,object color,yellow and purple polka dot,yes
-103,Sweep the scraps into the sink,object to sweep,object color,green and blue polka dot,yes
-104,Sweep the scraps into the sink,object to sweep,object color,green and purple polka dot,yes
-105,Sweep the scraps into the sink,object to sweep,object color,blue and purple polka dot,yes
-106,Sweep the scraps into the sink,object to sweep,object color,dark red and yellow polka dot,yes
-107,Sweep the scraps into the sink,object to sweep,object color,dark red and green polka dot,yes
-108,Sweep the scraps into the sink,object to sweep,object color,dark red and blue polka dot,yes
-109,Sweep the scraps into the sink,object to sweep,object color,dark red and purple polka dot,yes
-110,Sweep the scraps into the sink,object to sweep,object color,dark yellow and green polka dot,yes
-111,Sweep the scraps into the sink,object to sweep,object color,dark yellow and blue polka dot,yes
-112,Sweep the scraps into the sink,object to sweep,object color,dark yellow and purple polka dot,yes
-113,Sweep the scraps into the sink,object to sweep,object color,dark green and blue polka dot,yes
-114,Sweep the scraps into the sink,object to sweep,object color,dark green and purple polka dot,yes
-115,Sweep the scraps into the sink,object to sweep,object color,dark blue and purple polka dot,yes
-116,Sweep the scraps into the sink,object to sweep,object color,red swirl,yes
-117,Sweep the scraps into the sink,object to sweep,object color,yellow swirl,yes
-118,Sweep the scraps into the sink,object to sweep,object color,green swirl,yes
-119,Sweep the scraps into the sink,object to sweep,object color,blue swirl,yes
-120,Sweep the scraps into the sink,object to sweep,object color,purple swirl,yes
-121,Sweep the scraps into the sink,object to sweep,object color,dark red swirl,yes
-122,Sweep the scraps into the sink,object to sweep,object color,dark yellow swirl,yes
-123,Sweep the scraps into the sink,object to sweep,object color,dark green swirl,yes
-124,Sweep the scraps into the sink,object to sweep,object color,dark blue swirl,yes
-125,Sweep the scraps into the sink,object to sweep,object color,dark purple swirl,yes
-126,Sweep the scraps into the sink,object to sweep,object color,red paisley,yes
-127,Sweep the scraps into the sink,object to sweep,object color,yellow paisley,yes
-128,Sweep the scraps into the sink,object to sweep,object color,green paisley,yes
-129,Sweep the scraps into the sink,object to sweep,object color,blue paisley,yes
-130,Sweep the scraps into the sink,object to sweep,object color,purple paisley,yes
-131,Sweep the scraps into the sink,object to sweep into,object type,L-shaped block,no
-132,Sweep the scraps into the sink,object to sweep into,object type,tomato,yes
-133,Sweep the scraps into the sink,object to sweep into,object type,peach,no
-134,Sweep the scraps into the sink,object to sweep into,object type,apple,yes
-135,Sweep the scraps into the sink,object to sweep into,object type,banana,yes
-136,Sweep the scraps into the sink,object to sweep into,object type,pepper,yes
-137,Sweep the scraps into the sink,object to sweep into,object type,drying rack,no
-138,Sweep the scraps into the sink,object to sweep into,object type,drying cloth,no
-139,Sweep the scraps into the sink,object to sweep into,object type,dish towel,no
-140,Sweep the scraps into the sink,object to sweep into,object type,plate,yes
-141,Sweep the scraps into the sink,object to sweep into,object type,mug,no
-142,Sweep the scraps into the sink,object to sweep into,object type,cup,no
-143,Sweep the scraps into the sink,object to sweep into,object type,saucer,no
-144,Sweep the scraps into the sink,object to sweep into,object type,coaster,no
-145,Sweep the scraps into the sink,object to sweep into,object type,block,no
-146,Sweep the scraps into the sink,object to sweep into,object type,bowl,no
-147,Sweep the scraps into the sink,object to sweep into,object type,container,yes
-148,Sweep the scraps into the sink,object to sweep into,object type,cross (block of this shape),yes
-149,Sweep the scraps into the sink,object to sweep into,object type,diamond (block of this shape),yes
-150,Sweep the scraps into the sink,object to sweep into,object type,flower (block of this shape),yes
-151,Sweep the scraps into the sink,object to sweep into,object type,heart (block of this shape),no
-152,Sweep the scraps into the sink,object to sweep into,object type,hexagon (block of this shape),no
-153,Sweep the scraps into the sink,object to sweep into,object type,letter A,no
-154,Sweep the scraps into the sink,object to sweep into,object type,letter E,no
-155,Sweep the scraps into the sink,object to sweep into,object type,letter G,no
-156,Sweep the scraps into the sink,object to sweep into,object type,letter M,no
-157,Sweep the scraps into the sink,object to sweep into,object type,letter R,no
-158,Sweep the scraps into the sink,object to sweep into,object type,letter T,no
-159,Sweep the scraps into the sink,object to sweep into,object type,letter V,no
-160,Sweep the scraps into the sink,object to sweep into,object type,pallet,yes
-161,Sweep the scraps into the sink,object to sweep into,object type,pan,no
-162,Sweep the scraps into the sink,object to sweep into,object type,pentagon (block of this shape),no
-163,Sweep the scraps into the sink,object to sweep into,object type,ring (block of this shape),yes
-164,Sweep the scraps into the sink,object to sweep into,object type,round (block of this shape),no
-165,Sweep the scraps into the sink,object to sweep into,object type,shorter block,yes
-166,Sweep the scraps into the sink,object to sweep into,object type,small block,no
-167,Sweep the scraps into the sink,object to sweep into,object type,star (block of this shape),yes
-168,Sweep the scraps into the sink,object to sweep into,object type,triangle (block of this shape),yes
-169,Sweep the scraps into the sink,object to sweep into,object type,book,no
-170,Sweep the scraps into the sink,object to sweep into,object type,iPad,no
-171,Sweep the scraps into the sink,object to sweep into,object type,phone,no
-172,Sweep the scraps into the sink,object to sweep into,object type,laptop,no
-173,Sweep the scraps into the sink,object to sweep into,object type,bin,no
-174,Sweep the scraps into the sink,object to sweep into,object type,stove,no
-175,Sweep the scraps into the sink,object to sweep into,object type,sharp block,yes
-176,Sweep the scraps into the sink,object to sweep into,object type,knife,no
-177,Sweep the scraps into the sink,object to sweep into,object type,rug,no
-178,Sweep the scraps into the sink,object to sweep into,object type,box,no
-179,Sweep the scraps into the sink,object to sweep into,object color,brick,yes
-180,Sweep the scraps into the sink,object to sweep into,object color,tiles,yes
-181,Sweep the scraps into the sink,object to sweep into,object color,wooden,yes
-182,Sweep the scraps into the sink,object to sweep into,object color,granite,yes
-183,Sweep the scraps into the sink,object to sweep into,object color,plastic,yes
-184,Sweep the scraps into the sink,object to sweep into,object color,carpet,yes
-185,Sweep the scraps into the sink,object to sweep into,object color,polka dot,no
-186,Sweep the scraps into the sink,object to sweep into,object color,checkerboard,yes
-187,Sweep the scraps into the sink,object to sweep into,object color,tiger,yes
-188,Sweep the scraps into the sink,object to sweep into,object color,magma,yes
-189,Sweep the scraps into the sink,object to sweep into,object color,rainbow,yes
-190,Sweep the scraps into the sink,object to sweep into,object color,blue,no
-191,Sweep the scraps into the sink,object to sweep into,object color,cyan,yes
-192,Sweep the scraps into the sink,object to sweep into,object color,green,yes
-193,Sweep the scraps into the sink,object to sweep into,object color,olive,yes
-194,Sweep the scraps into the sink,object to sweep into,object color,orange,yes
-195,Sweep the scraps into the sink,object to sweep into,object color,pink,yes
-196,Sweep the scraps into the sink,object to sweep into,object color,purple,yes
-197,Sweep the scraps into the sink,object to sweep into,object color,red,yes
-198,Sweep the scraps into the sink,object to sweep into,object color,yellow,yes
-199,Sweep the scraps into the sink,object to sweep into,object color,dark blue,yes
-200,Sweep the scraps into the sink,object to sweep into,object color,dark cyan,yes
-201,Sweep the scraps into the sink,object to sweep into,object color,dark green,yes
-202,Sweep the scraps into the sink,object to sweep into,object color,dark orange,yes
-203,Sweep the scraps into the sink,object to sweep into,object color,dark pink,yes
-204,Sweep the scraps into the sink,object to sweep into,object color,dark purple,yes
-205,Sweep the scraps into the sink,object to sweep into,object color,dark red,yes
-206,Sweep the scraps into the sink,object to sweep into,object color,dark yellow,yes
-207,Sweep the scraps into the sink,object to sweep into,object color,red and yellow stripe,yes
-208,Sweep the scraps into the sink,object to sweep into,object color,red and green stripe,yes
-209,Sweep the scraps into the sink,object to sweep into,object color,red and blue stripe,yes
-210,Sweep the scraps into the sink,object to sweep into,object color,red and purple stripe,yes
-211,Sweep the scraps into the sink,object to sweep into,object color,yellow and green stripe,yes
-212,Sweep the scraps into the sink,object to sweep into,object color,yellow and blue stripe,yes
-213,Sweep the scraps into the sink,object to sweep into,object color,yellow and purple stripe,no
-214,Sweep the scraps into the sink,object to sweep into,object color,green and blue stripe,yes
-215,Sweep the scraps into the sink,object to sweep into,object color,green and purple stripe,yes
-216,Sweep the scraps into the sink,object to sweep into,object color,blue and purple stripe,yes
-217,Sweep the scraps into the sink,object to sweep into,object color,dark red and yellow stripe,yes
-218,Sweep the scraps into the sink,object to sweep into,object color,dark red and green stripe,yes
-219,Sweep the scraps into the sink,object to sweep into,object color,dark red and blue stripe,yes
-220,Sweep the scraps into the sink,object to sweep into,object color,dark red and purple stripe,no
-221,Sweep the scraps into the sink,object to sweep into,object color,dark yellow and green stripe,yes
-222,Sweep the scraps into the sink,object to sweep into,object color,dark yellow and blue stripe,yes
-223,Sweep the scraps into the sink,object to sweep into,object color,dark yellow and purple stripe,yes
-224,Sweep the scraps into the sink,object to sweep into,object color,dark green and blue stripe,yes
-225,Sweep the scraps into the sink,object to sweep into,object color,dark green and purple stripe,yes
-226,Sweep the scraps into the sink,object to sweep into,object color,dark blue and purple stripe,no
-227,Sweep the scraps into the sink,object to sweep into,object color,red and yellow polka dot,yes
-228,Sweep the scraps into the sink,object to sweep into,object color,red and green polka dot,yes
-229,Sweep the scraps into the sink,object to sweep into,object color,red and blue polka dot,yes
-230,Sweep the scraps into the sink,object to sweep into,object color,red and purple polka dot,yes
-231,Sweep the scraps into the sink,object to sweep into,object color,yellow and green polka dot,yes
-232,Sweep the scraps into the sink,object to sweep into,object color,yellow and blue polka dot,yes
-233,Sweep the scraps into the sink,object to sweep into,object color,yellow and purple polka dot,yes
-234,Sweep the scraps into the sink,object to sweep into,object color,green and blue polka dot,yes
-235,Sweep the scraps into the sink,object to sweep into,object color,green and purple polka dot,yes
-236,Sweep the scraps into the sink,object to sweep into,object color,blue and purple polka dot,yes
-237,Sweep the scraps into the sink,object to sweep into,object color,dark red and yellow polka dot,yes
-238,Sweep the scraps into the sink,object to sweep into,object color,dark red and green polka dot,yes
-239,Sweep the scraps into the sink,object to sweep into,object color,dark red and blue polka dot,yes
-240,Sweep the scraps into the sink,object to sweep into,object color,dark red and purple polka dot,yes
-241,Sweep the scraps into the sink,object to sweep into,object color,dark yellow and green polka dot,yes
-242,Sweep the scraps into the sink,object to sweep into,object color,dark yellow and blue polka dot,yes
-243,Sweep the scraps into the sink,object to sweep into,object color,dark yellow and purple polka dot,yes
-244,Sweep the scraps into the sink,object to sweep into,object color,dark green and blue polka dot,yes
-245,Sweep the scraps into the sink,object to sweep into,object color,dark green and purple polka dot,yes
-246,Sweep the scraps into the sink,object to sweep into,object color,dark blue and purple polka dot,yes
-247,Sweep the scraps into the sink,object to sweep into,object color,red swirl,yes
-248,Sweep the scraps into the sink,object to sweep into,object color,yellow swirl,yes
-249,Sweep the scraps into the sink,object to sweep into,object color,green swirl,yes
-250,Sweep the scraps into the sink,object to sweep into,object color,blue swirl,yes
-251,Sweep the scraps into the sink,object to sweep into,object color,purple swirl,yes
-252,Sweep the scraps into the sink,object to sweep into,object color,dark red swirl,yes
-253,Sweep the scraps into the sink,object to sweep into,object color,dark yellow swirl,yes
-254,Sweep the scraps into the sink,object to sweep into,object color,dark green swirl,yes
-255,Sweep the scraps into the sink,object to sweep into,object color,dark blue swirl,yes
-256,Sweep the scraps into the sink,object to sweep into,object color,dark purple swirl,yes
-257,Sweep the scraps into the sink,object to sweep into,object color,red paisley,yes
-258,Sweep the scraps into the sink,object to sweep into,object color,yellow paisley,yes
-259,Sweep the scraps into the sink,object to sweep into,object color,green paisley,yes
-260,Sweep the scraps into the sink,object to sweep into,object color,blue paisley,yes
-261,Sweep the scraps into the sink,object to sweep into,object color,purple paisley,yes
+0,Rotate the red heart,object to rotate,object type,L-shaped block,no
+1,Rotate the red heart,object to rotate,object type,block,no
+2,Rotate the red heart,object to rotate,object type,bowl,no
+3,Rotate the red heart,object to rotate,object type,container,no
+4,Rotate the red heart,object to rotate,object type,cross (block of this shape),no
+5,Rotate the red heart,object to rotate,object type,diamond (block of this shape),no
+6,Rotate the red heart,object to rotate,object type,flower (block of this shape),no
+7,Rotate the red heart,object to rotate,object type,heart (block of this shape),yes
+8,Rotate the red heart,object to rotate,object type,hexagon (block of this shape),no
+9,Rotate the red heart,object to rotate,object type,letter A,no
+10,Rotate the red heart,object to rotate,object type,letter E,no
+11,Rotate the red heart,object to rotate,object type,letter G,no
+12,Rotate the red heart,object to rotate,object type,letter M,no
+13,Rotate the red heart,object to rotate,object type,letter R,no
+14,Rotate the red heart,object to rotate,object type,letter T,no
+15,Rotate the red heart,object to rotate,object type,letter V,no
+16,Rotate the red heart,object to rotate,object type,pallet,no
+17,Rotate the red heart,object to rotate,object type,pan,no
+18,Rotate the red heart,object to rotate,object type,pentagon (block of this shape),no
+19,Rotate the red heart,object to rotate,object type,ring (block of this shape),no
+20,Rotate the red heart,object to rotate,object type,round (block of this shape),no
+21,Rotate the red heart,object to rotate,object type,shorter block,no
+22,Rotate the red heart,object to rotate,object type,small block,no
+23,Rotate the red heart,object to rotate,object type,star (block of this shape),no
+24,Rotate the red heart,object to rotate,object type,triangle (block of this shape),no
+25,Rotate the red heart,object to rotate,object color,brick,no
+26,Rotate the red heart,object to rotate,object color,tiles,no
+27,Rotate the red heart,object to rotate,object color,wooden,no
+28,Rotate the red heart,object to rotate,object color,granite,no
+29,Rotate the red heart,object to rotate,object color,plastic,no
+30,Rotate the red heart,object to rotate,object color,polka dot,no
+31,Rotate the red heart,object to rotate,object color,checkerboard,no
+32,Rotate the red heart,object to rotate,object color,tiger,no
+33,Rotate the red heart,object to rotate,object color,magma,no
+34,Rotate the red heart,object to rotate,object color,rainbow,no
+35,Rotate the red heart,object to rotate,object color,blue,no
+36,Rotate the red heart,object to rotate,object color,cyan,no
+37,Rotate the red heart,object to rotate,object color,green,no
+38,Rotate the red heart,object to rotate,object color,olive,no
+39,Rotate the red heart,object to rotate,object color,orange,no
+40,Rotate the red heart,object to rotate,object color,pink,no
+41,Rotate the red heart,object to rotate,object color,purple,no
+42,Rotate the red heart,object to rotate,object color,red,yes
+43,Rotate the red heart,object to rotate,object color,yellow,no
+44,Rotate the red heart,object to rotate,object color,dark blue,no
+45,Rotate the red heart,object to rotate,object color,dark cyan,no
+46,Rotate the red heart,object to rotate,object color,dark green,no
+47,Rotate the red heart,object to rotate,object color,dark orange,no
+48,Rotate the red heart,object to rotate,object color,dark pink,no
+49,Rotate the red heart,object to rotate,object color,dark purple,no
+50,Rotate the red heart,object to rotate,object color,dark red,no
+51,Rotate the red heart,object to rotate,object color,dark yellow,no
+52,Rotate the red heart,object to rotate,object color,red and yellow stripe,no
+53,Rotate the red heart,object to rotate,object color,red and green stripe,no
+54,Rotate the red heart,object to rotate,object color,red and blue stripe,no
+55,Rotate the red heart,object to rotate,object color,red and purple stripe,no
+56,Rotate the red heart,object to rotate,object color,yellow and green stripe,no
+57,Rotate the red heart,object to rotate,object color,yellow and blue stripe,no
+58,Rotate the red heart,object to rotate,object color,yellow and purple stripe,no
+59,Rotate the red heart,object to rotate,object color,green and blue stripe,no
+60,Rotate the red heart,object to rotate,object color,green and purple stripe,no
+61,Rotate the red heart,object to rotate,object color,blue and purple stripe,no
+62,Rotate the red heart,object to rotate,object color,dark red and yellow stripe,no
+63,Rotate the red heart,object to rotate,object color,dark red and green stripe,no
+64,Rotate the red heart,object to rotate,object color,dark red and blue stripe,no
+65,Rotate the red heart,object to rotate,object color,dark red and purple stripe,no
+66,Rotate the red heart,object to rotate,object color,dark yellow and green stripe,no
+67,Rotate the red heart,object to rotate,object color,dark yellow and blue stripe,no
+68,Rotate the red heart,object to rotate,object color,dark yellow and purple stripe,no
+69,Rotate the red heart,object to rotate,object color,dark green and blue stripe,no
+70,Rotate the red heart,object to rotate,object color,dark green and purple stripe,no
+71,Rotate the red heart,object to rotate,object color,dark blue and purple stripe,no
+72,Rotate the red heart,object to rotate,object color,red and yellow polka dot,no
+73,Rotate the red heart,object to rotate,object color,red and green polka dot,no
+74,Rotate the red heart,object to rotate,object color,red and blue polka dot,no
+75,Rotate the red heart,object to rotate,object color,red and purple polka dot,no
+76,Rotate the red heart,object to rotate,object color,yellow and green polka dot,no
+77,Rotate the red heart,object to rotate,object color,yellow and blue polka dot,no
+78,Rotate the red heart,object to rotate,object color,yellow and purple polka dot,no
+79,Rotate the red heart,object to rotate,object color,green and blue polka dot,no
+80,Rotate the red heart,object to rotate,object color,green and purple polka dot,no
+81,Rotate the red heart,object to rotate,object color,blue and purple polka dot,no
+82,Rotate the red heart,object to rotate,object color,dark red and yellow polka dot,no
+83,Rotate the red heart,object to rotate,object color,dark red and green polka dot,no
+84,Rotate the red heart,object to rotate,object color,dark red and blue polka dot,no
+85,Rotate the red heart,object to rotate,object color,dark red and purple polka dot,no
+86,Rotate the red heart,object to rotate,object color,dark yellow and green polka dot,no
+87,Rotate the red heart,object to rotate,object color,dark yellow and blue polka dot,no
+88,Rotate the red heart,object to rotate,object color,dark yellow and purple polka dot,no
+89,Rotate the red heart,object to rotate,object color,dark green and blue polka dot,no
+90,Rotate the red heart,object to rotate,object color,dark green and purple polka dot,no
+91,Rotate the red heart,object to rotate,object color,dark blue and purple polka dot,no
+92,Rotate the red heart,object to rotate,object color,red swirl,no
+93,Rotate the red heart,object to rotate,object color,yellow swirl,no
+94,Rotate the red heart,object to rotate,object color,green swirl,no
+95,Rotate the red heart,object to rotate,object color,blue swirl,no
+96,Rotate the red heart,object to rotate,object color,purple swirl,no
+97,Rotate the red heart,object to rotate,object color,dark red swirl,no
+98,Rotate the red heart,object to rotate,object color,dark yellow swirl,no
+99,Rotate the red heart,object to rotate,object color,dark green swirl,no
+100,Rotate the red heart,object to rotate,object color,dark blue swirl,no
+101,Rotate the red heart,object to rotate,object color,dark purple swirl,no
+102,Rotate the red heart,object to rotate,object color,red paisley,no
+103,Rotate the red heart,object to rotate,object color,yellow paisley,no
+104,Rotate the red heart,object to rotate,object color,green paisley,no
+105,Rotate the red heart,object to rotate,object color,blue paisley,no
+106,Rotate the red heart,object to rotate,object color,purple paisley,no
