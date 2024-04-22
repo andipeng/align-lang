@@ -1,0 +1,224 @@
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        inlineMath: [['$','$']]
+      }
+    });
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script> 
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./resources/style.css" media="screen"/>
+
+<html lang="en">
+
+<body>
+<div class="container">
+    <div class="title">
+        Diagnosis, Feedback, Adaptation: <br> A Human-in-the-Loop Framework for <br> Test-Time Policy Adaptation
+    </div>
+
+    <div class="venue">
+        ICML 2023
+    </div>
+
+    <br><br>
+
+    <div class="author">
+        <a href="https://andipeng.com/">Andi Peng</a><sup>1</sup>
+    </div>
+    <div class="author">
+        <a href="https://avivne.github.io/">Aviv Netanyahu</a><sup>1</sup>
+    </div>
+    <div class="author">
+        <a href="https://markkho.github.io/">Mark Ho</a><sup>2</sup>
+    </div>
+    <div class="author">
+        <a href="https://www.tshu.io/">Tianmin Shu</a><sup>1</sup>
+    </div>
+    <div class="author">
+        <a href="https://people.eecs.berkeley.edu/~abobu/">Andreea Bobu</a><sup>3</sup>
+    </div>
+    <div class="author">
+        <a href="https://interactive.mit.edu/about/people/julie">Julie Shah</a><sup>1</sup>
+    </div>
+    <div class="author">
+        <a href="https://people.csail.mit.edu/pulkitag/">Pulkit Agrawal</a><sup>1</sup>
+    </div>
+
+    <br><br>
+
+    <div class="affiliation"><sup>1&nbsp;</sup>MIT</div>
+    <div class="affiliation"><sup>2&nbsp;</sup>NYU</div>
+    <div class="affiliation"><sup>3&nbsp;</sup>UC Berkeley</div>
+    
+
+    <br><br>
+
+    <div class="links"><a href="https://arxiv.org/pdf/2307.06333.pdf"><i class="fa fa-file-text", style="font-size: 50px; padding-bottom: 10px"></i><br>[Paper]</a></div>
+    <div class="links"><a href="https://youtu.be/P5hopKcRCVk"><i class="fa fa-play-circle" style="font-size: 50px; padding-bottom: 10px"></i><br>[Video]</a></div>
+
+    <br><br>
+
+    <img style="width: 90%;" src="./resources/pipeline.png" alt="Teaser figure."/>
+    <br>
+    <br>
+
+    <h1>Abstract</h1>
+    <p style="width: 80%; text-align: left">
+        <br> Policies often fail due to distribution shift---changes in the state and reward that occur when a policy is deployed in new environments. Data augmentation can increase robustness by making the model invariant to <i>task-irrelevant</i> changes in the agent's observation. However, designers don't know which concepts are irrelevant <i>a priori</i>, especially when different end users have different preferences about how the task is performed. We propose an interactive framework to leverage feedback directly from the user to identify <i>personalized</i> task-irrelevant concepts. Our key idea is to generate <i>counterfactual demonstrations</i> that allow users to quickly identify possible task-relevant and irrelevant concepts. The knowledge of task-irrelevant concepts is then used to perform data augmentation and thus obtain a policy adapted to personalized user objectives. We present experiments validating our framework on discrete and continuous control tasks with real human users. Our method (1) enables users to better understand agent failure, (2) reduces the number of demonstrations required for fine-tuning, and (3) aligns the agent to individual user task preferences.
+    </p>
+    <br>
+    <hr>
+
+    <h1>Video</h1>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/P5hopKcRCVk" frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+    </div>
+    <br>
+
+    <br>
+    <hr>
+
+    <h1>Framework Overview</h1>
+
+    <br>
+    <h2>Diagnosing Distribution Shift Failures</h2>
+    <p style="width: 80%; text-align: left">Policies can fail due to different distribution shifts. The figure below shows illustrative distribution shifts for task: <b>``Get my mug."</b> Shifted concepts can be state-based (a changed object) and also reward-based (dependent on user preference). We can deploy data augmentation for <i>task-irrelevant</i> shifts (green checks), a subset where the modified state <i>does not impact</i> desired policy behaviour. But how do we know what's task-irrelevant vs. -relevant for each user?</p>
+    <img style="width: 70%;" src="./resources/shifts.png" alt="shifts."/>
+
+    <br>
+    <br>
+    <h2>Generating Counterfactual Demonstrations for Human Feedback</h2>
+    <p style="width: 80%; text-align: left">Our key insight is that <i>end users are uniquely positioned to recognize which concepts are relevant or irrelevant for their desired task.</i> But how do we elicit good concept-level human feedback? We propose a counterfactual approach to identify failure. Consider that the human also observes a trajectory of the robot successfully retrieving the object in the same scenario but with a single change -- the pan being blue instead of striped. Being able to contrast the two trajectories of successful and unsuccessful behaviour can better position the user to identify visual concepts impacting failure. Here, the user may identify pan material to be a task-irrelevant concept, which can then be used to make the policy invariant to this concept via data augmentation.</p>
+    <img style="width: 45%; text-align: left" src="./resources/counterfactual.png" alt="counterfactual."/>
+    <img style="width: 40%;" src="./resources/algo.png" alt="algo."/>
+    
+    <br>
+    <br>
+    <h2>Adaptation to Personalized User Objectives</h2>
+    <p style="width: 80%; text-align: left">We test our framework in three domains consisting of both discrete and continuous control tasks with real human users. Through human experiments, we verify our main hypothesis that user feedback resulting from counterfactual demonstrations significantly improves the accuracy of user-identified TI concepts as well as the data efficiency of policy finetuning with <i>less user effort</i>. </p>
+    <img style="width: 70%;" src="./resources/accuracy.png" alt="accuracy."/>
+
+    <br>
+    <br>
+     <p style="width: 80%; text-align: left">Moreover, policies finetuned using this human feedback (CF-H) result in higher performance with less expert demonstrations required compared to baselines. These findings illustrate a promising direction into leveraging end users to more efficiently perform interactive alignment of robotic policies at test-time. </p>
+     <img style="width: 70%;" src="./resources/finetuning.png" alt="finetuning."/>
+     <br>
+
+    <br>
+    <hr>
+    <h1>Paper</h1>
+    <div class="paper-thumbnail">
+        <a href="https://arxiv.org/pdf/2307.06333.pdf">
+            <img class="layered-paper-big" width="100%" src="./resources/paper.svg" alt="Paper thumbnail"/>
+        </a>
+    </div>
+    <div class="paper-info">
+        <h3>Diagnosis, Feedback, Adaptation: A Human-in-the-Loop Framework for Test-Time Policy Adaptation</h3>
+        <p>Andi Peng, Aviv Netanyahu, Mark Ho, Tianmin Shu, Andreea Bobu, Julie Shah, and Pulkit Agrawal</p>
+        <pre><code>@inproceedings{peng2023diagnosis,
+    title = {Diagnosis, Feedback, Adaptation: A Human-in-the-Loop Framework for Test-Time Policy Adaptation},
+    author = {Peng, Andi and Netanyahu, Aviv and Ho, Mark and Shu, Tianmin and Bobu, Andreea and Shah, Julie and Agrawal, Pulkit},
+    year = {2023},
+    booktitle = {Proceedings of the 40th International Conference on Machine Learning (ICML) 2023}
+}</code></pre>
+    </div>
+
+    <br>
+    <br>
+    <hr>
+
+ <section id="paper">
+        <h2>Team</h2>        
+        <div class="row">
+            <div class="column5">
+                <a href='https://andipeng.com/'>
+                    <img src=./resources/people/andi.png class="figure-img img-fluid rounded-circle" height=180px width=180px>
+                </a>
+                <p class=profname> Andi Peng </p>
+                <p class=institution>MIT</p>
+            </div>
+
+            <div class="column5">
+                <a href='https://avivne.github.io/'>
+                    <img  src=./resources/people/aviv.png class="figure-img img-fluid rounded-circle" height=180px width=180px>
+                </a>
+                <p class=profname> Aviv Netanyahu </p>
+                <p class=institution>MIT</p>
+            </div>
+
+            <div class="column5">
+                <a href='https://markkho.github.io/'>
+                    <img  src=./resources/people/mark.png class="figure-img img-fluid rounded-circle" height=180px width=180px>
+                </a>
+                <p class=profname> Mark Ho </p>
+                <p class=institution>NYU</p>
+            </div>
+
+            <div class="column5">
+                <a href='https://www.tshu.io/'>
+                    <img  src=./resources/people/tianmin.png class="figure-img img-fluid rounded-circle" height=180px width=180px>
+                </a>
+                <p class=profname> Tianmin Shu </p>
+                <p class=institution>MIT</p>
+            </div>
+
+            <div class="column5">
+                <a href='https://people.eecs.berkeley.edu/~abobu/'>
+                    <img  src=./resources/people/andreea.png class="figure-img img-fluid rounded-circle" height=180px width=180px>
+                </a>
+                <p class=profname> Andreea Bobu </p>
+                <p class=institution>UC Berkeley</p>
+            </div>
+
+            <div class="column5">
+                <a href='https://interactive.mit.edu/about/people/julie'>
+                    <img  src=./resources/people/julie.png class="figure-img img-fluid rounded-circle" height=180px width=180px>
+                </a>
+                <p class=profname> Julie Shah </p>
+                <p class=institution>MIT</p>
+            </div>
+
+            <div class="column5">
+                <a href='https://people.csail.mit.edu/pulkitag/'>
+                    <img  src=./resources/people/pulkit.png class="figure-img img-fluid rounded-circle" height=180px width=180px>
+                </a>
+                <p class=profname> Pulkit Agrawal </p>
+                <p class=institution>MIT</p>
+            </div>
+    </section>
+
+    <hr>
+    <h1>Acknowledgements</h1>
+    <p style="width: 80%;">
+        This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a>
+        and <a href="http://richzhang.github.io/">Richard Zhang</a> for a
+        <a href="http://richzhang.github.io/colorization/">colorful</a> ECCV project, and
+        adapted to be mobile responsive by <a href="https://github.com/jasonyzhang/webpage-template">Jason Zhang</a>.
+        The code we built on can be found <a href="https://github.com/elliottwu/webpage-template">here</a>.
+    </p>
+
+    <br>
+</div>
+
+</body>
+
+</html>
