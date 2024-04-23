@@ -78,7 +78,7 @@
 
     <br><br>
 
-    <h1>Video</h1>
+    <h1></h1>
     <div class="video-container">
         <iframe src="./resources/video.mp4" frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -87,23 +87,14 @@
 
     <br><br>
 
-    <img style="width: 90%;" src="./resources/pipeline.png" alt="Teaser figure."/>
-    <br><br>
-
-    <h1>Abstract</h1>
+    <h1>Summary</h1>
     <p style="width: 80%; text-align: left">
-        <br> Policies often fail due to distribution shift---changes in the state and reward that occur when a policy is deployed in new environments. Data augmentation can increase robustness by making the model invariant to <i>task-irrelevant</i> changes in the agent's observation. However, designers don't know which concepts are irrelevant <i>a priori</i>, especially when different end users have different preferences about how the task is performed. We propose an interactive framework to leverage feedback directly from the user to identify <i>personalized</i> task-irrelevant concepts. Our key idea is to generate <i>counterfactual demonstrations</i> that allow users to quickly identify possible task-relevant and irrelevant concepts. The knowledge of task-irrelevant concepts is then used to perform data augmentation and thus obtain a policy adapted to personalized user objectives. We present experiments validating our framework on discrete and continuous control tasks with real human users. Our method (1) enables users to better understand agent failure, (2) reduces the number of demonstrations required for fine-tuning, and (3) aligns the agent to individual user task preferences.
-    </p>
+        <br> Generalizable policy learning in high-dimensional observation spaces is facilitated by well-designed state representations, which can surface important features of an environment and hide irrelevant ones. These state representations are typically manually specified, or derived from other labor-intensive labeling procedures. We introduce two methods, LGA (language-guided abstraction) and PLGA (preference-conditioned language-guided abstraction), which use a combination of natural language supervision and background knowledge from language models (LMs) to automatically build state representations tailored to unseen tasks. In LGA, a user first provides a (possibly incomplete) description of a target task in natural language; next, a pre-trained LM translates this task description into a state abstraction function that masks out irrelevant features; finally, an imitation policy is trained using a small number of demonstrations and LGAgenerated abstract states. In PLGA, we observe that these abstractions also depend on a user’s preference for what matters in a task, which may be hard to describe or infeasible to exhaustively specify using language alone. Ergo, we propose using language models (LMs) to query for those preferences directly given knowledge that a change in behavior has occurred. In PLGA, we use the LM in two ways: first, given a text description of the task and knowledge of behavioral change between states, we query the LM for possible hidden preferences; second, given the most likely preference, we query the LM to construct the state abstraction.
     <br>
     <hr>
 
-    <h1>Video</h1>
-    <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/P5hopKcRCVk" frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-    </div>
-    <br>
+    <img style="width: 90%;" src="./resources/pipeline.png" alt="Teaser figure."/>
+    <br><br>
 
     <br>
     <hr>
