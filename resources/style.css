@@ -189,6 +189,20 @@ hr {
     opacity: 0.85;
 }
 
+.material-icons {
+    vertical-align: -6px;
+}
+p {
+    line-height: 1.25em;
+}
+.caption {
+    font-size: 16px;
+    color: #666;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
 
 /* Alternative */
 /*
