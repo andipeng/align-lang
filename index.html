@@ -107,40 +107,58 @@
 
     <h1>LGA</h1>
     <img style="width: 90%;" src="./resources/lga.png" alt="Teaser figure."/>
-    <p style="width: 80%; text-align: left"><b>(A)</b>: Example demonstration in our environment, showing Spot picking up an orange and bringing it to the user. <b>(B)</b>:~Our approach, Language Guided Abstraction (LGA), uses natural language supervision to create a state abstraction with task-relevant features identified by an LM. The policy is learned directly over this abstracted state.</p>
+    <p style="width: 80%; text-align: left"><b>(A)</b>: Example demonstration in our environment, showing Spot picking up an orange and bringing it to the user. <b>(B)</b>: Our approach, Language Guided Abstraction (LGA), uses natural language supervision to create a state abstraction with task-relevant features identified by an LM. The policy is learned directly over this abstracted state.</p>
     <h1>PLGA</h1>
     <img style="width: 90%;" src="./resources/plga.png" alt="Teaser figure."/>
-    <p style="width: 80%; text-align: left"><b>(Left)</b> The robot uses a contrastive demonstration pair to identify a behavior change not captured by the language specification. Given this information, we query the LM for potential preferences that could explain this change. Finally, the robot uses its best preference estimate to query the LM for state abstractions and train a policy. <b>(Right)</b> At test time, the robot generalizes to new states and language specifications using its preference-conditioned abstractions.</p>
+    <p style="width: 80%; text-align: left"><b>(Left)</b>: The robot uses a contrastive demonstration pair to identify a behavior change not captured by the language specification. Given this information, we query the LM for potential preferences that could explain this change. Finally, the robot uses its best preference estimate to query the LM for state abstractions and train a policy. <b>(Right)</b>: At test time, the robot generalizes to new states and language specifications using its preference-conditioned abstractions.</p>
     <br><br>
 
     <br>
     <hr>
 
-    <h1>Framework Overview</h1>
-
-    <br>
-    <h2>Diagnosing Distribution Shift Failures</h2>
-    <p style="width: 80%; text-align: left">Policies can fail due to different distribution shifts. The figure below shows illustrative distribution shifts for task: <b>``Get my mug."</b> Shifted concepts can be state-based (a changed object) and also reward-based (dependent on user preference). We can deploy data augmentation for <i>task-irrelevant</i> shifts (green checks), a subset where the modified state <i>does not impact</i> desired policy behaviour. But how do we know what's task-irrelevant vs. -relevant for each user?</p>
-    <img style="width: 70%;" src="./resources/shifts.png" alt="shifts."/>
-
-    <br>
-    <br>
-    <h2>Generating Counterfactual Demonstrations for Human Feedback</h2>
-    <p style="width: 80%; text-align: left">Our key insight is that <i>end users are uniquely positioned to recognize which concepts are relevant or irrelevant for their desired task.</i> But how do we elicit good concept-level human feedback? We propose a counterfactual approach to identify failure. Consider that the human also observes a trajectory of the robot successfully retrieving the object in the same scenario but with a single change -- the pan being blue instead of striped. Being able to contrast the two trajectories of successful and unsuccessful behaviour can better position the user to identify visual concepts impacting failure. Here, the user may identify pan material to be a task-irrelevant concept, which can then be used to make the policy invariant to this concept via data augmentation.</p>
-    <img style="width: 45%; text-align: left" src="./resources/counterfactual.png" alt="counterfactual."/>
-    <img style="width: 40%;" src="./resources/algo.png" alt="algo."/>
-    
-    <br>
-    <br>
-    <h2>Adaptation to Personalized User Objectives</h2>
-    <p style="width: 80%; text-align: left">We test our framework in three domains consisting of both discrete and continuous control tasks with real human users. Through human experiments, we verify our main hypothesis that user feedback resulting from counterfactual demonstrations significantly improves the accuracy of user-identified TI concepts as well as the data efficiency of policy finetuning with <i>less user effort</i>. </p>
-    <img style="width: 70%;" src="./resources/accuracy.png" alt="accuracy."/>
-
-    <br>
-    <br>
-     <p style="width: 80%; text-align: left">Moreover, policies finetuned using this human feedback (CF-H) result in higher performance with less expert demonstrations required compared to baselines. These findings illustrate a promising direction into leveraging end users to more efficiently perform interactive alignment of robotic policies at test-time. </p>
-     <img style="width: 70%;" src="./resources/finetuning.png" alt="finetuning."/>
-     <br>
+    <div class="columns is-centered">
+        <div class="column">
+          <h2 class="title is-3"><b>LGA</b> learns policies robust policies to object poses, visual distractors and physical disturbances</h2>
+          <section class="hero is-light is-small">
+            <div class="hero-body">
+                <div class="container">
+                  <div id="results-carousel" class="carousel results-carousel">
+                    <div class="item item-steve">
+                      <video poster="" id="steve" autoplay controls muted loop  height=300px>
+                        <source src="materials/videos/booknshelfrealtime.mp4"
+                                type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="item item-chair-tp">
+                      <video poster="" id="chair-tp" autoplay controls muted loop  height=300px>
+                        <source src="materials/videos/mugrealtime2.mp4"
+                                type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="item item-shiba">
+                      <video poster="" id="shiba" autoplay controls muted loop  height=300px>
+                        <source src="materials/videos/cabinetrealtime2.mp4"
+                                type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="item item-fullbody">
+                      <video poster="" id="fullbody" autoplay controls muted loop  height=300px>
+                        <source src="materials/videos/dishinrackdisturbances.mp4"
+                                type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="item item-blueshirt">
+                      <video poster="" id="blueshirt" autoplay controls muted loop  height=300px>
+                        <source src="materials/videos/drawerrealtime2.mp4"
+                                type="video/mp4">
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </section>
+        </div>
+    </div>
 
     <br>
     <hr>
