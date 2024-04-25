@@ -119,10 +119,10 @@
 
     <h1>LGA</h1>
     <img style="width: 90%;" src="./resources/lga.png" alt="Teaser figure."/>
-    <p style="width: 80%; text-align: left">Policies can fail due to different distribution shifts. The figure below shows illustrative distribution shifts for task: <b>``Get my mug."</b> Shifted concepts can be state-based (a changed object) and also reward-based (dependent on user preference). We can deploy data augmentation for <i>task-irrelevant</i> shifts (green checks), a subset where the modified state <i>does not impact</i> desired policy behaviour. But how do we know what's task-irrelevant vs. -relevant for each user?</p>
+    <p style="width: 80%; text-align: left"><b>A</b>: Example demonstration in our environment, showing Spot picking up an orange and bringing it to the user. ><b>B</b>:~Our approach, ><i>Language Guided Abstraction</i> (LGA), creates a state abstraction with task-relevant features identified by an LM. The policy is learned directly over this abstracted state.</p>
     <h1>PLGA</h1>
     <img style="width: 90%;" src="./resources/plga.png" alt="Teaser figure."/>
-    <p style="width: 80%; text-align: left">Policies can fail due to different distribution shifts. The figure below shows illustrative distribution shifts for task: <b>``Get my mug."</b> Shifted concepts can be state-based (a changed object) and also reward-based (dependent on user preference). We can deploy data augmentation for <i>task-irrelevant</i> shifts (green checks), a subset where the modified state <i>does not impact</i> desired policy behaviour. But how do we know what's task-irrelevant vs. -relevant for each user?</p>
+    <p style="width: 80%; text-align: left">(Left) The robot uses the demonstration pair to identify a behavior change not captured by the language specification. Given this information, we query the LM for potential preferences that could explain this change. Finally, the robot uses its best preference estimate to query the LM for state abstractions and train a policy. (Right) At test time, the robot generalizes to new states and language specifications using its preference-conditioned abstractions.</p>
     <br><br>
 
     <br>
