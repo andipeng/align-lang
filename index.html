@@ -87,18 +87,15 @@
             </a>
             </div>
     </div>
-
     <br><br>
 
-    <h1></h1>
-    <div class="video-container">
-        <video poster="" id="shiba" autoplay controls muted  height=300px>
-            <source src="./resources/video.mp4?autoplay=1"
-                type="video/mp4">
-        </video>
-    </div>
+    <video autoplay controls muted  height=480px>
+        <source src="./resources/video.mp4?autoplay=1"
+            type="video/mp4">
+    </video>
 
-    <br><br>
+    <br>
+    <br>
 
     <h1>Summary</h1>
     <p style="width: 80%; text-align: left">
@@ -109,6 +106,7 @@
     <h2>LGA</h2>
     <img style="width: 90%;" src="./resources/lga.png" alt="Teaser figure."/>
     <p style="width: 80%; text-align: left"><b>(A)</b>: Example demonstration in our environment, showing Spot picking up an orange and bringing it to the user. <b>(B)</b>: LGA uses natural language supervision to create a state abstraction with task-relevant features identified by an LM. The policy is learned directly over this abstracted state.</p>
+    <hr>
     <h2>PLGA</h2>
     <img style="width: 90%;" src="./resources/plga.png" alt="Teaser figure."/>
     <p style="width: 80%; text-align: left"><b>(Left)</b>: The robot uses a contrastive demonstration pair to identify a behavior change not captured by the language specification. Given this information, PLGA queries the LM for potential preferences that could explain this change. Finally, the robot uses its best preference estimate to query the LM for state abstractions and train a policy. <b>(Right)</b>: At test time, PLGA generalizes to new states and language specifications using preference-conditioned abstractions.</p>
